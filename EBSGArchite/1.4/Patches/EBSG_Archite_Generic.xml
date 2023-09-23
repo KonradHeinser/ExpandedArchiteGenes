@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/displayOrderInCategory</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/displayOrderInCategory</xpath>
+            <value><displayOrderInCategory>998.8</displayOrderInCategory></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]</xpath>
+            <value><displayOrderInCategory>998.8</displayOrderInCategory></value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/exclusionTags</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/exclusionTags</xpath>
+            <value><li>ArchiteMetabolism</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>ArchiteMetabolism</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneCategoryDef[defName="AG_FoodConsumption"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_MinorArchiteMetabolism"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_StrongArchiteMetabolism"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+            </operations>
+        </match>
+        <nomatch Class="PatchOperationConditional">
+            <xpath>Defs/GeneCategoryDef[defName="EBSG_Food"]</xpath>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/GeneDef[defName="EBSG_MinorArchiteMetabolism"]/displayCategory</xpath>
+                        <value><displayCategory>EBSG_Food</displayCategory></value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/displayCategory</xpath>
+                        <value><displayCategory>EBSG_Food</displayCategory></value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/GeneDef[defName="EBSG_StrongArchiteMetabolism"]/displayCategory</xpath>
+                        <value><displayCategory>EBSG_Food</displayCategory></value>
+                    </li>
+                </operations>
+            </match>
+        </nomatch>
+    </Operation>
+</Patch>
