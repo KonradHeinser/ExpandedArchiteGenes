@@ -2,133 +2,171 @@
 <Patch> <!--To account for multiple potential sources, the patch will check for the genes themselves instead of specific mods-->
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/GeneDef[defName="EBSG_EnhancedVision"]</xpath>
-        <match Class='PatchOperationAdd'>
-            <xpath>Defs</xpath>
-            <value>
-                <GeneDef>
-                    <defName>EBSG_MinorArchiteSenses</defName>
-                    <label>minor archite senses</label>
-                    <iconPath>EBSG/Gene_AmazingVision</iconPath>
-                    <description>Carriers of this gene have a small number archites in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
-                    <displayOrderInCategory>30</displayOrderInCategory>
-                    <displayCategory>EBSG_Sensory</displayCategory>
-                    <marketValueFactor>1.5</marketValueFactor>
-                    <biostatArc>1</biostatArc>
-                    <biostatCpx>3</biostatCpx>
-                    <statFactors>
-                        <CookSpeed>1.25</CookSpeed>
-                        <SocialImpact>1.1</SocialImpact>
-                    </statFactors>
-                    <capMods>
-                        <li>
-                            <capacity>Sight</capacity>
-                            <postFactor>1.25</postFactor>
-                        </li>
-                        <li>
-                            <capacity>Hearing</capacity>
-                            <postFactor>1.25</postFactor>
-                        </li>
-                    </capMods>
-                    <exclusionTags>
-                        <li>EBSG_Sight</li>
-                        <li>EBSG_Hearing</li>
-                        <li>EBSG_Smelling</li>
-                    </exclusionTags>
-                </GeneDef>
-                
-                <GeneDef>
-                    <defName>EBSG_ArchiteSenses</defName>
-                    <label>archite senses</label>
-                    <iconPath>EBSG/Gene_AmazingVision</iconPath>
-                    <description>Carriers of this gene have archites in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
-                    <displayOrderInCategory>31</displayOrderInCategory>
-                    <displayCategory>EBSG_Sensory</displayCategory>
-                    <marketValueFactor>2.0</marketValueFactor>
-                    <biostatArc>2</biostatArc>
-                    <biostatCpx>6</biostatCpx>
-                    <statFactors>
-                        <CookSpeed>1.25</CookSpeed>
-                        <SocialImpact>1.22</SocialImpact>
-                    </statFactors>
-                    <capMods>
-                        <li>
-                            <capacity>Sight</capacity>
-                            <postFactor>1.50</postFactor>
-                        </li>
-                        <li>
-                            <capacity>Hearing</capacity>
-                            <postFactor>1.50</postFactor>
-                        </li>
-                    </capMods>
-                    <exclusionTags>
-                        <li>EBSG_Sight</li>
-                        <li>EBSG_Hearing</li>
-                        <li>EBSG_Smelling</li>
-                    </exclusionTags>
-                </GeneDef>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class='PatchOperationAdd'>
+                    <xpath>Defs</xpath>
+                    <value>
+                        <GeneDef>
+                            <defName>EBSG_MinorArchiteSenses</defName>
+                            <label>minor archite senses</label>
+                            <iconPath>EBSG/Gene_AmazingVision</iconPath>
+                            <description>Carriers of this gene have a small number archites in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
+                            <displayOrderInCategory>30</displayOrderInCategory>
+                            <displayCategory>EBSG_Sensory</displayCategory>
+                            <marketValueFactor>1.5</marketValueFactor>
+                            <ignoreDarkness>true</ignoreDarkness>
+                            <biostatArc>1</biostatArc>
+                            <biostatCpx>3</biostatCpx>
+                            <statFactors>
+                                <CookSpeed>1.25</CookSpeed>
+                                <SocialImpact>1.1</SocialImpact>
+                            </statFactors>
+                            <capMods>
+                                <li>
+                                    <capacity>Sight</capacity>
+                                    <postFactor>1.25</postFactor>
+                                </li>
+                                <li>
+                                    <capacity>Hearing</capacity>
+                                    <postFactor>1.25</postFactor>
+                                </li>
+                            </capMods>
+                            <exclusionTags>
+                                <li>EBSG_Sight</li>
+                                <li>EBSG_Hearing</li>
+                                <li>EBSG_Smelling</li>
+                                <li>EBSG_ArchiteSenses</li>
+                            </exclusionTags>
+                        </GeneDef>
+                        
+                        <GeneDef>
+                            <defName>EBSG_ArchiteSenses</defName>
+                            <label>archite senses</label>
+                            <iconPath>EBSG/Gene_AmazingVision</iconPath>
+                            <description>Carriers of this gene have archites in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
+                            <displayOrderInCategory>31</displayOrderInCategory>
+                            <displayCategory>EBSG_Sensory</displayCategory>
+                            <marketValueFactor>2.0</marketValueFactor>
+                            <ignoreDarkness>true</ignoreDarkness>
+                            <biostatArc>2</biostatArc>
+                            <biostatCpx>6</biostatCpx>
+                            <statFactors>
+                                <CookSpeed>1.25</CookSpeed>
+                                <SocialImpact>1.22</SocialImpact>
+                            </statFactors>
+                            <capMods>
+                                <li>
+                                    <capacity>Sight</capacity>
+                                    <postFactor>1.50</postFactor>
+                                </li>
+                                <li>
+                                    <capacity>Hearing</capacity>
+                                    <postFactor>1.50</postFactor>
+                                </li>
+                            </capMods>
+                            <exclusionTags>
+                                <li>EBSG_Sight</li>
+                                <li>EBSG_Hearing</li>
+                                <li>EBSG_Smelling</li>
+                                <li>EBSG_ArchiteSenses</li>
+                            </exclusionTags>
+                        </GeneDef>
 
-                <GeneDef>
-                    <defName>EBSG_MajorArchiteSenses</defName>
-                    <label>major archite senses</label>
-                    <iconPath>EBSG/Gene_AmazingVision</iconPath>
-                    <description>Carriers of this gene have a large number archites in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
-                    <displayOrderInCategory>32</displayOrderInCategory>
-                    <displayCategory>EBSG_Sensory</displayCategory>
-                    <marketValueFactor>2.5</marketValueFactor>
-                    <biostatArc>3</biostatArc>
-                    <biostatCpx>9</biostatCpx>
-                    <statFactors>
-                        <CookSpeed>1.75</CookSpeed>
-                        <SocialImpact>1.35</SocialImpact>
-                    </statFactors>
-                    <capMods>
-                        <li>
-                            <capacity>Sight</capacity>
-                            <postFactor>1.75</postFactor>
-                        </li>
-                        <li>
-                            <capacity>Hearing</capacity>
-                            <postFactor>1.75</postFactor>
-                        </li>
-                    </capMods>
-                    <exclusionTags>
-                        <li>EBSG_Sight</li>
-                        <li>EBSG_Hearing</li>
-                        <li>EBSG_Smelling</li>
-                    </exclusionTags>
-                </GeneDef>
+                        <GeneDef>
+                            <defName>EBSG_MajorArchiteSenses</defName>
+                            <label>major archite senses</label>
+                            <iconPath>EBSG/Gene_AmazingVision</iconPath>
+                            <description>Carriers of this gene have a large number archites in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
+                            <displayOrderInCategory>32</displayOrderInCategory>
+                            <displayCategory>EBSG_Sensory</displayCategory>
+                            <marketValueFactor>2.5</marketValueFactor>
+                            <ignoreDarkness>true</ignoreDarkness>
+                            <biostatArc>3</biostatArc>
+                            <biostatCpx>9</biostatCpx>
+                            <statFactors>
+                                <CookSpeed>1.75</CookSpeed>
+                                <SocialImpact>1.35</SocialImpact>
+                            </statFactors>
+                            <capMods>
+                                <li>
+                                    <capacity>Sight</capacity>
+                                    <postFactor>1.75</postFactor>
+                                </li>
+                                <li>
+                                    <capacity>Hearing</capacity>
+                                    <postFactor>1.75</postFactor>
+                                </li>
+                            </capMods>
+                            <exclusionTags>
+                                <li>EBSG_Sight</li>
+                                <li>EBSG_Hearing</li>
+                                <li>EBSG_Smelling</li>
+                                <li>EBSG_ArchiteSenses</li>
+                            </exclusionTags>
+                        </GeneDef>
 
-                <GeneDef>
-                    <defName>EBSG_ExtremeArchiteSenses</defName>
-                    <label>extreme archite senses</label>
-                    <iconPath>EBSG/Gene_AmazingVision</iconPath>
-                    <description>Carriers of this gene have a small number of compressed archite clumps in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
-                    <displayOrderInCategory>33</displayOrderInCategory>
-                    <displayCategory>EBSG_Sensory</displayCategory>
-                    <marketValueFactor>3.0</marketValueFactor>
-                    <biostatArc>4</biostatArc>
-                    <biostatCpx>12</biostatCpx>
-                    <statFactors>
-                        <CookSpeed>2.00</CookSpeed>
-                        <SocialImpact>1.5</SocialImpact>
-                    </statFactors>
-                    <capMods>
-                        <li>
-                            <capacity>Sight</capacity>
-                            <postFactor>2.00</postFactor>
-                        </li>
-                        <li>
-                            <capacity>Hearing</capacity>
-                            <postFactor>2.00</postFactor>
-                        </li>
-                    </capMods>
-                    <exclusionTags>
-                        <li>EBSG_Sight</li>
-                        <li>EBSG_Hearing</li>
-                        <li>EBSG_Smelling</li>
-                    </exclusionTags>
-                </GeneDef>
-            </value>
+                        <GeneDef>
+                            <defName>EBSG_ExtremeArchiteSenses</defName>
+                            <label>extreme archite senses</label>
+                            <iconPath>EBSG/Gene_AmazingVision</iconPath>
+                            <description>Carriers of this gene have a small number of compressed archite clumps in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
+                            <displayOrderInCategory>33</displayOrderInCategory>
+                            <displayCategory>EBSG_Sensory</displayCategory>
+                            <marketValueFactor>3.0</marketValueFactor>
+                            <ignoreDarkness>true</ignoreDarkness>
+                            <biostatArc>4</biostatArc>
+                            <biostatCpx>12</biostatCpx>
+                            <statFactors>
+                                <CookSpeed>2.00</CookSpeed>
+                                <SocialImpact>1.5</SocialImpact>
+                            </statFactors>
+                            <capMods>
+                                <li>
+                                    <capacity>Sight</capacity>
+                                    <postFactor>2.00</postFactor>
+                                </li>
+                                <li>
+                                    <capacity>Hearing</capacity>
+                                    <postFactor>2.00</postFactor>
+                                </li>
+                            </capMods>
+                            <exclusionTags>
+                                <li>EBSG_Sight</li>
+                                <li>EBSG_Hearing</li>
+                                <li>EBSG_Smelling</li>
+                                <li>EBSG_ArchiteSenses</li>
+                            </exclusionTags>
+                        </GeneDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/GeneDef[defName="DarkVision"]/exclusionTags</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/GeneDef[defName="DarkVision"]/exclusionTags</xpath>
+                        <value><li>EBSG_ArchiteSenses</li></value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/GeneDef[defName="DarkVision"]</xpath>
+                        <value>
+                            <exclusionTags>
+                                <li>EBSG_ArchiteSenses</li>
+                            </exclusionTags>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThoughtDef[defName="EnvironmentDark"]/nullifyingGenes</xpath>
+                    <value>
+                        <li>EBSG_MinorArchiteSenses</li>
+                        <li>EBSG_ArchiteSenses</li>
+                        <li>EBSG_MajorArchiteSenses</li>
+                        <li>EBSG_ExtremeArchiteSenses</li>
+                    </value>
+                </li>
+            </operations>
         </match>
     </Operation>
 
@@ -263,7 +301,7 @@
             <value>
                 <GeneDef ParentName="EBSG_HemogenGain">
                     <defName>EBSG_MinorArchiteHemogenGain</defName>
-                    <label>minor archite hemo-precessing efficiency</label>
+                    <label>minor archite hemo-processing efficiency</label>
                     <iconPath>EBSG/Gene_HemogenGain</iconPath>
                     <description>Carriers of this gene have a small number of archites in their blood that allow them to process the blood of others into hemogen unbelievably efficiently.</description>
                     <displayOrderInCategory>1.9</displayOrderInCategory>
@@ -277,7 +315,7 @@
 
                 <GeneDef ParentName="EBSG_HemogenGain">
                     <defName>EBSG_ArchiteHemogenGain</defName>
-                    <label>archite hemo-precessing efficiency</label>
+                    <label>archite hemo-processing efficiency</label>
                     <iconPath>EBSG/Gene_HemogenGainExtreme</iconPath>
                     <description>Carriers of this gene have archites in their blood that allow them to process the blood of others into hemogen unbelievably efficiently.</description>
                     <displayOrderInCategory>2.0</displayOrderInCategory>
@@ -291,7 +329,7 @@
 
                 <GeneDef ParentName="EBSG_HemogenGain">
                     <defName>EBSG_MajorArchiteHemogenGain</defName>
-                    <label>major archite hemo-precessing efficiency</label>
+                    <label>major archite hemo-processing efficiency</label>
                     <iconPath>EBSG/Gene_HemogenGainExtreme</iconPath>
                     <description>Carriers of this gene have a large number of archites in their blood that allow them to process the blood of others into hemogen unbelievably efficiently.</description>
                     <displayOrderInCategory>2.1</displayOrderInCategory>
