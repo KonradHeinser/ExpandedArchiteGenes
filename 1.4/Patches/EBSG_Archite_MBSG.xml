@@ -204,7 +204,7 @@
                 <GeneDef ParentName="FertilityBase">
                     <defName>EBSG_ArchiteFertility</defName>
                     <label>archite fertility</label>
-                    <description>Carriers of this gene have archites in their cells that make it exceptionally easy for them to become pregnant or impregnate others.</description>
+                    <description>Carriers of this gene have archites in their cells that make it exceptionally easy for them to become pregnant or impregnate others. Their reproductive system is so hyperactive that just being in the same room is cause for concern.</description>
                     <iconPath>UI/Icons/Genes/Gene_Fertile</iconPath>
                     <displayOrderInCategory>140.1</displayOrderInCategory>
                     <marketValueFactor>1.5</marketValueFactor>

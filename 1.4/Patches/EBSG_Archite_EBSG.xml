@@ -352,7 +352,7 @@
                 <GeneDef ParentName="EBSG_MentalFortitude">
                     <defName>EBSG_ArchiteMentalFortitude</defName>
                     <label>archite mental fortitude</label>
-                    <description>Carriers of this gene have archites in their brains that help defend their mind from being unsettled by outside influences. This will make it much less likely for them to have a mental break. For those who have Ideology, this also makes it much harder to keep them supressed and change their beliefs.</description>
+                    <description>Carriers of this gene have archites in their brains that help defend their mind from being unsettled by outside influences. This will make it much less likely for them to have a mental break. For those who have Ideology, this also makes it much harder to keep them suppressed and change their beliefs.</description>
                     <iconPath>EBSG/Gene_ExtremelyStubborn</iconPath>
                     <displayOrderInCategory>99.99</displayOrderInCategory>
                     <marketValueFactor>1.5</marketValueFactor>
