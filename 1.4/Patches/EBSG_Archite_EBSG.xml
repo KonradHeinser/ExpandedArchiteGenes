@@ -859,4 +859,287 @@
             </value>
         </match>
     </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_HyperRecklessBrawler"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_Brawler">
+                    <defName>EBSG_MinorArchiteEnhancedBrawler</defName>
+                    <label>minor archite enhanced brawling</label>
+                    <description>Carriers of this gene have a small number of archites in their bodies dedicated to making them a much better brawler compared to most people. This helps them fight enemies in melee combat by making them more accurate and evasive.</description>
+                    <iconPath>EBSG/Gene_RecklessBrawler</iconPath>
+                    <displayOrderInCategory>101.3</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <MeleeHitChance>1.40</MeleeHitChance>
+                        <MeleeDodgeChance>1.40</MeleeDodgeChance>
+                    </statFactors>
+                    <symbolPack>
+                        <prefixSymbols>
+                            <li><symbol>fight</symbol></li>
+                        </prefixSymbols>
+                    </symbolPack>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_Brawler">
+                    <defName>EBSG_ArchiteEnhancedBrawler</defName>
+                    <label>archite enhanced brawling</label>
+                    <description>Carriers of this gene have archites in their bodies dedicated to making them a much better brawler compared to most people. This helps them fight enemies in melee combat by making them more accurate and evasive.</description>
+                    <iconPath>EBSG/Gene_ExtremelyRecklessBrawler</iconPath>
+                    <displayOrderInCategory>101.4</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <MeleeHitChance>1.80</MeleeHitChance>
+                        <MeleeDodgeChance>1.80</MeleeDodgeChance>
+                    </statFactors>
+                    <symbolPack>
+                        <prefixSymbols>
+                            <li><symbol>fight</symbol></li>
+                        </prefixSymbols>
+                    </symbolPack>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_Brawler">
+                    <defName>EBSG_MajorArchiteEnhancedBrawler</defName>
+                    <label>major archite enhanced brawling</label>
+                    <description>Carriers of this gene have a large number of archites in their bodies dedicated to making them a much better brawler compared to most people. This helps them fight enemies in melee combat by making them more accurate and evasive.</description>
+                    <iconPath>EBSG/Gene_ExtremelyRecklessBrawler</iconPath>
+                    <displayOrderInCategory>101.5</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <MeleeHitChance>2.20</MeleeHitChance>
+                        <MeleeDodgeChance>2.20</MeleeDodgeChance>
+                    </statFactors>
+                    <symbolPack>
+                        <prefixSymbols>
+                            <li><symbol>fight</symbol></li>
+                        </prefixSymbols>
+                    </symbolPack>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_Shooter">
+                    <defName>EBSG_MinorArchiteEnhancedShooter</defName>
+                    <label>minor archite enhanced shooting</label>
+                    <description>Carriers of this gene have a small number of archites in their brains dedicated to making them a much better shooter compared to most people. This helps them snipe enemies in melee combat by making them more accurate and evasive.</description>
+                    <iconPath>EBSG/Gene_CarefulShooter</iconPath>
+                    <displayOrderInCategory>103.5</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <ShootingAccuracyPawn>1.40</ShootingAccuracyPawn>
+                        <AimingDelayFactor>0.60</AimingDelayFactor>
+                    </statFactors>
+                    <symbolPack>
+                        <prefixSymbols>
+                            <li><symbol>snipe</symbol></li>
+                        </prefixSymbols>
+                    </symbolPack>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_Shooter">
+                    <defName>EBSG_ArchiteEnhancedShooter</defName>
+                    <label>archite enhanced shooting</label>
+                    <description>Carriers of this gene have archites in their brains dedicated to making them a much better shooter compared to most people. This helps them snipe enemies in melee combat by making them more accurate and evasive.</description>
+                    <iconPath>EBSG/Gene_ExtremelyCarefulShooter</iconPath>
+                    <displayOrderInCategory>103.6</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <ShootingAccuracyPawn>1.80</ShootingAccuracyPawn>
+                        <AimingDelayFactor>0.20</AimingDelayFactor>
+                    </statFactors>
+                    <symbolPack>
+                        <prefixSymbols>
+                            <li><symbol>snipe</symbol></li>
+                        </prefixSymbols>
+                    </symbolPack>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_Shooter">
+                    <defName>EBSG_MajorArchiteEnhancedShooter</defName>
+                    <label>major archite enhanced shooting</label>
+                    <description>Carriers of this gene have a large number of archites in their brains dedicated to making them a much better shooter compared to most people. This helps them snipe enemies in melee combat by making them more accurate and evasive.</description>
+                    <iconPath>EBSG/Gene_ExtremelyCarefulShooter</iconPath>
+                    <displayOrderInCategory>103.7</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <ShootingAccuracyPawn>2.20</ShootingAccuracyPawn>
+                        <AimingDelayFactor>0.01</AimingDelayFactor>
+                    </statFactors>
+                    <symbolPack>
+                        <prefixSymbols>
+                            <li><symbol>snipe</symbol></li>
+                        </prefixSymbols>
+                    </symbolPack>
+                </GeneDef>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_AcidImmune"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef>
+                    <defName>EBSG_MinorElementalProtection</defName>
+                    <label>minor elemental protection</label>
+                    <description>Carriers of this gene have a small number of archites in their body dedicated to protecting them from various types of elemental damage. The number of items on this list may increase based on what mods you have enabled.</description>
+                    <iconPath>EBSG/Gene_ElementalProtection</iconPath>
+                    <displayOrderInCategory>-0.3</displayOrderInCategory>
+                    <displayCategory>ResistanceAndWeakness</displayCategory>
+                    <statFactors>
+                        <Flammability>0.66</Flammability>
+                    </statFactors>
+                    <damageFactors>
+                            <!--Base Game Damages-->
+                        <AcidBurn>0.66</AcidBurn>
+                        <Frostbite>0.66</Frostbite>
+                        <Flame>0.66</Flame>
+
+                            <!--Superhero Genes Damages-->
+                        <SHG_Ice MayRequire="SuperheroGenesBase.mod">0.66</SHG_Ice>
+                        <SHG_Petrification MayRequire="SuperheroGenesBase.mod">0.66</SHG_Petrification>
+                        <SHG_Lightning MayRequire="SuperheroGenesBase.mod">0.66</SHG_Lightning>
+                        <SHG_Water MayRequire="SuperheroGenesBase.mod">0.66</SHG_Water>
+
+                            <!--Cryoweapons Damages-->
+                        <CW_CryoDamagePistolBullet MayRequire="SA.Cryoweapons">0.66</CW_CryoDamagePistolBullet>
+                        <CW_CryoDamageRifleBullet MayRequire="SA.Cryoweapons">0.66</CW_CryoDamageRifleBullet>
+                        <CW_CryoDamageShell MayRequire="SA.Cryoweapons">0.66</CW_CryoDamageShell>
+                        <CW_CryoDamageRailShot MayRequire="SA.Cryoweapons">0.66</CW_CryoDamageRailShot>
+                        <CW_SecondaryFrostBurn MayRequire="SA.Cryoweapons">0.66</CW_SecondaryFrostBurn>
+                        
+                            <!--Alpha Genes Damages-->
+                        <AG_Electric MayRequire="sarg.alphagenes">0.66</AG_Electric>
+                        <AG_AcidSpit MayRequire="sarg.alphagenes">0.66</AG_AcidSpit>
+
+                            <!--VEF Damages-->
+                        <VEF_SecondaryAcidBurn>0.66</VEF_SecondaryAcidBurn>
+                    </damageFactors>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <exclusionTags>
+                        <li>AcidDamage</li>
+                        <li>FrostbiteDamage</li>
+                        <li>FireDamage</li>
+                        <li>LightningDamage</li>
+                    </exclusionTags>
+                </GeneDef>
+
+                <GeneDef>
+                    <defName>EBSG_ElementalProtection</defName>
+                    <label>elemental protection</label>
+                    <description>Carriers of this gene have archites in their body dedicated to protecting them from various types of elemental damage. The number of items on this list may increase based on what mods you have enabled.</description>
+                    <iconPath>EBSG/Gene_ElementalProtection</iconPath>
+                    <displayOrderInCategory>-0.2</displayOrderInCategory>
+                    <displayCategory>ResistanceAndWeakness</displayCategory>
+                    <statFactors>
+                        <Flammability>0.33</Flammability>
+                    </statFactors>
+                    <damageFactors>
+                            <!--Base Game Damages-->
+                        <AcidBurn>0.33</AcidBurn>
+                        <Frostbite>0.33</Frostbite>
+                        <Flame>0.33</Flame>
+
+                            <!--Superhero Genes Damages-->
+                        <SHG_Ice MayRequire="SuperheroGenesBase.mod">0.33</SHG_Ice>
+                        <SHG_Petrification MayRequire="SuperheroGenesBase.mod">0.33</SHG_Petrification>
+                        <SHG_Lightning MayRequire="SuperheroGenesBase.mod">0.33</SHG_Lightning>
+                        <SHG_Water MayRequire="SuperheroGenesBase.mod">0.33</SHG_Water>
+
+                            <!--Cryoweapons Damages-->
+                        <CW_CryoDamagePistolBullet MayRequire="SA.Cryoweapons">0.33</CW_CryoDamagePistolBullet>
+                        <CW_CryoDamageRifleBullet MayRequire="SA.Cryoweapons">0.33</CW_CryoDamageRifleBullet>
+                        <CW_CryoDamageShell MayRequire="SA.Cryoweapons">0.33</CW_CryoDamageShell>
+                        <CW_CryoDamageRailShot MayRequire="SA.Cryoweapons">0.33</CW_CryoDamageRailShot>
+                        <CW_SecondaryFrostBurn MayRequire="SA.Cryoweapons">0.33</CW_SecondaryFrostBurn>
+                        
+                            <!--Alpha Genes Damages-->
+                        <AG_Electric MayRequire="sarg.alphagenes">0.33</AG_Electric>
+                        <AG_AcidSpit MayRequire="sarg.alphagenes">0.33</AG_AcidSpit>
+
+                            <!--VEF Damages-->
+                        <VEF_SecondaryAcidBurn>0.33</VEF_SecondaryAcidBurn>
+                    </damageFactors>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <exclusionTags>
+                        <li>AcidDamage</li>
+                        <li>FrostbiteDamage</li>
+                        <li>FireDamage</li>
+                        <li>LightningDamage</li>
+                    </exclusionTags>
+                </GeneDef>
+
+                <GeneDef>
+                    <defName>EBSG_ElementalImmunity</defName>
+                    <label>elemental Immunity</label>
+                    <description>Carriers of this gene have a large number archites in their body dedicated to protecting them from various types of elemental damage. The number of items on this list may increase based on what mods you have enabled.\n\nThis does NOT render a pawn immune to all damage. Bullets and blades can still kill the pawn, along with certain types of damages that were intentionally excluded from the list.</description>
+                    <iconPath>EBSG/Gene_ElementalProtection</iconPath>
+                    <displayOrderInCategory>-0.1</displayOrderInCategory>
+                    <displayCategory>ResistanceAndWeakness</displayCategory>
+                    <statFactors>
+                        <Flammability>0</Flammability>
+                    </statFactors>
+                    <damageFactors>
+                            <!--Base Game Damages-->
+                        <AcidBurn>0</AcidBurn>
+                        <Frostbite>0</Frostbite>
+                        <Flame>0</Flame>
+
+                            <!--Superhero Genes Damages-->
+                        <SHG_Ice MayRequire="SuperheroGenesBase.mod">0</SHG_Ice>
+                        <SHG_Petrification MayRequire="SuperheroGenesBase.mod">0</SHG_Petrification>
+                        <SHG_Lightning MayRequire="SuperheroGenesBase.mod">0</SHG_Lightning>
+                        <SHG_Water MayRequire="SuperheroGenesBase.mod">0</SHG_Water>
+
+                            <!--Cryoweapons Damages-->
+                        <CW_CryoDamagePistolBullet MayRequire="SA.Cryoweapons">0</CW_CryoDamagePistolBullet>
+                        <CW_CryoDamageRifleBullet MayRequire="SA.Cryoweapons">0</CW_CryoDamageRifleBullet>
+                        <CW_CryoDamageShell MayRequire="SA.Cryoweapons">0</CW_CryoDamageShell>
+                        <CW_CryoDamageRailShot MayRequire="SA.Cryoweapons">0</CW_CryoDamageRailShot>
+                        <CW_SecondaryFrostBurn MayRequire="SA.Cryoweapons">0</CW_SecondaryFrostBurn>
+                        
+                            <!--Alpha Genes Damages-->
+                        <AG_Electric MayRequire="sarg.alphagenes">0</AG_Electric>
+                        <AG_AcidSpit MayRequire="sarg.alphagenes">0</AG_AcidSpit>
+
+                            <!--VEF Damages-->
+                        <VEF_SecondaryAcidBurn>0</VEF_SecondaryAcidBurn>
+                    </damageFactors>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <exclusionTags>
+                        <li>AcidDamage</li>
+                        <li>FrostbiteDamage</li>
+                        <li>FireDamage</li>
+                        <li>LightningDamage</li>
+                    </exclusionTags>
+                </GeneDef>
+            </value>
+        </match>
+    </Operation>
+
 </Patch>
+
+<!--
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_VeryConvincing"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+            </value>
+        </match>
+    </Operation>
+
+
+-->
