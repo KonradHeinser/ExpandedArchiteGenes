@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch> <!--To account for multiple potential sources, the patch will check for the genes themselves instead of specific mods-->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_SlightlyAcceleratedDeathrest"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_DeathrestSpeedBase">
+                    <defName>EBSG_MinorArchiteEnhancedDeathrestSpeed</defName>
+                    <label>minor archite enhanced deathrest speed</label>
+                    <description>Carriers of this gene have a small number of archites in their brains dedicated to decreasing the amount of time the pawn needs to spend deathresting.</description>
+                    <iconPath>EBSG/Gene_DeathrestSpeed</iconPath>
+                    <displayOrderInCategory>667.2</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <EBSG_DeathrestEfficiency>2.00</EBSG_DeathrestEfficiency>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_DeathrestSpeedBase">
+                    <defName>EBSG_ArchiteEnhancedDeathrestSpeed</defName>
+                    <label>archite enhanced deathrest speed</label>
+                    <description>Carriers of this gene have archites in their brains dedicated to decreasing the amount of time the pawn needs to spend deathresting.</description>
+                    <iconPath>EBSG/Gene_ExtremeDeathrestSpeed</iconPath>
+                    <displayOrderInCategory>667.2</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <EBSG_DeathrestEfficiency>3.00</EBSG_DeathrestEfficiency>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_DeathrestSpeedBase">
+                    <defName>EBSG_MajorArchiteEnhancedDeathrestSpeed</defName>
+                    <label>major archite enhanced deathrest speed</label>
+                    <description>Carriers of this gene have a large number of archites in their brains dedicated to decreasing the amount of time the pawn needs to spend deathresting.</description>
+                    <iconPath>EBSG/Gene_ExtremeDeathrestSpeed</iconPath>
+                    <displayOrderInCategory>667.3</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <EBSG_DeathrestEfficiency>4.00</EBSG_DeathrestEfficiency>
+                    </statFactors>
+                </GeneDef>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_NoBloodRecovery"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_BloodRestoration">
+                    <defName>EBSG_MinorArchiteEnhancedBloodRecovery</defName>
+                    <label>minor archite enhanced mech work speed</label>
+                    <description>Carriers of this gene have a small number of archites in their bodies dedicated to replenishing blood they've lost. This is only active while the pawn is not bleeding.</description>
+                    <iconPath>EBSG/Gene_BloodRecovery</iconPath>
+                    <displayOrderInCategory>98.91</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statOffsets>
+                        <EBSG_BloodlossRecoveryBonus>2.00</EBSG_BloodlossRecoveryBonus>
+                    </statOffsets>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_BloodRestoration">
+                    <defName>EBSG_ArchiteEnhancedBloodRecovery</defName>
+                    <label>archite enhanced mech work speed</label>
+                    <description>Carriers of this gene have archites in their bodies dedicated to replenishing blood they've lost. This is only active while the pawn is not bleeding.</description>
+                    <iconPath>EBSG/Gene_ExtremeBloodRecovery</iconPath>
+                    <displayOrderInCategory>98.92</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statOffsets>
+                        <EBSG_BloodlossRecoveryBonus>3.00</EBSG_BloodlossRecoveryBonus>
+                    </statOffsets>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_BloodRestoration">
+                    <defName>EBSG_MajorArchiteEnhancedBloodRecovery</defName>
+                    <label>major archite enhanced mech work speed</label>
+                    <description>Carriers of this gene have a large number of archites in their bodies dedicated to replenishing blood they've lost. This is only active while the pawn is not bleeding.</description>
+                    <iconPath>EBSG/Gene_ExtremeBloodRecovery</iconPath>
+                    <displayOrderInCategory>98.93</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statOffsets>
+                        <EBSG_BloodlossRecoveryBonus>4.00</EBSG_BloodlossRecoveryBonus>
+                    </statOffsets>
+                </GeneDef>
+
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_HyperFastPregnancySpeed"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_PregnancySpeedBase">
+                    <defName>EBSG_MinorArchiteEnhancedPregnancySpeed</defName>
+                    <label>minor archite enhanced pregnancy speed</label>
+                    <description>Carriers of this gene have a small number of archites in their bodies dedicated to decreasing how long their pregnancies last.\n\nFor obvious reasons, this doesn't usually have an effect on males.</description>
+                    <iconPath>EBSG/Gene_PregnancySpeed</iconPath>
+                    <displayOrderInCategory>201.1</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <EBSG_PawnGestationSpeed>2.00</EBSG_PawnGestationSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_PregnancySpeedBase">
+                    <defName>EBSG_ArchiteEnhancedPregnancySpeed</defName>
+                    <label>archite enhanced pregnancy speed</label>
+                    <description>Carriers of this gene have archites in their bodies dedicated to decreasing how long their pregnancies last.\n\nFor obvious reasons, this doesn't usually have an effect on males.</description>
+                    <iconPath>EBSG/Gene_ExtremePregnancySpeed</iconPath>
+                    <displayOrderInCategory>201.2</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <EBSG_PawnGestationSpeed>4.00</EBSG_PawnGestationSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_PregnancySpeedBase">
+                    <defName>EBSG_MajorArchiteEnhancedPregnancySpeed</defName>
+                    <label>major archite enhanced pregnancy speed</label>
+                    <description>Carriers of this gene have a large number of archites in their bodies dedicated to decreasing how long their pregnancies last.\n\nFor obvious reasons, this doesn't usually have an effect on males.</description>
+                    <iconPath>EBSG/Gene_ExtremePregnancySpeed</iconPath>
+                    <displayOrderInCategory>201.3</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <EBSG_PawnGestationSpeed>6.00</EBSG_PawnGestationSpeed>
+                    </statFactors>
+                </GeneDef>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_HyperBiosculpterSpeed"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_BiosculpterSpeedBase">
+                    <defName>EBSG_MinorArchiteEnhancedBiosculpterSpeed</defName>
+                    <label>minor archite enhanced biosculpting speed</label>
+                    <description>Carriers of this gene have a small number of archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
+                    <iconPath>EBSG/Gene_BiosculpterSpeed</iconPath>
+                    <displayOrderInCategory>9</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <BiosculpterOccupantSpeed>2.00</BiosculpterOccupantSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_BiosculpterSpeedBase">
+                    <defName>EBSG_ArchiteEnhancedBiosculpterSpeed</defName>
+                    <label>archite enhanced biosculpting speed</label>
+                    <description>Carriers of this gene have archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
+                    <iconPath>EBSG/Gene_ExtremeBiosculpterSpeed</iconPath>
+                    <displayOrderInCategory>10</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <BiosculpterOccupantSpeed>3.00</BiosculpterOccupantSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_BiosculpterSpeedBase">
+                    <defName>EBSG_MajorArchiteEnhancedBiosculpterSpeed</defName>
+                    <label>major archite enhanced biosculpting speed</label>
+                    <description>Carriers of this gene have a large number of archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
+                    <iconPath>EBSG/Gene_ExtremeBiosculpterSpeed</iconPath>
+                    <displayOrderInCategory>11</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <BiosculpterOccupantSpeed>4.00</BiosculpterOccupantSpeed>
+                    </statFactors>
+                </GeneDef>
+
+            </value>
+        </match>
+    </Operation>
+
+</Patch>
+
+<!--
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName=""]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+            </value>
+        </match>
+    </Operation>
+
+
+-->

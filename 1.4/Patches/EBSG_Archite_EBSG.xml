@@ -1128,12 +1128,539 @@
         </match>
     </Operation>
 
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_InnatePsychicAmplifier"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class='PatchOperationAdd'>
+                    <xpath>Defs</xpath>
+                    <value>
+                        <GeneDef> 
+                            <defName>EBSG_ArchitePsychicInfluencer</defName>
+                            <label>archite psychic influencer</label>
+                            <iconPath>EBSG/Gene_InnatePsychicInsulation</iconPath>
+                            <description>Carriers of this gene have an innate psychic reader, harmonizer, and shield. The shield protects them from most external mood and opinion altering psychic effect. Unlike Psychic insulation, this only stops both negative moods and dynamic moods(like a harmonizer and drones).</description>
+                            <displayOrderInCategory>310.4</displayOrderInCategory>
+                            <displayCategory>Psychic</displayCategory>
+                            <biostatArc>1</biostatArc>
+                            <biostatCpx>4</biostatCpx>
+                            <customEffectDescriptions>
+                                <li>Colonist will not be effected by external psychic thought and opinion changers.</li>
+                                <li>Colonist will still be effected by other effects of psychic abilties, even if those abilities include a thought or opinion change.</li>
+                                <li>The harmonizer and bond break moods look strange on the list because they don't have a source. This is just a visual bug caused by the base game's naming structure.</li>
+                                <li>Gives a psychic harmonizer.</li>
+                                <li>Gives a psychic reader.</li>
+                            </customEffectDescriptions>
+                            <exclusionTags>
+                                <li>EBSG_PsychicMood</li>
+                                <li>EBSGA_PsychicInfluencer</li>
+                            </exclusionTags>
+                            <modExtensions>
+                                <li Class="VanillaGenesExpanded.GeneExtension">
+                                    <hediffsToBodyParts>
+                                        <li>
+                                            <hediff>PsychicHarmonizer</hediff>
+                                            <bodyparts>
+                                                <li>Brain</li>
+                                            </bodyparts>
+                                        </li>
+                                        <li>
+                                            <hediff>PsychicReader</hediff>
+                                            <bodyparts>
+                                                <li>Brain</li>
+                                            </bodyparts>
+                                        </li>
+                                    </hediffsToBodyParts>
+                                </li>
+                            </modExtensions>
+                        </GeneDef>
+
+                        <GeneDef ParentName="EBSG_EntropyMaxBase">
+                            <defName>EBSG_MinorArchiteEnhancedEntropyMax</defName>
+                            <label>minor archite enhanced entropy max</label>
+                            <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping them avoid suffering damage from storing large amounts of neural heat.</description>
+                            <iconPath>EBSG/Gene_EntropyMax</iconPath>
+                            <displayOrderInCategory>312.81</displayOrderInCategory>
+                            <biostatArc>1</biostatArc>
+                            <biostatCpx>3</biostatCpx>
+                            <statFactors>
+                                <PsychicEntropyMax>2.00</PsychicEntropyMax>
+                            </statFactors>
+                        </GeneDef>
+
+                        <GeneDef ParentName="EBSG_EntropyMaxBase">
+                            <defName>EBSG_ArchiteEnhancedEntropyMax</defName>
+                            <label>archite enhanced entropy max</label>
+                            <description>Carriers of this gene have archites in their bodies dedicated to helping them avoid suffering damage from storing large amounts of neural heat.</description>
+                            <iconPath>EBSG/Gene_ExtremeEntropyMax</iconPath>
+                            <displayOrderInCategory>312.82</displayOrderInCategory>
+                            <biostatArc>2</biostatArc>
+                            <biostatCpx>6</biostatCpx>
+                            <statFactors>
+                                <PsychicEntropyMax>3.00</PsychicEntropyMax>
+                            </statFactors>
+                        </GeneDef>
+
+                        <GeneDef ParentName="EBSG_EntropyMaxBase">
+                            <defName>EBSG_MajorArchiteEnhancedEntropyMax</defName>
+                            <label>major archite enhanced entropy max</label>
+                            <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping them avoid suffering damage from storing large amounts of neural heat.</description>
+                            <iconPath>EBSG/Gene_ExtremeEntropyMax</iconPath>
+                            <displayOrderInCategory>312.83</displayOrderInCategory>
+                            <biostatArc>3</biostatArc>
+                            <biostatCpx>9</biostatCpx>
+                            <statFactors>
+                                <PsychicEntropyMax>4.00</PsychicEntropyMax>
+                            </statFactors>
+                        </GeneDef>
+
+                        <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+                            <defName>EBSG_MinorArchiteEnhancedEntropyRecovery</defName>
+                            <label>minor archite enhanced entropy recovery</label>
+                            <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping them dissipate neural heat.</description>
+                            <iconPath>EBSG/Gene_EntropyRecovery</iconPath>
+                            <displayOrderInCategory>313.81</displayOrderInCategory>
+                            <biostatArc>1</biostatArc>
+                            <biostatCpx>3</biostatCpx>
+                            <statFactors>
+                                <PsychicEntropyRecoveryRate>2.00</PsychicEntropyRecoveryRate>
+                            </statFactors>
+                        </GeneDef>
+
+                        <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+                            <defName>EBSG_ArchiteEnhancedEntropyRecovery</defName>
+                            <label>archite enhanced entropy recovery</label>
+                            <description>Carriers of this gene have archites in their bodies dedicated to helping them dissipate neural heat.</description>
+                            <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
+                            <displayOrderInCategory>313.82</displayOrderInCategory>
+                            <biostatArc>2</biostatArc>
+                            <biostatCpx>6</biostatCpx>
+                            <statFactors>
+                                <PsychicEntropyRecoveryRate>3.00</PsychicEntropyRecoveryRate>
+                            </statFactors>
+                        </GeneDef>
+
+                        <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+                            <defName>EBSG_MajorArchiteEnhancedEntropyRecovery</defName>
+                            <label>major archite enhanced entropy recovery</label>
+                            <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping them dissipate neural heat.</description>
+                            <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
+                            <displayOrderInCategory>313.83</displayOrderInCategory>
+                            <biostatArc>3</biostatArc>
+                            <biostatCpx>9</biostatCpx>
+                            <statFactors>
+                                <PsychicEntropyRecoveryRate>4.00</PsychicEntropyRecoveryRate>
+                            </statFactors>
+                        </GeneDef>
+
+                        <GeneDef ParentName="EBSG_MeditationFocusBase">
+                            <defName>EBSG_MinorArchiteEnhancedMeditationFocus</defName>
+                            <label>minor archite enhanced focus gain</label>
+                            <description>Carriers of this gene have a small number of archites in their brains dedicated to helping them clear their minds and gain more focus while meditating.</description>
+                            <iconPath>EBSG/Gene_MeditationFocus</iconPath>
+                            <displayOrderInCategory>311.81</displayOrderInCategory>
+                            <biostatArc>1</biostatArc>
+                            <biostatCpx>3</biostatCpx>
+                            <statFactors>
+                                <MeditationFocusGain>2.00</MeditationFocusGain>
+                            </statFactors>
+                        </GeneDef>
+
+                        <GeneDef ParentName="EBSG_MeditationFocusBase">
+                            <defName>EBSG_ArchiteEnhancedMeditationFocus</defName>
+                            <label>archite enhanced focus gain</label>
+                            <description>Carriers of this gene have archites in their brains dedicated to helping them clear their minds and gain more focus while meditating.</description>
+                            <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>
+                            <displayOrderInCategory>311.82</displayOrderInCategory>
+                            <biostatArc>2</biostatArc>
+                            <biostatCpx>6</biostatCpx>
+                            <statFactors>
+                                <MeditationFocusGain>3.00</MeditationFocusGain>
+                            </statFactors>
+                        </GeneDef>
+
+                        <GeneDef ParentName="EBSG_MeditationFocusBase">
+                            <defName>EBSG_MajorArchiteEnhancedMeditationFocus</defName>
+                            <label>major archite enhanced focus gain</label>
+                            <description>Carriers of this gene have a large number of archites in their brains dedicated to helping them clear their minds and gain more focus while meditating.</description>
+                            <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>
+                            <displayOrderInCategory>311.83</displayOrderInCategory>
+                            <biostatArc>3</biostatArc>
+                            <biostatCpx>9</biostatCpx>
+                            <statFactors>
+                                <MeditationFocusGain>4.00</MeditationFocusGain>
+                            </statFactors>
+                        </GeneDef>
+                    </value>
+                </li>
+                
+                <li Class='PatchOperationAdd'>
+                    <xpath>Defs/GeneDef[defName="EBSG_InnatePsychicReader"]</xpath>
+                    <value><exclusionTags><li>EBSGA_PsychicInfluencer</li></exclusionTags></value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThoughtDef[defName="PsychicDrone"]/nullifyingGenes</xpath>
+                    <value><li>EBSG_ArchitePsychicInfluencer</li></value>
+                </li>
+
+                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
+                    <xpath>Defs/ThoughtDef[@Name="PsychicArchotechEmanator"]/nullifyingGenes</xpath>
+                    <value><li>EBSG_ArchitePsychicInfluencer</li></value>
+                </li>
+
+                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+                    <xpath>Defs/ThoughtDef[defName="PsychicHarmonization"]/nullifyingGenes</xpath>
+                    <value><li>EBSG_ArchitePsychicInfluencer</li></value>
+                </li>
+
+                <li Class="VFECore.PatchOperationToggableSequence">
+                    <enabled>False</enabled>
+                    <label>Archite Psychic Influencer removes Psychic Bond Torn mood:</label>
+                    <operations>
+                        <li Class="PatchOperationAdd">
+                            <xpath>Defs/ThoughtDef[defName="PsychicBondTorn"]/nullifyingGenes</xpath>
+                            <value><li>EBSG_ArchitePsychicInfluencer</li></value>
+                        </li>
+                    </operations>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_InnateMechlink"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_EncodingSpeedBase">
+                    <defName>EBSG_MinorArchiteEnhancedEncodingSpeed</defName>
+                    <label>minor archite enhanced encoding speed</label>
+                    <description>Carriers of this gene have a small number of archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
+                    <iconPath>EBSG/Gene_EncodingSpeed</iconPath>
+                    <displayOrderInCategory>69.1</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <SubcoreEncodingSpeed>2.00</SubcoreEncodingSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_EncodingSpeedBase">
+                    <defName>EBSG_ArchiteEnhancedEncodingSpeed</defName>
+                    <label>archite enhanced encoding speed</label>
+                    <description>Carriers of this gene have archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
+                    <iconPath>EBSG/Gene_ExtremeEncodingSpeed</iconPath>
+                    <displayOrderInCategory>69.2</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <SubcoreEncodingSpeed>3.00</SubcoreEncodingSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_EncodingSpeedBase">
+                    <defName>EBSG_MajorArchiteEnhancedEncodingSpeed</defName>
+                    <label>major archite enhanced encoding speed</label>
+                    <description>Carriers of this gene have a large number of archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
+                    <iconPath>EBSG/Gene_ExtremeEncodingSpeed</iconPath>
+                    <displayOrderInCategory>69.3</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <SubcoreEncodingSpeed>4.00</SubcoreEncodingSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechControlBase">
+                    <defName>EBSG_MinorArchiteEnhancedMechControl</defName>
+                    <label>minor archite enhanced mech control</label>
+                    <description>Carriers of this gene have a small number of archites in their brains dedicated to helping them control more mechanoids at the same time.</description>
+                    <iconPath>EBSG/Gene_MechControl</iconPath>
+                    <displayOrderInCategory>69.1</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <MechBandwidth>2.00</MechBandwidth>
+                    </statFactors>
+                    <statOffsets>
+                        <MechControlGroups>1</MechControlGroups>
+                    </statOffsets>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechControlBase">
+                    <defName>EBSG_ArchiteEnhancedMechControl</defName>
+                    <label>archite enhanced mech control</label>
+                    <description>Carriers of this gene have archites in their brains dedicated to helping them control more mechanoids at the same time.</description>
+                    <iconPath>EBSG/Gene_ExtremeMechControl</iconPath>
+                    <displayOrderInCategory>69.2</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <MechBandwidth>3.00</MechBandwidth>
+                    </statFactors>
+                    <statOffsets>
+                        <MechControlGroups>2</MechControlGroups>
+                    </statOffsets>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechControlBase">
+                    <defName>EBSG_MajorArchiteEnhancedMechControl</defName>
+                    <label>major archite enhanced mech control</label>
+                    <description>Carriers of this gene have a large number of archites in their brains dedicated to helping them control more mechanoids at the same time.</description>
+                    <iconPath>EBSG/Gene_ExtremeMechControl</iconPath>
+                    <displayOrderInCategory>69.3</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <MechBandwidth>4.00</MechBandwidth>
+                    </statFactors>
+                    <statOffsets>
+                        <MechControlGroups>3</MechControlGroups>
+                    </statOffsets>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechFormingBase">
+                    <defName>EBSG_MinorArchiteEnhancedMechForming</defName>
+                    <label>minor archite enhanced mech gestation speed</label>
+                    <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping the pawn direct mechanites used in mechanoid.</description>
+                    <iconPath>EBSG/Gene_MechForming</iconPath>
+                    <displayOrderInCategory>59.1</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <MechFormingSpeed>2.00</MechFormingSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechFormingBase">
+                    <defName>EBSG_ArchiteEnhancedMechForming</defName>
+                    <label>archite enhanced mech gestation speed</label>
+                    <description>Carriers of this gene have archites in their bodies dedicated to helping the pawn direct mechanites used in mechanoid.</description>
+                    <iconPath>EBSG/Gene_ExtremeMechForming</iconPath>
+                    <displayOrderInCategory>59.2</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <MechFormingSpeed>3.00</MechFormingSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechFormingBase">
+                    <defName>EBSG_MajorArchiteEnhancedMechForming</defName>
+                    <label>major archite enhanced mech gestation speed</label>
+                    <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping the pawn direct mechanites used in mechanoid.</description>
+                    <iconPath>EBSG/Gene_ExtremeMechForming</iconPath>
+                    <displayOrderInCategory>59.3</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <MechFormingSpeed>4.00</MechFormingSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechRepairBase">
+                    <defName>EBSG_MinorArchiteEnhancedMechRepair</defName>
+                    <label>minor archite enhanced mech repair speed</label>
+                    <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
+                    <iconPath>EBSG/Gene_MechRepair</iconPath>
+                    <displayOrderInCategory>39.1</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <MechRepairSpeed>2.00</MechRepairSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechRepairBase">
+                    <defName>EBSG_ArchiteEnhancedMechRepair</defName>
+                    <label>archite enhanced mech repair speed</label>
+                    <description>Carriers of this gene have archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
+                    <iconPath>EBSG/Gene_ExtremeMechRepair</iconPath>
+                    <displayOrderInCategory>39.2</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <MechRepairSpeed>3.00</MechRepairSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechRepairBase">
+                    <defName>EBSG_MajorArchiteEnhancedMechRepair</defName>
+                    <label>major archite enhanced mech repair speed</label>
+                    <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
+                    <iconPath>EBSG/Gene_ExtremeMechRepair</iconPath>
+                    <displayOrderInCategory>39.3</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <MechRepairSpeed>4.00</MechRepairSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_RemoteRepairBase">
+                    <defName>EBSG_MinorArchiteEnhancedRemoteRepair</defName>
+                    <label>minor archite enhanced remote repairing</label>
+                    <description>Carriers of this gene have a small number of archites in their brains dedicated to increasing the range at which the pawn can repair distant mechanoids.</description>
+                    <iconPath>EBSG/Gene_RemoteRepair</iconPath>
+                    <displayOrderInCategory>29.1</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <MechRemoteRepairDistance>2.00</MechRemoteRepairDistance>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_RemoteRepairBase">
+                    <defName>EBSG_ArchiteEnhancedRemoteRepair</defName>
+                    <label>archite enhanced remote repairing</label>
+                    <description>Carriers of this gene have archites in their brains dedicated to increasing the range at which the pawn can repair distant mechanoids.</description>
+                    <iconPath>EBSG/Gene_ExtremeRemoteRepair</iconPath>
+                    <displayOrderInCategory>29.2</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <MechRemoteRepairDistance>3.00</MechRemoteRepairDistance>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_RemoteRepairBase">
+                    <defName>EBSG_MajorArchiteEnhancedRemoteRepair</defName>
+                    <label>major archite enhanced remote repairing</label>
+                    <description>Carriers of this gene have a large number of archites in their brains dedicated to increasing the range at which the pawn can repair distant mechanoids.</description>
+                    <iconPath>EBSG/Gene_ExtremeRemoteRepair</iconPath>
+                    <displayOrderInCategory>29.3</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <MechRemoteRepairDistance>4.00</MechRemoteRepairDistance>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_RemoteShieldBase">
+                    <defName>EBSG_MinorArchiteEnhancedRemoteShield</defName>
+                    <label>minor archite enhanced remote shielding</label>
+                    <description>Carriers of this gene have a small number of archites in their brains dedicated to increasing the range at which the pawn can shield distant mechanoids, along with increasing the amount of energy the shield has.</description>
+                    <iconPath>EBSG/Gene_RemoteShield</iconPath>
+                    <displayOrderInCategory>19.1</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <MechRemoteShieldDistance>2.00</MechRemoteShieldDistance>
+                        <MechRemoteShieldEnergy>2.00</MechRemoteShieldEnergy>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_RemoteShieldBase">
+                    <defName>EBSG_ArchiteEnhancedRemoteShield</defName>
+                    <label>archite enhanced remote shielding</label>
+                    <description>Carriers of this gene have archites in their brains dedicated to increasing the range at which the pawn can shield distant mechanoids, along with increasing the amount of energy the shield has.</description>
+                    <iconPath>EBSG/Gene_ExtremeRemoteShield</iconPath>
+                    <displayOrderInCategory>19.2</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <MechRemoteShieldDistance>3.00</MechRemoteShieldDistance>
+                        <MechRemoteShieldEnergy>3.00</MechRemoteShieldEnergy>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_RemoteShieldBase">
+                    <defName>EBSG_MajorArchiteEnhancedRemoteShield</defName>
+                    <label>major archite enhanced remote shielding</label>
+                    <description>Carriers of this gene have a large number of archites in their brains dedicated to increasing the range at which the pawn can shield distant mechanoids, along with increasing the amount of energy the shield has.</description>
+                    <iconPath>EBSG/Gene_ExtremeRemoteShield</iconPath>
+                    <displayOrderInCategory>19.3</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <MechRemoteShieldDistance>4.00</MechRemoteShieldDistance>
+                        <MechRemoteShieldEnergy>4.00</MechRemoteShieldEnergy>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechWorkSpeedBase">
+                    <defName>EBSG_MinorArchiteEnhancedMechWorkSpeed</defName>
+                    <label>minor archite enhanced mech work speed</label>
+                    <description>Carriers of this gene have a small number of archites in their brains dedicated to increasing the work speed of all mechanoids under the carrier's control.</description>
+                    <iconPath>EBSG/Gene_MechWorkSpeed</iconPath>
+                    <displayOrderInCategory>79.1</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statOffsets>
+                        <WorkSpeedGlobalOffsetMech>2.00</WorkSpeedGlobalOffsetMech>
+                    </statOffsets>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechWorkSpeedBase">
+                    <defName>EBSG_ArchiteEnhancedMechWorkSpeed</defName>
+                    <label>archite enhanced mech work speed</label>
+                    <description>Carriers of this gene have archites in their brains dedicated to increasing the work speed of all mechanoids under the carrier's control.</description>
+                    <iconPath>EBSG/Gene_ExtremeMechWorkSpeed</iconPath>
+                    <displayOrderInCategory>79.2</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statOffsets>
+                        <WorkSpeedGlobalOffsetMech>3.00</WorkSpeedGlobalOffsetMech>
+                    </statOffsets>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechWorkSpeedBase">
+                    <defName>EBSG_MajorArchiteEnhancedMechWorkSpeed</defName>
+                    <label>major archite enhanced mech work speed</label>
+                    <description>Carriers of this gene have a large number of archites in their brains dedicated to increasing the work speed of all mechanoids under the carrier's control.</description>
+                    <iconPath>EBSG/Gene_ExtremeMechWorkSpeed</iconPath>
+                    <displayOrderInCategory>79.3</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statOffsets>
+                        <WorkSpeedGlobalOffsetMech>4.00</WorkSpeedGlobalOffsetMech>
+                    </statOffsets>
+                </GeneDef>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_Undergrounder"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_Biomes">
+                    <defName>EBSGA_BiomeAdaptability</defName>
+                    <label>biome adaptability</label>
+                    <description>Carriers of this gene never get stressed from being underground or outside too long, and don't care about being soaking wet.</description>
+                    <iconPath>EBSG/Gene_Overgrounder</iconPath>
+                    <displayOrderInCategory>100.4</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <disablesNeeds>
+                        <li>Outdoors</li>
+                    </disablesNeeds>
+                    <suppressedTraits>
+                        <li>
+                            <def>Undergrounder</def>
+                        </li>
+                    </suppressedTraits>
+                </GeneDef>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_Undergrounder"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs/ThoughtDef[defName="SoakingWet"]/nullifyingGenes</xpath>
+            <value><li>EBSGA_BiomeAdaptability</li></value>
+        </match>
+    </Operation>
+
 </Patch>
 
 <!--
 
     <Operation Class="PatchOperationConditional">
-        <xpath>Defs/GeneDef[defName="EBSG_VeryConvincing"]</xpath>
+        <xpath>Defs/GeneDef[defName=""]</xpath>
         <match Class='PatchOperationAdd'>
             <xpath>Defs</xpath>
             <value>
