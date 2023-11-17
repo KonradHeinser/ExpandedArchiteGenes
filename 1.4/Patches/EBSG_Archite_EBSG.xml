@@ -1333,42 +1333,123 @@
         <match Class='PatchOperationAdd'>
             <xpath>Defs</xpath>
             <value>
-                <GeneDef ParentName="EBSG_EncodingSpeedBase">
-                    <defName>EBSG_MinorArchiteEnhancedEncodingSpeed</defName>
-                    <label>minor archite enhanced encoding speed</label>
-                    <description>Carriers of this gene have a small number of archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
-                    <iconPath>EBSG/Gene_EncodingSpeed</iconPath>
-                    <displayOrderInCategory>69.1</displayOrderInCategory>
+                <GeneDef ParentName="EBSG_RemoteShieldBase">
+                    <defName>EBSG_MinorArchiteEnhancedRemoteShield</defName>
+                    <label>minor archite enhanced remote shielding</label>
+                    <description>Carriers of this gene have a small number of archites in their brains dedicated to increasing the range at which the pawn can shield distant mechanoids, along with increasing the amount of energy the shield has.</description>
+                    <iconPath>EBSG/Gene_RemoteShield</iconPath>
+                    <displayOrderInCategory>19.1</displayOrderInCategory>
                     <biostatArc>1</biostatArc>
                     <biostatCpx>3</biostatCpx>
                     <statFactors>
-                        <SubcoreEncodingSpeed>2.00</SubcoreEncodingSpeed>
+                        <MechRemoteShieldDistance>2.00</MechRemoteShieldDistance>
+                        <MechRemoteShieldEnergy>2.00</MechRemoteShieldEnergy>
                     </statFactors>
                 </GeneDef>
 
-                <GeneDef ParentName="EBSG_EncodingSpeedBase">
-                    <defName>EBSG_ArchiteEnhancedEncodingSpeed</defName>
-                    <label>archite enhanced encoding speed</label>
-                    <description>Carriers of this gene have archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
-                    <iconPath>EBSG/Gene_ExtremeEncodingSpeed</iconPath>
-                    <displayOrderInCategory>69.2</displayOrderInCategory>
+                <GeneDef ParentName="EBSG_RemoteShieldBase">
+                    <defName>EBSG_ArchiteEnhancedRemoteShield</defName>
+                    <label>archite enhanced remote shielding</label>
+                    <description>Carriers of this gene have archites in their brains dedicated to increasing the range at which the pawn can shield distant mechanoids, along with increasing the amount of energy the shield has.</description>
+                    <iconPath>EBSG/Gene_ExtremeRemoteShield</iconPath>
+                    <displayOrderInCategory>19.2</displayOrderInCategory>
                     <biostatArc>2</biostatArc>
                     <biostatCpx>6</biostatCpx>
                     <statFactors>
-                        <SubcoreEncodingSpeed>3.00</SubcoreEncodingSpeed>
+                        <MechRemoteShieldDistance>3.00</MechRemoteShieldDistance>
+                        <MechRemoteShieldEnergy>3.00</MechRemoteShieldEnergy>
                     </statFactors>
                 </GeneDef>
 
-                <GeneDef ParentName="EBSG_EncodingSpeedBase">
-                    <defName>EBSG_MajorArchiteEnhancedEncodingSpeed</defName>
-                    <label>major archite enhanced encoding speed</label>
-                    <description>Carriers of this gene have a large number of archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
-                    <iconPath>EBSG/Gene_ExtremeEncodingSpeed</iconPath>
-                    <displayOrderInCategory>69.3</displayOrderInCategory>
+                <GeneDef ParentName="EBSG_RemoteShieldBase">
+                    <defName>EBSG_MajorArchiteEnhancedRemoteShield</defName>
+                    <label>major archite enhanced remote shielding</label>
+                    <description>Carriers of this gene have a large number of archites in their brains dedicated to increasing the range at which the pawn can shield distant mechanoids, along with increasing the amount of energy the shield has.</description>
+                    <iconPath>EBSG/Gene_ExtremeRemoteShield</iconPath>
+                    <displayOrderInCategory>19.3</displayOrderInCategory>
                     <biostatArc>3</biostatArc>
                     <biostatCpx>9</biostatCpx>
                     <statFactors>
-                        <SubcoreEncodingSpeed>4.00</SubcoreEncodingSpeed>
+                        <MechRemoteShieldDistance>4.00</MechRemoteShieldDistance>
+                        <MechRemoteShieldEnergy>4.00</MechRemoteShieldEnergy>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_RemoteRepairBase">
+                    <defName>EBSG_MinorArchiteEnhancedRemoteRepair</defName>
+                    <label>minor archite enhanced remote repairing</label>
+                    <description>Carriers of this gene have a small number of archites in their brains dedicated to increasing the range at which the pawn can repair distant mechanoids.</description>
+                    <iconPath>EBSG/Gene_RemoteRepair</iconPath>
+                    <displayOrderInCategory>29.1</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <MechRemoteRepairDistance>2.00</MechRemoteRepairDistance>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_RemoteRepairBase">
+                    <defName>EBSG_ArchiteEnhancedRemoteRepair</defName>
+                    <label>archite enhanced remote repairing</label>
+                    <description>Carriers of this gene have archites in their brains dedicated to increasing the range at which the pawn can repair distant mechanoids.</description>
+                    <iconPath>EBSG/Gene_ExtremeRemoteRepair</iconPath>
+                    <displayOrderInCategory>29.2</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <MechRemoteRepairDistance>3.00</MechRemoteRepairDistance>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_RemoteRepairBase">
+                    <defName>EBSG_MajorArchiteEnhancedRemoteRepair</defName>
+                    <label>major archite enhanced remote repairing</label>
+                    <description>Carriers of this gene have a large number of archites in their brains dedicated to increasing the range at which the pawn can repair distant mechanoids.</description>
+                    <iconPath>EBSG/Gene_ExtremeRemoteRepair</iconPath>
+                    <displayOrderInCategory>29.3</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <MechRemoteRepairDistance>4.00</MechRemoteRepairDistance>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechRepairBase">
+                    <defName>EBSG_MinorArchiteEnhancedMechRepair</defName>
+                    <label>minor archite enhanced mech repair speed</label>
+                    <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
+                    <iconPath>EBSG/Gene_MechRepair</iconPath>
+                    <displayOrderInCategory>39.1</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <MechRepairSpeed>2.00</MechRepairSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechRepairBase">
+                    <defName>EBSG_ArchiteEnhancedMechRepair</defName>
+                    <label>archite enhanced mech repair speed</label>
+                    <description>Carriers of this gene have archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
+                    <iconPath>EBSG/Gene_ExtremeMechRepair</iconPath>
+                    <displayOrderInCategory>39.2</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <MechRepairSpeed>3.00</MechRepairSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MechRepairBase">
+                    <defName>EBSG_MajorArchiteEnhancedMechRepair</defName>
+                    <label>major archite enhanced mech repair speed</label>
+                    <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
+                    <iconPath>EBSG/Gene_ExtremeMechRepair</iconPath>
+                    <displayOrderInCategory>39.3</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <MechRepairSpeed>4.00</MechRepairSpeed>
                     </statFactors>
                 </GeneDef>
 
@@ -1377,7 +1458,7 @@
                     <label>minor archite enhanced mech control</label>
                     <description>Carriers of this gene have a small number of archites in their brains dedicated to helping them control more mechanoids at the same time.</description>
                     <iconPath>EBSG/Gene_MechControl</iconPath>
-                    <displayOrderInCategory>69.1</displayOrderInCategory>
+                    <displayOrderInCategory>49.1</displayOrderInCategory>
                     <biostatArc>1</biostatArc>
                     <biostatCpx>3</biostatCpx>
                     <statFactors>
@@ -1393,7 +1474,7 @@
                     <label>archite enhanced mech control</label>
                     <description>Carriers of this gene have archites in their brains dedicated to helping them control more mechanoids at the same time.</description>
                     <iconPath>EBSG/Gene_ExtremeMechControl</iconPath>
-                    <displayOrderInCategory>69.2</displayOrderInCategory>
+                    <displayOrderInCategory>49.2</displayOrderInCategory>
                     <biostatArc>2</biostatArc>
                     <biostatCpx>6</biostatCpx>
                     <statFactors>
@@ -1409,7 +1490,7 @@
                     <label>major archite enhanced mech control</label>
                     <description>Carriers of this gene have a large number of archites in their brains dedicated to helping them control more mechanoids at the same time.</description>
                     <iconPath>EBSG/Gene_ExtremeMechControl</iconPath>
-                    <displayOrderInCategory>69.3</displayOrderInCategory>
+                    <displayOrderInCategory>49.3</displayOrderInCategory>
                     <biostatArc>3</biostatArc>
                     <biostatCpx>9</biostatCpx>
                     <statFactors>
@@ -1459,123 +1540,42 @@
                     </statFactors>
                 </GeneDef>
 
-                <GeneDef ParentName="EBSG_MechRepairBase">
-                    <defName>EBSG_MinorArchiteEnhancedMechRepair</defName>
-                    <label>minor archite enhanced mech repair speed</label>
-                    <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
-                    <iconPath>EBSG/Gene_MechRepair</iconPath>
-                    <displayOrderInCategory>39.1</displayOrderInCategory>
+                <GeneDef ParentName="EBSG_EncodingSpeedBase">
+                    <defName>EBSG_MinorArchiteEnhancedEncodingSpeed</defName>
+                    <label>minor archite enhanced encoding speed</label>
+                    <description>Carriers of this gene have a small number of archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
+                    <iconPath>EBSG/Gene_EncodingSpeed</iconPath>
+                    <displayOrderInCategory>69.1</displayOrderInCategory>
                     <biostatArc>1</biostatArc>
                     <biostatCpx>3</biostatCpx>
                     <statFactors>
-                        <MechRepairSpeed>2.00</MechRepairSpeed>
+                        <SubcoreEncodingSpeed>2.00</SubcoreEncodingSpeed>
                     </statFactors>
                 </GeneDef>
 
-                <GeneDef ParentName="EBSG_MechRepairBase">
-                    <defName>EBSG_ArchiteEnhancedMechRepair</defName>
-                    <label>archite enhanced mech repair speed</label>
-                    <description>Carriers of this gene have archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
-                    <iconPath>EBSG/Gene_ExtremeMechRepair</iconPath>
-                    <displayOrderInCategory>39.2</displayOrderInCategory>
+                <GeneDef ParentName="EBSG_EncodingSpeedBase">
+                    <defName>EBSG_ArchiteEnhancedEncodingSpeed</defName>
+                    <label>archite enhanced encoding speed</label>
+                    <description>Carriers of this gene have archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
+                    <iconPath>EBSG/Gene_ExtremeEncodingSpeed</iconPath>
+                    <displayOrderInCategory>69.2</displayOrderInCategory>
                     <biostatArc>2</biostatArc>
                     <biostatCpx>6</biostatCpx>
                     <statFactors>
-                        <MechRepairSpeed>3.00</MechRepairSpeed>
+                        <SubcoreEncodingSpeed>3.00</SubcoreEncodingSpeed>
                     </statFactors>
                 </GeneDef>
 
-                <GeneDef ParentName="EBSG_MechRepairBase">
-                    <defName>EBSG_MajorArchiteEnhancedMechRepair</defName>
-                    <label>major archite enhanced mech repair speed</label>
-                    <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
-                    <iconPath>EBSG/Gene_ExtremeMechRepair</iconPath>
-                    <displayOrderInCategory>39.3</displayOrderInCategory>
+                <GeneDef ParentName="EBSG_EncodingSpeedBase">
+                    <defName>EBSG_MajorArchiteEnhancedEncodingSpeed</defName>
+                    <label>major archite enhanced encoding speed</label>
+                    <description>Carriers of this gene have a large number of archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
+                    <iconPath>EBSG/Gene_ExtremeEncodingSpeed</iconPath>
+                    <displayOrderInCategory>69.3</displayOrderInCategory>
                     <biostatArc>3</biostatArc>
                     <biostatCpx>9</biostatCpx>
                     <statFactors>
-                        <MechRepairSpeed>4.00</MechRepairSpeed>
-                    </statFactors>
-                </GeneDef>
-
-                <GeneDef ParentName="EBSG_RemoteRepairBase">
-                    <defName>EBSG_MinorArchiteEnhancedRemoteRepair</defName>
-                    <label>minor archite enhanced remote repairing</label>
-                    <description>Carriers of this gene have a small number of archites in their brains dedicated to increasing the range at which the pawn can repair distant mechanoids.</description>
-                    <iconPath>EBSG/Gene_RemoteRepair</iconPath>
-                    <displayOrderInCategory>29.1</displayOrderInCategory>
-                    <biostatArc>1</biostatArc>
-                    <biostatCpx>3</biostatCpx>
-                    <statFactors>
-                        <MechRemoteRepairDistance>2.00</MechRemoteRepairDistance>
-                    </statFactors>
-                </GeneDef>
-
-                <GeneDef ParentName="EBSG_RemoteRepairBase">
-                    <defName>EBSG_ArchiteEnhancedRemoteRepair</defName>
-                    <label>archite enhanced remote repairing</label>
-                    <description>Carriers of this gene have archites in their brains dedicated to increasing the range at which the pawn can repair distant mechanoids.</description>
-                    <iconPath>EBSG/Gene_ExtremeRemoteRepair</iconPath>
-                    <displayOrderInCategory>29.2</displayOrderInCategory>
-                    <biostatArc>2</biostatArc>
-                    <biostatCpx>6</biostatCpx>
-                    <statFactors>
-                        <MechRemoteRepairDistance>3.00</MechRemoteRepairDistance>
-                    </statFactors>
-                </GeneDef>
-
-                <GeneDef ParentName="EBSG_RemoteRepairBase">
-                    <defName>EBSG_MajorArchiteEnhancedRemoteRepair</defName>
-                    <label>major archite enhanced remote repairing</label>
-                    <description>Carriers of this gene have a large number of archites in their brains dedicated to increasing the range at which the pawn can repair distant mechanoids.</description>
-                    <iconPath>EBSG/Gene_ExtremeRemoteRepair</iconPath>
-                    <displayOrderInCategory>29.3</displayOrderInCategory>
-                    <biostatArc>3</biostatArc>
-                    <biostatCpx>9</biostatCpx>
-                    <statFactors>
-                        <MechRemoteRepairDistance>4.00</MechRemoteRepairDistance>
-                    </statFactors>
-                </GeneDef>
-
-                <GeneDef ParentName="EBSG_RemoteShieldBase">
-                    <defName>EBSG_MinorArchiteEnhancedRemoteShield</defName>
-                    <label>minor archite enhanced remote shielding</label>
-                    <description>Carriers of this gene have a small number of archites in their brains dedicated to increasing the range at which the pawn can shield distant mechanoids, along with increasing the amount of energy the shield has.</description>
-                    <iconPath>EBSG/Gene_RemoteShield</iconPath>
-                    <displayOrderInCategory>19.1</displayOrderInCategory>
-                    <biostatArc>1</biostatArc>
-                    <biostatCpx>3</biostatCpx>
-                    <statFactors>
-                        <MechRemoteShieldDistance>2.00</MechRemoteShieldDistance>
-                        <MechRemoteShieldEnergy>2.00</MechRemoteShieldEnergy>
-                    </statFactors>
-                </GeneDef>
-
-                <GeneDef ParentName="EBSG_RemoteShieldBase">
-                    <defName>EBSG_ArchiteEnhancedRemoteShield</defName>
-                    <label>archite enhanced remote shielding</label>
-                    <description>Carriers of this gene have archites in their brains dedicated to increasing the range at which the pawn can shield distant mechanoids, along with increasing the amount of energy the shield has.</description>
-                    <iconPath>EBSG/Gene_ExtremeRemoteShield</iconPath>
-                    <displayOrderInCategory>19.2</displayOrderInCategory>
-                    <biostatArc>2</biostatArc>
-                    <biostatCpx>6</biostatCpx>
-                    <statFactors>
-                        <MechRemoteShieldDistance>3.00</MechRemoteShieldDistance>
-                        <MechRemoteShieldEnergy>3.00</MechRemoteShieldEnergy>
-                    </statFactors>
-                </GeneDef>
-
-                <GeneDef ParentName="EBSG_RemoteShieldBase">
-                    <defName>EBSG_MajorArchiteEnhancedRemoteShield</defName>
-                    <label>major archite enhanced remote shielding</label>
-                    <description>Carriers of this gene have a large number of archites in their brains dedicated to increasing the range at which the pawn can shield distant mechanoids, along with increasing the amount of energy the shield has.</description>
-                    <iconPath>EBSG/Gene_ExtremeRemoteShield</iconPath>
-                    <displayOrderInCategory>19.3</displayOrderInCategory>
-                    <biostatArc>3</biostatArc>
-                    <biostatCpx>9</biostatCpx>
-                    <statFactors>
-                        <MechRemoteShieldDistance>4.00</MechRemoteShieldDistance>
-                        <MechRemoteShieldEnergy>4.00</MechRemoteShieldEnergy>
+                        <SubcoreEncodingSpeed>4.00</SubcoreEncodingSpeed>
                     </statFactors>
                 </GeneDef>
 
@@ -1588,7 +1588,7 @@
                     <biostatArc>1</biostatArc>
                     <biostatCpx>3</biostatCpx>
                     <statOffsets>
-                        <WorkSpeedGlobalOffsetMech>2.00</WorkSpeedGlobalOffsetMech>
+                        <WorkSpeedGlobalOffsetMech>1.00</WorkSpeedGlobalOffsetMech>
                     </statOffsets>
                 </GeneDef>
 
@@ -1601,7 +1601,7 @@
                     <biostatArc>2</biostatArc>
                     <biostatCpx>6</biostatCpx>
                     <statOffsets>
-                        <WorkSpeedGlobalOffsetMech>3.00</WorkSpeedGlobalOffsetMech>
+                        <WorkSpeedGlobalOffsetMech>2.00</WorkSpeedGlobalOffsetMech>
                     </statOffsets>
                 </GeneDef>
 
@@ -1614,7 +1614,7 @@
                     <biostatArc>3</biostatArc>
                     <biostatCpx>9</biostatCpx>
                     <statOffsets>
-                        <WorkSpeedGlobalOffsetMech>4.00</WorkSpeedGlobalOffsetMech>
+                        <WorkSpeedGlobalOffsetMech>3.00</WorkSpeedGlobalOffsetMech>
                     </statOffsets>
                 </GeneDef>
             </value>
