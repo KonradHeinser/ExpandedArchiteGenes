@@ -14,7 +14,7 @@
 
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/exclusionTags</xpath>
-        <match Class="PatchOperationReplace">
+        <match Class="PatchOperationAdd">
             <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/exclusionTags</xpath>
             <value><li>ArchiteMetabolism</li></value>
         </match>
