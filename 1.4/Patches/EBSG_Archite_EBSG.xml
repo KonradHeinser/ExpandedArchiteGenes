@@ -273,6 +273,45 @@
                                 <li>EBSG_StrongStomachs</li>
                             </exclusionTags>
                         </GeneDef>
+
+                        <GeneDef ParentName="EBSG_EatingSpeedBase">
+                            <defName>EBSGA_MinorArchiteEatingSpeed</defName>
+                            <label>minor archite eating speed</label>
+                            <iconPath>EBSG/Gene_EatingSpeed</iconPath>
+                            <description>Carriers of this gene have a small number of archites in their mouth dedicated to rapidly breaking down food to make consuming it easier.</description>
+                            <displayOrderInCategory>18.1</displayOrderInCategory>
+                            <biostatArc>1</biostatArc>
+                            <biostatCpx>3</biostatCpx>
+                            <statFactors>
+                                <EatingSpeed>3.00</EatingSpeed>
+                            </statFactors>
+                        </GeneDef>
+                    
+                        <GeneDef ParentName="EBSG_EatingSpeedBase">
+                            <defName>EBSGA_ArchiteEatingSpeed</defName>
+                            <label>archite eating speed</label>
+                            <iconPath>EBSG/Gene_ExtremeEatingSpeed</iconPath>
+                            <description>Carriers of this gene have archites in their mouth dedicated to rapidly breaking down food to make consuming it easier.</description>
+                            <displayOrderInCategory>18.2</displayOrderInCategory>
+                            <biostatArc>2</biostatArc>
+                            <biostatCpx>6</biostatCpx>
+                            <statFactors>
+                                <EatingSpeed>5.00</EatingSpeed>
+                            </statFactors>
+                        </GeneDef>
+
+                        <GeneDef ParentName="EBSG_EatingSpeedBase">
+                            <defName>EBSGA_MajorArchiteEatingSpeed</defName>
+                            <label>major archite eating speed</label>
+                            <iconPath>EBSG/Gene_ExtremeEatingSpeed</iconPath>
+                            <description>Carriers of this gene have a large number of archites in their mouth dedicated to rapidly breaking down food to make consuming it easier.</description>
+                            <displayOrderInCategory>18.3</displayOrderInCategory>
+                            <biostatArc>3</biostatArc>
+                            <biostatCpx>9</biostatCpx>
+                            <statFactors>
+                                <EatingSpeed>7.00</EatingSpeed>
+                            </statFactors>
+                        </GeneDef>
                     </value>
                 </li>
 
