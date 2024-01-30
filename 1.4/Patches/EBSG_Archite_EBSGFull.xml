@@ -223,6 +223,156 @@
         </match>
     </Operation>
 
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_HyperAesthetism"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_ComfortChangeBase">
+                    <defName>EBSG_MinorArchiteInducedAsceticism</defName>
+                    <label>minor archite induced asceticism</label>
+                    <description>Carriers of this gene have a small number of archites in their brain dedicated to preventing them from feeling discomfort.</description>
+                    <iconPath>EBSG/Gene_Asceticism</iconPath>
+                    <displayOrderInCategory>1.3</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <EBSG_ComfortRiseRate>2.00</EBSG_ComfortRiseRate>
+                        <EBSG_ComfortFallRate>0.6</EBSG_ComfortFallRate>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_BeautyChangeBase">
+                    <defName>EBSG_ArchiteInducedAsceticism</defName>
+                    <label>archite induced asceticism</label>
+                    <description>Carriers of this gene have archites in their brain dedicated to stopping them from caring about physical comforts.\n\nWhile I did not encounter any issues arising from completely disabling the comfort need, please keep in mind that this may have unintended side effects.</description>
+                    <iconPath>EBSG/Gene_ExtremeAsceticism</iconPath>
+                    <displayOrderInCategory>1.4</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <disablesNeeds>
+                        <li>Comfort</li>
+                    </disablesNeeds>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_BeautyChangeBase">
+                    <defName>EBSG_MinorArchiteInducedPhilisthinism</defName>
+                    <label>minor archite induced philistinism</label>
+                    <description>Carriers of this gene have a small number of archites in their brain dedicated to preventing them from feeling sad about the appearance of ugly environments while also making it take less time for them to be happy to see pretty environments.</description>
+                    <iconPath>EBSG/Gene_Philisthinism</iconPath>
+                    <displayOrderInCategory>11.3</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <EBSG_BeautyRiseRate>2.00</EBSG_BeautyRiseRate>
+                        <EBSG_BeautyFallRate>0.6</EBSG_BeautyFallRate>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_ComfortChangeBase">
+                    <defName>EBSG_ArchiteInducedPhilisthinism</defName>
+                    <label>archite induced philisthinism</label>
+                    <description>Carriers of this gene have archites in their brain dedicated to stopping them from caring about the appearance of their environments.\n\nWhile I did not encounter any issues arising from completely disabling the beauty need, please keep in mind that this may have unintended side effects.</description>
+                    <iconPath>EBSG/Gene_ExtremePhilisthinism</iconPath>
+                    <displayOrderInCategory>11.4</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <disablesNeeds>
+                        <li>Beauty</li>
+                    </disablesNeeds>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_RecreationChangeBase">
+                    <defName>EBSG_MinorArchiteInducedJoviality</defName>
+                    <label>minor archite induced joviality</label>
+                    <description>Carriers of this gene have a small number of archites in their brain dedicated to remain happy even when they don't have time to dedicate to recreational activities.</description>
+                    <iconPath>EBSG/Gene_Joviality</iconPath>
+                    <displayOrderInCategory>21.3</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <EBSG_JoyRiseRate>2.00</EBSG_JoyRiseRate>
+                        <EBSG_JoyFallRate>0.6</EBSG_JoyFallRate>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_RecreationChangeBase">
+                    <defName>EBSG_ArchiteInducedJoviality</defName>
+                    <label>archite induced joviality</label>
+                    <description>Carriers of this gene have archites in their brain dedicated to stopping them from requiring special activities to feel happy.\n\nWhile I did not encounter any issues arising from completely disabling the recreation need, please keep in mind that this may have unintended side effects.</description>
+                    <iconPath>EBSG/Gene_ExtremeJoviality</iconPath>
+                    <displayOrderInCategory>21.4</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <disablesNeeds>
+                        <li>Beauty</li>
+                    </disablesNeeds>
+                </GeneDef>
+
+                <ThoughtDef>
+                    <defName>EBSG_ArchiteInducedJoviality</defName>
+                    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+                    <validWhileDespawned>true</validWhileDespawned>
+                    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+                    <requiredGenes>
+                        <li>EBSG_ArchiteInducedJoviality</li>
+                    </requiredGenes>
+                    <stages>
+                        <li>
+                            <label>archite induced jovial</label>
+                            <description>Natural bonus from the archite induced joviality gene.</description>
+                            <baseMoodEffect>10</baseMoodEffect>
+                        </li>
+                    </stages>
+                </ThoughtDef>
+
+                <GeneDef ParentName="EBSG_MoodChangeBase">
+                    <defName>EBSG_MinorArchiteInducedOptimism</defName>
+                    <label>minor archite induced philistinism</label>
+                    <description>Carriers of this gene have a small number of archites in their brain dedicated to helping them remain positive by minimizing the negative impacts neurotransmitters have when bad events occur.</description>
+                    <iconPath>EBSG/Gene_Optimism</iconPath>
+                    <displayOrderInCategory>111.3</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <EBSG_MoodRiseRate>2.00</EBSG_MoodRiseRate>
+                        <EBSG_MoodFallRate>0.6</EBSG_MoodFallRate>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MoodChangeBase">
+                    <defName>EBSG_ArchiteInducedOptimism</defName>
+                    <label>archite induced philisthinism</label>
+                    <description>Carriers of this gene have archites in their brain dedicated to helping them remain positive by minimizing the negative impacts neurotransmitters have when bad events occur.</description>
+                    <iconPath>EBSG/Gene_ExtremeOptimism</iconPath>
+                    <displayOrderInCategory>111.4</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <EBSG_MoodRiseRate>3.00</EBSG_MoodRiseRate>
+                        <EBSG_MoodFallRate>0.2</EBSG_MoodFallRate>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MoodChangeBase">
+                    <defName>EBSG_Emotionless</defName>
+                    <label>emotionless</label>
+                    <description>Carriers of this gene have a large number of archites in their brain dedicated to supressing all emotions.\n\nWhile I did not encounter any issues arising from completely disabling the mood need, please keep in mind that this may have unintended side effects. Also, even at this cost it's probably not very balanced, even by archite gene standards.</description>
+                    <iconPath>EBSG/Gene_Emotionless</iconPath>
+                    <displayOrderInCategory>111.5</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <disablesNeeds>
+                        <li>Mood</li>
+                    </disablesNeeds>
+                    <exclusionTags>
+                        <li>Mood</li>
+                    </exclusionTags>
+                </GeneDef>
+            </value>
+        </match>
+    </Operation>
+
 </Patch>
 
 <!--

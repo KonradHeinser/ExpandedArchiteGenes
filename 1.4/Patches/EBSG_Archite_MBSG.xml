@@ -1199,40 +1199,4 @@
             </value>
         </match>
     </Operation>
-
-    <!--    Waiting for framework to implement archites or for me to find a mod that adds archites to gene templates
-
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/GeneTemplateDef[defName="AptitudeInstinctive"]</xpath>
-        <match Class='PatchOperationAdd'>
-            <xpath>Defs</xpath>
-            <value>
-                <GeneTemplateDef ParentName="GeneAptitudeBase">
-                    <defName>EBSG_ArchiteAptitude</defName>
-                    <label>archite enhanced {0}</label>
-                    <description>The carrier's aptitude in {0} is raised to 20 due to archites in their brain.</description>
-                    <iconPath>UI/Icons/Genes/Skills/{0}/Remarkable</iconPath>
-                    <aptitudeOffset>20</aptitudeOffset>
-                    <displayOrderOffset>32.1</displayOrderOffset>
-                    <marketValueFactor>1.5</marketValueFactor>
-                    <biostatCpx>6</biostatCpx>
-                    <biostatArc>1</biostatArc>
-                </GeneTemplateDef>
-
-                <GeneTemplateDef ParentName="GeneAptitudeBase">
-                    <defName>EBSG_MajorArchiteAptitude</defName>
-                    <label>major archite enhanced {0}</label>
-                    <description>The carrier's aptitude in {0} is raised to 20 due to archites in their brain. These archites are also wired to trigger dopamine any time the carrier utilizes their {0} aptitude.</description>
-                    <iconPath>UI/Icons/Genes/Skills/{0}/Remarkable</iconPath>
-                    <aptitudeOffset>20</aptitudeOffset>
-                    <passionModType>AddOneLevel</passionModType>
-                    <displayOrderOffset>32.2</displayOrderOffset>
-                    <marketValueFactor>2.0</marketValueFactor>
-                    <biostatCpx>9</biostatCpx>
-                    <biostatArc>2</biostatArc>
-                </GeneTemplateDef>
-            </value>
-        </match>
-    </Operation>
-    -->
 </Patch>
