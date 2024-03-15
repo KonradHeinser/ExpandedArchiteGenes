@@ -292,7 +292,7 @@
                     <biostatCpx>3</biostatCpx>
                     <statFactors>
                         <EBSG_JoyRiseRate>2.00</EBSG_JoyRiseRate>
-                        <EBSG_JoyFallRate>0.6</EBSG_JoyFallRate>
+                        <JoyFallRateFactor>0.6</JoyFallRateFactor>
                     </statFactors>
                 </GeneDef>
 
