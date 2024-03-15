@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch> <!--To account for multiple potential sources, the patch will check for the genes themselves instead of specific mods-->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_Undergrounder"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_Biomes">
+                    <defName>EBSGA_BiomeAdaptability</defName>
+                    <label>biome adaptability</label>
+                    <description>Carriers of this gene never get stressed from being underground or outside too long, and don't care about being soaking wet.</description>
+                    <iconPath>EBSG/Gene_Overgrounder</iconPath>
+                    <displayOrderInCategory>100.4</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <disablesNeeds>
+                        <li>Outdoors</li>
+                    </disablesNeeds>
+                    <suppressedTraits>
+                        <li>
+                            <def>Undergrounder</def>
+                        </li>
+                    </suppressedTraits>
+                </GeneDef>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_Undergrounder"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs/ThoughtDef[defName="SoakingWet"]/nullifyingGenes</xpath>
+            <value><li>EBSGA_BiomeAdaptability</li></value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_SlightlyFastDeathrestSpeed"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_DeathrestSpeedBase">
+                    <defName>EBSG_MinorArchiteEnhancedDeathrestSpeed</defName>
+                    <label>minor archite enhanced deathrest speed</label>
+                    <description>Carriers of this gene have a small number of archites in their brains dedicated to decreasing the amount of time the pawn needs to spend deathresting.</description>
+                    <iconPath>EBSG/Gene_DeathrestSpeed</iconPath>
+                    <displayOrderInCategory>667.2</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <EBSG_DeathrestEfficiency>2.00</EBSG_DeathrestEfficiency>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_DeathrestSpeedBase">
+                    <defName>EBSG_ArchiteEnhancedDeathrestSpeed</defName>
+                    <label>archite enhanced deathrest speed</label>
+                    <description>Carriers of this gene have archites in their brains dedicated to decreasing the amount of time the pawn needs to spend deathresting.</description>
+                    <iconPath>EBSG/Gene_ExtremeDeathrestSpeed</iconPath>
+                    <displayOrderInCategory>667.3</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <EBSG_DeathrestEfficiency>3.00</EBSG_DeathrestEfficiency>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_DeathrestSpeedBase">
+                    <defName>EBSG_MajorArchiteEnhancedDeathrestSpeed</defName>
+                    <label>major archite enhanced deathrest speed</label>
+                    <description>Carriers of this gene have a large number of archites in their brains dedicated to decreasing the amount of time the pawn needs to spend deathresting.</description>
+                    <iconPath>EBSG/Gene_ExtremeDeathrestSpeed</iconPath>
+                    <displayOrderInCategory>667.4</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <EBSG_DeathrestEfficiency>4.00</EBSG_DeathrestEfficiency>
+                    </statFactors>
+                </GeneDef>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_NoBloodRecovery"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_BloodRestoration">
+                    <defName>EBSG_MinorArchiteEnhancedBloodRecovery</defName>
+                    <label>minor archite enhanced blood recovery</label>
+                    <description>Carriers of this gene have a small number of archites in their bodies dedicated to replenishing blood they've lost. This is only active while the pawn is not bleeding.</description>
+                    <iconPath>EBSG/Gene_BloodRecovery</iconPath>
+                    <displayOrderInCategory>98.91</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statOffsets>
+                        <EBSG_BloodlossRecoveryBonus>2.00</EBSG_BloodlossRecoveryBonus>
+                    </statOffsets>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_BloodRestoration">
+                    <defName>EBSG_ArchiteEnhancedBloodRecovery</defName>
+                    <label>archite enhanced blood recovery</label>
+                    <description>Carriers of this gene have archites in their bodies dedicated to replenishing blood they've lost. This is only active while the pawn is not bleeding.</description>
+                    <iconPath>EBSG/Gene_ExtremeBloodRecovery</iconPath>
+                    <displayOrderInCategory>98.92</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statOffsets>
+                        <EBSG_BloodlossRecoveryBonus>3.00</EBSG_BloodlossRecoveryBonus>
+                    </statOffsets>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_BloodRestoration">
+                    <defName>EBSG_MajorArchiteEnhancedBloodRecovery</defName>
+                    <label>major archite enhanced blood recovery</label>
+                    <description>Carriers of this gene have a large number of archites in their bodies dedicated to replenishing blood they've lost. This is only active while the pawn is not bleeding.</description>
+                    <iconPath>EBSG/Gene_ExtremeBloodRecovery</iconPath>
+                    <displayOrderInCategory>98.93</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statOffsets>
+                        <EBSG_BloodlossRecoveryBonus>4.00</EBSG_BloodlossRecoveryBonus>
+                    </statOffsets>
+                </GeneDef>
+
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_GestationSpeedSuper"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_GestationSpeed">
+                    <defName>EBSG_MinorArchiteEnhancedGestationSpeed</defName>
+                    <label>minor archite enhanced gestation speed</label>
+                    <description>Carriers of this gene have a small number of archites in their bodies dedicated to decreasing how long their pregnancies last.\n\nFor obvious reasons, this doesn't usually have an effect on males.</description>
+                    <iconPath>EBSG/Gene_GestationSpeed</iconPath>
+                    <displayOrderInCategory>201.1</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <EBSG_PawnGestationSpeed>3.00</EBSG_PawnGestationSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_GestationSpeed">
+                    <defName>EBSG_ArchiteEnhancedGestationSpeed</defName>
+                    <label>archite enhanced gestation speed</label>
+                    <description>Carriers of this gene have archites in their bodies dedicated to decreasing how long their pregnancies last.\n\nFor obvious reasons, this doesn't usually have an effect on males.</description>
+                    <iconPath>EBSG/Gene_GestationSpeedExtreme</iconPath>
+                    <displayOrderInCategory>201.2</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <EBSG_PawnGestationSpeed>5.00</EBSG_PawnGestationSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_GestationSpeed">
+                    <defName>EBSG_MajorArchiteEnhancedGestationSpeed</defName>
+                    <label>major archite enhanced gestation speed</label>
+                    <description>Carriers of this gene have a large number of archites in their bodies dedicated to decreasing how long their pregnancies last.\n\nFor obvious reasons, this doesn't usually have an effect on males.</description>
+                    <iconPath>EBSG/Gene_GestationSpeedExtreme</iconPath>
+                    <displayOrderInCategory>201.3</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <EBSG_PawnGestationSpeed>7.00</EBSG_PawnGestationSpeed>
+                    </statFactors>
+                </GeneDef>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_BiosculptingSpeedHyper"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_BiosculptingSpeed">
+                    <defName>EBSG_MinorArchiteEnhancedBiosculptingSpeed</defName>
+                    <label>minor archite enhanced biosculpting speed</label>
+                    <description>Carriers of this gene have a small number of archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
+                    <iconPath>EBSG/Gene_BiosculptingSpeed</iconPath>
+                    <displayOrderInCategory>200.9</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <BiosculpterOccupantSpeed>3.00</BiosculpterOccupantSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_BiosculptingSpeed">
+                    <defName>EBSG_ArchiteEnhancedBiosculptingSpeed</defName>
+                    <label>archite enhanced biosculpting speed</label>
+                    <description>Carriers of this gene have archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
+                    <iconPath>EBSG/Gene_ExtremeBiosculptingSpeed</iconPath>
+                    <displayOrderInCategory>201.0</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <BiosculpterOccupantSpeed>5.00</BiosculpterOccupantSpeed>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_BiosculptingSpeed">
+                    <defName>EBSG_MajorArchiteEnhancedBiosculptingSpeed</defName>
+                    <label>major archite enhanced biosculpting speed</label>
+                    <description>Carriers of this gene have a large number of archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
+                    <iconPath>EBSG/Gene_ExtremeBiosculptingSpeed</iconPath>
+                    <displayOrderInCategory>201.1</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <BiosculpterOccupantSpeed>7.00</BiosculpterOccupantSpeed>
+                    </statFactors>
+                </GeneDef>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_HyperAesthetism"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_ComfortChangeBase">
+                    <defName>EBSG_MinorArchiteInducedAsceticism</defName>
+                    <label>minor archite induced asceticism</label>
+                    <description>Carriers of this gene have a small number of archites in their brain dedicated to preventing them from feeling discomfort.</description>
+                    <iconPath>EBSG/Gene_Asceticism</iconPath>
+                    <displayOrderInCategory>1.3</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <EBSG_ComfortRiseRate>2.00</EBSG_ComfortRiseRate>
+                        <EBSG_ComfortFallRate>0.6</EBSG_ComfortFallRate>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_BeautyChangeBase">
+                    <defName>EBSG_ArchiteInducedAsceticism</defName>
+                    <label>archite induced asceticism</label>
+                    <description>Carriers of this gene have archites in their brain dedicated to stopping them from caring about physical comforts.\n\nWhile I did not encounter any issues arising from completely disabling the comfort need, please keep in mind that this may have unintended side effects.</description>
+                    <iconPath>EBSG/Gene_ExtremeAsceticism</iconPath>
+                    <displayOrderInCategory>1.4</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <disablesNeeds>
+                        <li>Comfort</li>
+                    </disablesNeeds>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_BeautyChangeBase">
+                    <defName>EBSG_MinorArchiteInducedPhilisthinism</defName>
+                    <label>minor archite induced philistinism</label>
+                    <description>Carriers of this gene have a small number of archites in their brain dedicated to preventing them from feeling sad about the appearance of ugly environments while also making it take less time for them to be happy to see pretty environments.</description>
+                    <iconPath>EBSG/Gene_Philisthinism</iconPath>
+                    <displayOrderInCategory>11.3</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <EBSG_BeautyRiseRate>2.00</EBSG_BeautyRiseRate>
+                        <EBSG_BeautyFallRate>0.6</EBSG_BeautyFallRate>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_ComfortChangeBase">
+                    <defName>EBSG_ArchiteInducedPhilisthinism</defName>
+                    <label>archite induced philisthinism</label>
+                    <description>Carriers of this gene have archites in their brain dedicated to stopping them from caring about the appearance of their environments.\n\nWhile I did not encounter any issues arising from completely disabling the beauty need, please keep in mind that this may have unintended side effects.</description>
+                    <iconPath>EBSG/Gene_ExtremePhilisthinism</iconPath>
+                    <displayOrderInCategory>11.4</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <disablesNeeds>
+                        <li>Beauty</li>
+                    </disablesNeeds>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_RecreationChangeBase">
+                    <defName>EBSG_MinorArchiteInducedJoviality</defName>
+                    <label>minor archite induced joviality</label>
+                    <description>Carriers of this gene have a small number of archites in their brain dedicated to remain happy even when they don't have time to dedicate to recreational activities.</description>
+                    <iconPath>EBSG/Gene_Joviality</iconPath>
+                    <displayOrderInCategory>21.3</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <EBSG_JoyRiseRate>2.00</EBSG_JoyRiseRate>
+                        <EBSG_JoyFallRate>0.6</EBSG_JoyFallRate>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_RecreationChangeBase">
+                    <defName>EBSG_ArchiteInducedJoviality</defName>
+                    <label>archite induced joviality</label>
+                    <description>Carriers of this gene have archites in their brain dedicated to stopping them from requiring special activities to feel happy.\n\nWhile I did not encounter any issues arising from completely disabling the recreation need, please keep in mind that this may have unintended side effects.</description>
+                    <iconPath>EBSG/Gene_ExtremeJoviality</iconPath>
+                    <displayOrderInCategory>21.4</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <disablesNeeds>
+                        <li>Beauty</li>
+                    </disablesNeeds>
+                </GeneDef>
+
+                <ThoughtDef>
+                    <defName>EBSG_ArchiteInducedJoviality</defName>
+                    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+                    <validWhileDespawned>true</validWhileDespawned>
+                    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+                    <requiredGenes>
+                        <li>EBSG_ArchiteInducedJoviality</li>
+                    </requiredGenes>
+                    <stages>
+                        <li>
+                            <label>archite induced jovial</label>
+                            <description>Natural bonus from the archite induced joviality gene.</description>
+                            <baseMoodEffect>10</baseMoodEffect>
+                        </li>
+                    </stages>
+                </ThoughtDef>
+
+                <GeneDef ParentName="EBSG_MoodChangeBase">
+                    <defName>EBSG_MinorArchiteInducedOptimism</defName>
+                    <label>minor archite induced philistinism</label>
+                    <description>Carriers of this gene have a small number of archites in their brain dedicated to helping them remain positive by minimizing the negative impacts neurotransmitters have when bad events occur.</description>
+                    <iconPath>EBSG/Gene_Optimism</iconPath>
+                    <displayOrderInCategory>111.3</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <EBSG_MoodRiseRate>2.00</EBSG_MoodRiseRate>
+                        <EBSG_MoodFallRate>0.6</EBSG_MoodFallRate>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MoodChangeBase">
+                    <defName>EBSG_ArchiteInducedOptimism</defName>
+                    <label>archite induced philisthinism</label>
+                    <description>Carriers of this gene have archites in their brain dedicated to helping them remain positive by minimizing the negative impacts neurotransmitters have when bad events occur.</description>
+                    <iconPath>EBSG/Gene_ExtremeOptimism</iconPath>
+                    <displayOrderInCategory>111.4</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <EBSG_MoodRiseRate>3.00</EBSG_MoodRiseRate>
+                        <EBSG_MoodFallRate>0.2</EBSG_MoodFallRate>
+                    </statFactors>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_MoodChangeBase">
+                    <defName>EBSG_Emotionless</defName>
+                    <label>emotionless</label>
+                    <description>Carriers of this gene have a large number of archites in their brain dedicated to supressing all emotions.\n\nWhile I did not encounter any issues arising from completely disabling the mood need, please keep in mind that this may have unintended side effects. Also, even at this cost it's probably not very balanced, even by archite gene standards.</description>
+                    <iconPath>EBSG/Gene_Emotionless</iconPath>
+                    <displayOrderInCategory>111.5</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <disablesNeeds>
+                        <li>Mood</li>
+                    </disablesNeeds>
+                    <exclusionTags>
+                        <li>Mood</li>
+                    </exclusionTags>
+                </GeneDef>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>
+
+<!--
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName=""]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+            </value>
+        </match>
+    </Operation>
+
+
+-->

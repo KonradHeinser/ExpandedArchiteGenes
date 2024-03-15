@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef>
+        <defName>EBSG_MinorArchiteMetabolism</defName>
+        <label>minor archite metabolism</label>
+        <labelShortAdj>archite-metabolic</labelShortAdj>
+        <description>Carriers of this gene have a small number of special archites in their cells that facilitate and optimize metabolism. This improves overall genetic and metabolic quality.</description>
+        <iconPath>UI/Icons/Genes/Gene_ArchiteMetabolism</iconPath>
+        <displayCategory>Archite</displayCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <displayOrderInCategory>998.7</displayOrderInCategory>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>3</biostatMet>
+        <biostatArc>1</biostatArc>
+        <exclusionTags>
+            <li>ArchiteMetabolism</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_StrongArchiteMetabolism</defName>
+        <label>strong archite metabolism</label>
+        <labelShortAdj>archite-metabolic</labelShortAdj>
+        <description>Carriers of this gene have a large number of special archites in their cells that facilitate and optimize metabolism. This improves overall genetic and metabolic quality.</description>
+        <iconPath>UI/Icons/Genes/Gene_ArchiteMetabolism</iconPath>
+        <displayCategory>Archite</displayCategory>
+        <marketValueFactor>2.00</marketValueFactor>
+        <displayOrderInCategory>998.9</displayOrderInCategory>
+        <biostatCpx>9</biostatCpx>
+        <biostatMet>9</biostatMet>
+        <biostatArc>3</biostatArc>
+        <exclusionTags>
+            <li>ArchiteMetabolism</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef Name="ArchiteComplexity" Abstract="True">
+        <displayCategory>Archite</displayCategory>
+        <biostatMet>0</biostatMet>
+        <exclusionTags>
+            <li>ArchiteComplexity</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="ArchiteComplexity">
+        <defName>EBSG_MinorGeneticStreamlining</defName>
+        <label>minor genetic streamlining</label>
+        <description>Carriers of this gene have a small number of special archites in their cells that reduce how difficult it is to replicate their genetic structure.</description>
+        <iconPath>UI/Icons/Biostats/Complexity</iconPath>
+        <marketValueFactor>1.25</marketValueFactor>
+        <displayOrderInCategory>998.2</displayOrderInCategory>
+        <biostatCpx>-4</biostatCpx>
+        <biostatArc>1</biostatArc>
+    </GeneDef>
+
+    <GeneDef ParentName="ArchiteComplexity">
+        <defName>EBSG_GeneticStreamlining</defName>
+        <label>genetic streamlining</label>
+        <description>Carriers of this gene have special archites in their cells that reduce how difficult it is to replicate their genetic structure.</description>
+        <iconPath>UI/Icons/Biostats/Complexity</iconPath>
+        <marketValueFactor>1.50</marketValueFactor>
+        <displayOrderInCategory>998.3</displayOrderInCategory>
+        <biostatCpx>-8</biostatCpx>
+        <biostatArc>2</biostatArc>
+    </GeneDef>
+
+    <GeneDef ParentName="ArchiteComplexity">
+        <defName>EBSG_MajorGeneticStreamlining</defName>
+        <label>major genetic streamlining</label>
+        <description>Carriers of this gene have a large number of special archites in their cells that reduce how difficult it is to replicate their genetic structure.</description>
+        <iconPath>UI/Icons/Biostats/Complexity</iconPath>
+        <marketValueFactor>2.00</marketValueFactor>
+        <displayOrderInCategory>998.4</displayOrderInCategory>
+        <biostatCpx>-12</biostatCpx>
+        <biostatArc>3</biostatArc>
+    </GeneDef>
+</Defs>

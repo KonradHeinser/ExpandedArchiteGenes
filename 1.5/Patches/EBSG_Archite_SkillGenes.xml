@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods><li>Expanded Biotech Style Genes Framework</li></mods>
+        <match Class="PatchOperationConditional">
+            <xpath>Defs/GeneTemplateDef[defName="AptitudeInstinctive"]</xpath>
+            <match Class='PatchOperationAdd'>
+                <xpath>Defs</xpath>
+                <value>
+                    <GeneCategoryDef>
+                        <defName>EBSGA_ArchiteAptitudes</defName>
+                        <label>archite aptitudes</label>
+                        <displayPriorityInXenotype>201</displayPriorityInXenotype>
+                    </GeneCategoryDef>
+
+                    <GeneDef Name="MBSG_MinorArchite" Abstract="True">
+                        <geneClass>EBSGFramework.Gene_SkillChanging</geneClass>
+                        <displayCategory>EBSGA_ArchiteAptitudes</displayCategory>
+                        <description>The carrier's aptitude in this skill is raised to 16 due to a small number of specialized archites in their brain.</description>
+                        <biostatCpx>3</biostatCpx>
+                        <biostatArc>1</biostatArc>
+                        <marketValueFactor>1.25</marketValueFactor>
+                        <customEffectDescriptions>
+                            <li>Raises skill level by 16.</li>
+                        </customEffectDescriptions>
+                    </GeneDef>
+                
+                    <GeneDef ParentName="MBSG_MinorArchite">
+                        <defName>MBSG_MinorArchite_Shooting</defName>
+                        <label>minor archite enhanced shooting</label>
+                        <iconPath>UI/Icons/Genes/Skills/Shooting/Strong</iconPath>
+                        <displayOrderInCategory>97</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Shooting</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Shooting</skill>
+                                        <skillChange>16</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+                
+                    <GeneDef ParentName="MBSG_MinorArchite">
+                        <defName>MBSG_MinorArchite_Melee</defName>
+                        <label>minor archite enhanced melee</label>
+                        <iconPath>UI/Icons/Genes/Skills/Melee/Strong</iconPath>
+                        <displayOrderInCategory>197</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Melee</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Melee</skill>
+                                        <skillChange>16</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+                
+                    <GeneDef ParentName="MBSG_MinorArchite">
+                        <defName>MBSG_MinorArchite_Construction</defName>
+                        <label>minor archite enhanced construction</label>
+                        <iconPath>UI/Icons/Genes/Skills/Construction/Strong</iconPath>
+                        <displayOrderInCategory>297</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Construction</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Construction</skill>
+                                        <skillChange>16</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+                
+                    <GeneDef ParentName="MBSG_MinorArchite">
+                        <defName>MBSG_MinorArchite_Mining</defName>
+                        <label>minor archite enhanced mining</label>
+                        <iconPath>UI/Icons/Genes/Skills/Mining/Strong</iconPath>
+                        <displayOrderInCategory>397</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Mining</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Mining</skill>
+                                        <skillChange>16</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+                
+                    <GeneDef ParentName="MBSG_MinorArchite">
+                        <defName>MBSG_MinorArchite_Cooking</defName>
+                        <label>minor archite enhanced cooking</label>
+                        <iconPath>UI/Icons/Genes/Skills/Cooking/Strong</iconPath>
+                        <displayOrderInCategory>497</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Cooking</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Cooking</skill>
+                                        <skillChange>16</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+                
+                    <GeneDef ParentName="MBSG_MinorArchite">
+                        <defName>MBSG_MinorArchite_Plants</defName>
+                        <label>minor archite enhanced plants</label>
+                        <iconPath>UI/Icons/Genes/Skills/Plants/Strong</iconPath>
+                        <displayOrderInCategory>597</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Plants</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Plants</skill>
+                                        <skillChange>16</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+                
+                    <GeneDef ParentName="MBSG_MinorArchite">
+                        <defName>MBSG_MinorArchite_Animals</defName>
+                        <label>minor archite enhanced animals</label>
+                        <iconPath>UI/Icons/Genes/Skills/Animals/Strong</iconPath>
+                        <displayOrderInCategory>697</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Animals</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Animals</skill>
+                                        <skillChange>16</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+                
+                    <GeneDef ParentName="MBSG_MinorArchite">
+                        <defName>MBSG_MinorArchite_Crafting</defName>
+                        <label>minor archite enhanced crafting</label>
+                        <iconPath>UI/Icons/Genes/Skills/Crafting/Strong</iconPath>
+                        <displayOrderInCategory>797</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Crafting</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Crafting</skill>
+                                        <skillChange>16</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+                
+                    <GeneDef ParentName="MBSG_MinorArchite">
+                        <defName>MBSG_MinorArchite_Artistic</defName>
+                        <label>minor archite enhanced artistic</label>
+                        <iconPath>UI/Icons/Genes/Skills/Artistic/Strong</iconPath>
+                        <displayOrderInCategory>897</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Artistic</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Artistic</skill>
+                                        <skillChange>16</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+                
+                    <GeneDef ParentName="MBSG_MinorArchite">
+                        <defName>MBSG_MinorArchite_Medicine</defName>
+                        <label>minor archite enhanced medical</label>
+                        <iconPath>UI/Icons/Genes/Skills/Medicine/Strong</iconPath>
+                        <displayOrderInCategory>997</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Medicine</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Medicine</skill>
+                                        <skillChange>16</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+                
+                    <GeneDef ParentName="MBSG_MinorArchite">
+                        <defName>MBSG_MinorArchite_Social</defName>
+                        <label>minor archite enhanced social</label>
+                        <iconPath>UI/Icons/Genes/Skills/Social/Strong</iconPath>
+                        <displayOrderInCategory>1097</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Social</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Social</skill>
+                                        <skillChange>16</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+                
+                    <GeneDef ParentName="MBSG_MinorArchite">
+                        <defName>MBSG_MinorArchite_Intellectual</defName>
+                        <label>minor archite enhanced intellectual</label>
+                        <iconPath>UI/Icons/Genes/Skills/Intellectual/Strong</iconPath>
+                        <displayOrderInCategory>1197</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Intellectual</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Intellectual</skill>
+                                        <skillChange>16</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+
+                    <GeneDef Name="MBSG_Archite" Abstract="True">
+                        <geneClass>EBSGFramework.Gene_SkillChanging</geneClass>
+                        <displayCategory>EBSGA_ArchiteAptitudes</displayCategory>
+                        <description>The carrier's aptitude in this skill is raised to 20 due to specialized archites in their brain. These archites are also wired to trigger dopamine any time the carrier utilizes the aptitude, raising the passion for it by two.</description>
+                        <biostatCpx>6</biostatCpx>
+                        <biostatArc>2</biostatArc>
+                        <marketValueFactor>1.5</marketValueFactor>
+                        <customEffectDescriptions>
+                            <li>Raises skill level by 20.</li>
+                            <li>Increases passion level by 2.</li>
+                        </customEffectDescriptions>
+                    </GeneDef>
+
+                    <GeneDef ParentName="MBSG_Archite">
+                        <defName>MBSG_Archite_Shooting</defName>
+                        <label>archite enhanced shooting</label>
+                        <iconPath>UI/Icons/Genes/Skills/Shooting/Remarkable</iconPath>
+                        <displayOrderInCategory>99</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Shooting</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Shooting</skill>
+                                        <passionChange>3</passionChange>
+                                        <skillChange>20</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+
+                    <GeneDef ParentName="MBSG_Archite">
+                        <defName>MBSG_Archite_Melee</defName>
+                        <label>archite enhanced melee</label>
+                        <iconPath>UI/Icons/Genes/Skills/Melee/Remarkable</iconPath>
+                        <displayOrderInCategory>199</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Melee</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Melee</skill>
+                                        <passionChange>3</passionChange>
+                                        <skillChange>20</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+
+                    <GeneDef ParentName="MBSG_Archite">
+                        <defName>MBSG_Archite_Construction</defName>
+                        <label>archite enhanced construction</label>
+                        <iconPath>UI/Icons/Genes/Skills/Construction/Remarkable</iconPath>
+                        <displayOrderInCategory>299</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Construction</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Construction</skill>
+                                        <passionChange>3</passionChange>
+                                        <skillChange>20</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+
+                    <GeneDef ParentName="MBSG_Archite">
+                        <defName>MBSG_Archite_Mining</defName>
+                        <label>archite enhanced mining</label>
+                        <iconPath>UI/Icons/Genes/Skills/Mining/Remarkable</iconPath>
+                        <displayOrderInCategory>399</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Mining</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Mining</skill>
+                                        <passionChange>3</passionChange>
+                                        <skillChange>20</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+
+                    <GeneDef ParentName="MBSG_Archite">
+                        <defName>MBSG_Archite_Cooking</defName>
+                        <label>archite enhanced cooking</label>
+                        <iconPath>UI/Icons/Genes/Skills/Cooking/Remarkable</iconPath>
+                        <displayOrderInCategory>499</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Cooking</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Cooking</skill>
+                                        <passionChange>3</passionChange>
+                                        <skillChange>20</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+
+                    <GeneDef ParentName="MBSG_Archite">
+                        <defName>MBSG_Archite_Plants</defName>
+                        <label>archite enhanced plants</label>
+                        <iconPath>UI/Icons/Genes/Skills/Plants/Remarkable</iconPath>
+                        <displayOrderInCategory>599</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Plants</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Plants</skill>
+                                        <passionChange>3</passionChange>
+                                        <skillChange>20</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+
+                    <GeneDef ParentName="MBSG_Archite">
+                        <defName>MBSG_Archite_Animals</defName>
+                        <label>archite enhanced animals</label>
+                        <iconPath>UI/Icons/Genes/Skills/Animals/Remarkable</iconPath>
+                        <displayOrderInCategory>699</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Animals</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Animals</skill>
+                                        <passionChange>3</passionChange>
+                                        <skillChange>20</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+
+                    <GeneDef ParentName="MBSG_Archite">
+                        <defName>MBSG_Archite_Crafting</defName>
+                        <label>archite enhanced crafting</label>
+                        <iconPath>UI/Icons/Genes/Skills/Crafting/Remarkable</iconPath>
+                        <displayOrderInCategory>799</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Crafting</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Crafting</skill>
+                                        <passionChange>3</passionChange>
+                                        <skillChange>20</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+
+                    <GeneDef ParentName="MBSG_Archite">
+                        <defName>MBSG_Archite_Artistic</defName>
+                        <label>archite enhanced artistic</label>
+                        <iconPath>UI/Icons/Genes/Skills/Artistic/Remarkable</iconPath>
+                        <displayOrderInCategory>899</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Artistic</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Artistic</skill>
+                                        <passionChange>3</passionChange>
+                                        <skillChange>20</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+
+                    <GeneDef ParentName="MBSG_Archite">
+                        <defName>MBSG_Archite_Medicine</defName>
+                        <label>archite enhanced medical</label>
+                        <iconPath>UI/Icons/Genes/Skills/Medicine/Remarkable</iconPath>
+                        <displayOrderInCategory>999</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Medicine</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Medicine</skill>
+                                        <passionChange>3</passionChange>
+                                        <skillChange>20</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+
+                    <GeneDef ParentName="MBSG_Archite">
+                        <defName>MBSG_Archite_Social</defName>
+                        <label>archite enhanced social</label>
+                        <iconPath>UI/Icons/Genes/Skills/Social/Remarkable</iconPath>
+                        <displayOrderInCategory>1099</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Social</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Social</skill>
+                                        <passionChange>3</passionChange>
+                                        <skillChange>20</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+
+                    <GeneDef ParentName="MBSG_Archite">
+                        <defName>MBSG_Archite_Intellectual</defName>
+                        <label>archite enhanced intellectual</label>
+                        <iconPath>UI/Icons/Genes/Skills/Intellectual/Remarkable</iconPath>
+                        <displayOrderInCategory>1199</displayOrderInCategory>
+                        <exclusionTags>
+                            <li>Aptitude_Intellectual</li>
+                        </exclusionTags>
+                        <modExtensions>
+                            <li Class="EBSGFramework.EBSGExtension">
+                                <skillChanges>
+                                    <li>
+                                        <skill>Intellectual</skill>
+                                        <passionChange>3</passionChange>
+                                        <skillChange>20</skillChange>
+                                    </li>
+                                </skillChanges>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+                </value>
+            </match>
+        </match>
+    </Operation>
+</Patch>
