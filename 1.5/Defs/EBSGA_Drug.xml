@@ -3,6 +3,7 @@
     <GeneDef Name="EBSGA_Drugs" Abstract="True">
         <displayCategory>Drugs</displayCategory>
         <exclusionTags><li>EBSGA_DrugBlood</li></exclusionTags>
+        <geneClass>EBSGFramework.HediffAdder</geneClass>
     </GeneDef>
 
     <HediffDef Name="EBSGA_DrugHediff" Abstract="True">
@@ -24,8 +25,8 @@
         <biostatCpx>20</biostatCpx>
         <biostatArc>5</biostatArc>
         <modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-                <hediffToWholeBody>EBSGA_LuciferiumBlood</hediffToWholeBody>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSGA_LuciferiumBlood</hediff></li></hediffsToApply>
 			</li>
 		</modExtensions>
     </GeneDef>
@@ -88,8 +89,8 @@
         <biostatCpx>4</biostatCpx>
         <biostatArc>1</biostatArc>
         <modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-                <hediffToWholeBody>EBSGA_AlcoholBlood</hediffToWholeBody>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSGA_AlcoholBlood</hediff></li></hediffsToApply>
 			</li>
 		</modExtensions>
     </GeneDef>
@@ -141,8 +142,8 @@
         <biostatCpx>4</biostatCpx>
         <biostatArc>1</biostatArc>
         <modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-                <hediffToWholeBody>EBSGA_AmbrosiaBlood</hediffToWholeBody>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSGA_AmbrosiaBlood</hediff></li></hediffsToApply>
 			</li>
 		</modExtensions>
     </GeneDef>
@@ -183,8 +184,8 @@
         <biostatCpx>12</biostatCpx>
         <biostatArc>3</biostatArc>
         <modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-                <hediffToWholeBody>EBSGA_GoJuiceBlood</hediffToWholeBody>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSGA_GoJuiceBlood</hediff></li></hediffsToApply>
 			</li>
 		</modExtensions>
     </GeneDef>
@@ -243,8 +244,8 @@
         <biostatCpx>4</biostatCpx>
         <biostatArc>1</biostatArc>
         <modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-                <hediffToWholeBody>EBSGA_PsychiteBlood</hediffToWholeBody>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSGA_PsychiteBlood</hediff></li></hediffsToApply>
 			</li>
 		</modExtensions>
     </GeneDef>
@@ -292,8 +293,8 @@
         <biostatCpx>8</biostatCpx>
         <biostatArc>2</biostatArc>
         <modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-                <hediffToWholeBody>EBSGA_FlakeBlood</hediffToWholeBody>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSGA_FlakeBlood</hediff></li></hediffsToApply>
 			</li>
 		</modExtensions>
     </GeneDef>
@@ -341,8 +342,8 @@
         <biostatCpx>12</biostatCpx>
         <biostatArc>3</biostatArc>
         <modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-                <hediffToWholeBody>EBSGA_YayoBlood</hediffToWholeBody>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSGA_YayoBlood</hediff></li></hediffsToApply>
 			</li>
 		</modExtensions>
     </GeneDef>
@@ -396,8 +397,8 @@
         <biostatCpx>4</biostatCpx>
         <biostatArc>1</biostatArc>
         <modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-                <hediffToWholeBody>EBSGA_SmokeleafBlood</hediffToWholeBody>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSGA_SmokeleafBlood</hediff></li></hediffsToApply>
 			</li>
 		</modExtensions>
     </GeneDef>
@@ -448,8 +449,8 @@
         <biostatCpx>12</biostatCpx>
         <biostatArc>3</biostatArc>
         <modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-                <hediffToWholeBody>EBSGA_WakeUpBlood</hediffToWholeBody>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSGA_WakeUpBlood</hediff></li></hediffsToApply>
 			</li>
 		</modExtensions>
     </GeneDef>

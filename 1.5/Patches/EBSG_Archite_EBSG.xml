@@ -1060,7 +1060,7 @@
                         <AG_AcidSpit MayRequire="sarg.alphagenes">0.66</AG_AcidSpit>
 
                             <!--VEF Damages-->
-                        <VEF_SecondaryAcidBurn>0.66</VEF_SecondaryAcidBurn>
+                        <VEF_SecondaryAcidBurn MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.66</VEF_SecondaryAcidBurn>
                     </damageFactors>
                     <biostatArc>1</biostatArc>
                     <biostatCpx>3</biostatCpx>
@@ -1106,7 +1106,7 @@
                         <AG_AcidSpit MayRequire="sarg.alphagenes">0.33</AG_AcidSpit>
 
                             <!--VEF Damages-->
-                        <VEF_SecondaryAcidBurn>0.33</VEF_SecondaryAcidBurn>
+                        <VEF_SecondaryAcidBurn MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.33</VEF_SecondaryAcidBurn>
                     </damageFactors>
                     <biostatArc>2</biostatArc>
                     <biostatCpx>6</biostatCpx>
@@ -1152,7 +1152,7 @@
                         <AG_AcidSpit MayRequire="sarg.alphagenes">0</AG_AcidSpit>
 
                             <!--VEF Damages-->
-                        <VEF_SecondaryAcidBurn>0</VEF_SecondaryAcidBurn>
+                        <VEF_SecondaryAcidBurn MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0</VEF_SecondaryAcidBurn>
                     </damageFactors>
                     <biostatArc>3</biostatArc>
                     <biostatCpx>9</biostatCpx>
@@ -1164,206 +1164,6 @@
                     </exclusionTags>
                 </GeneDef>
             </value>
-        </match>
-    </Operation>
-
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/GeneDef[defName="EBSG_InnatePsychicAmplifier"]</xpath>
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class='PatchOperationAdd'>
-                    <xpath>Defs</xpath>
-                    <value>
-                        <GeneDef> 
-                            <defName>EBSG_ArchitePsychicInfluencer</defName>
-                            <label>archite psychic influencer</label>
-                            <iconPath>EBSG/Gene_InnatePsychicInsulation</iconPath>
-                            <description>Carriers of this gene have an innate psychic reader, harmonizer, and shield. The shield protects them from most external mood and opinion altering psychic effect. Unlike Psychic insulation, this only stops both negative moods and dynamic moods(like a harmonizer and drones).</description>
-                            <displayOrderInCategory>310.4</displayOrderInCategory>
-                            <displayCategory>Psychic</displayCategory>
-                            <biostatArc>1</biostatArc>
-                            <biostatCpx>4</biostatCpx>
-                            <customEffectDescriptions>
-                                <li>Colonist will not be effected by external psychic thought and opinion changers.</li>
-                                <li>Colonist will still be effected by other effects of psychic abilties, even if those abilities include a thought or opinion change.</li>
-                                <li>The harmonizer and bond break moods look strange on the list because they don't have a source. This is just a visual bug caused by the base game's naming structure.</li>
-                                <li>Gives a psychic harmonizer.</li>
-                                <li>Gives a psychic reader.</li>
-                            </customEffectDescriptions>
-                            <exclusionTags>
-                                <li>EBSG_PsychicMood</li>
-                                <li>EBSGA_PsychicInfluencer</li>
-                            </exclusionTags>
-                            <modExtensions>
-                                <li Class="VanillaGenesExpanded.GeneExtension">
-                                    <hediffsToBodyParts>
-                                        <li>
-                                            <hediff>PsychicHarmonizer</hediff>
-                                            <bodyparts>
-                                                <li>Brain</li>
-                                            </bodyparts>
-                                        </li>
-                                        <li>
-                                            <hediff>PsychicReader</hediff>
-                                            <bodyparts>
-                                                <li>Brain</li>
-                                            </bodyparts>
-                                        </li>
-                                    </hediffsToBodyParts>
-                                </li>
-                            </modExtensions>
-                        </GeneDef>
-
-                        <GeneDef ParentName="EBSG_EntropyMaxBase">
-                            <defName>EBSG_MinorArchiteEnhancedEntropyMax</defName>
-                            <label>minor archite enhanced entropy max</label>
-                            <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping them avoid suffering damage from storing large amounts of neural heat.</description>
-                            <iconPath>EBSG/Gene_EntropyMax</iconPath>
-                            <displayOrderInCategory>312.81</displayOrderInCategory>
-                            <biostatArc>1</biostatArc>
-                            <biostatCpx>3</biostatCpx>
-                            <statFactors>
-                                <PsychicEntropyMax>2.00</PsychicEntropyMax>
-                            </statFactors>
-                        </GeneDef>
-
-                        <GeneDef ParentName="EBSG_EntropyMaxBase">
-                            <defName>EBSG_ArchiteEnhancedEntropyMax</defName>
-                            <label>archite enhanced entropy max</label>
-                            <description>Carriers of this gene have archites in their bodies dedicated to helping them avoid suffering damage from storing large amounts of neural heat.</description>
-                            <iconPath>EBSG/Gene_ExtremeEntropyMax</iconPath>
-                            <displayOrderInCategory>312.82</displayOrderInCategory>
-                            <biostatArc>2</biostatArc>
-                            <biostatCpx>6</biostatCpx>
-                            <statFactors>
-                                <PsychicEntropyMax>3.00</PsychicEntropyMax>
-                            </statFactors>
-                        </GeneDef>
-
-                        <GeneDef ParentName="EBSG_EntropyMaxBase">
-                            <defName>EBSG_MajorArchiteEnhancedEntropyMax</defName>
-                            <label>major archite enhanced entropy max</label>
-                            <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping them avoid suffering damage from storing large amounts of neural heat.</description>
-                            <iconPath>EBSG/Gene_ExtremeEntropyMax</iconPath>
-                            <displayOrderInCategory>312.83</displayOrderInCategory>
-                            <biostatArc>3</biostatArc>
-                            <biostatCpx>9</biostatCpx>
-                            <statFactors>
-                                <PsychicEntropyMax>4.00</PsychicEntropyMax>
-                            </statFactors>
-                        </GeneDef>
-
-                        <GeneDef ParentName="EBSG_EntropyRecoveryBase">
-                            <defName>EBSG_MinorArchiteEnhancedEntropyRecovery</defName>
-                            <label>minor archite enhanced entropy recovery</label>
-                            <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping them dissipate neural heat.</description>
-                            <iconPath>EBSG/Gene_EntropyRecovery</iconPath>
-                            <displayOrderInCategory>313.81</displayOrderInCategory>
-                            <biostatArc>1</biostatArc>
-                            <biostatCpx>3</biostatCpx>
-                            <statFactors>
-                                <PsychicEntropyRecoveryRate>2.00</PsychicEntropyRecoveryRate>
-                            </statFactors>
-                        </GeneDef>
-
-                        <GeneDef ParentName="EBSG_EntropyRecoveryBase">
-                            <defName>EBSG_ArchiteEnhancedEntropyRecovery</defName>
-                            <label>archite enhanced entropy recovery</label>
-                            <description>Carriers of this gene have archites in their bodies dedicated to helping them dissipate neural heat.</description>
-                            <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
-                            <displayOrderInCategory>313.82</displayOrderInCategory>
-                            <biostatArc>2</biostatArc>
-                            <biostatCpx>6</biostatCpx>
-                            <statFactors>
-                                <PsychicEntropyRecoveryRate>3.00</PsychicEntropyRecoveryRate>
-                            </statFactors>
-                        </GeneDef>
-
-                        <GeneDef ParentName="EBSG_EntropyRecoveryBase">
-                            <defName>EBSG_MajorArchiteEnhancedEntropyRecovery</defName>
-                            <label>major archite enhanced entropy recovery</label>
-                            <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping them dissipate neural heat.</description>
-                            <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
-                            <displayOrderInCategory>313.83</displayOrderInCategory>
-                            <biostatArc>3</biostatArc>
-                            <biostatCpx>9</biostatCpx>
-                            <statFactors>
-                                <PsychicEntropyRecoveryRate>4.00</PsychicEntropyRecoveryRate>
-                            </statFactors>
-                        </GeneDef>
-
-                        <GeneDef ParentName="EBSG_MeditationFocusBase">
-                            <defName>EBSG_MinorArchiteEnhancedMeditationFocus</defName>
-                            <label>minor archite enhanced focus gain</label>
-                            <description>Carriers of this gene have a small number of archites in their brains dedicated to helping them clear their minds and gain more focus while meditating.</description>
-                            <iconPath>EBSG/Gene_MeditationFocus</iconPath>
-                            <displayOrderInCategory>311.81</displayOrderInCategory>
-                            <biostatArc>1</biostatArc>
-                            <biostatCpx>3</biostatCpx>
-                            <statFactors>
-                                <MeditationFocusGain>2.00</MeditationFocusGain>
-                            </statFactors>
-                        </GeneDef>
-
-                        <GeneDef ParentName="EBSG_MeditationFocusBase">
-                            <defName>EBSG_ArchiteEnhancedMeditationFocus</defName>
-                            <label>archite enhanced focus gain</label>
-                            <description>Carriers of this gene have archites in their brains dedicated to helping them clear their minds and gain more focus while meditating.</description>
-                            <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>
-                            <displayOrderInCategory>311.82</displayOrderInCategory>
-                            <biostatArc>2</biostatArc>
-                            <biostatCpx>6</biostatCpx>
-                            <statFactors>
-                                <MeditationFocusGain>3.00</MeditationFocusGain>
-                            </statFactors>
-                        </GeneDef>
-
-                        <GeneDef ParentName="EBSG_MeditationFocusBase">
-                            <defName>EBSG_MajorArchiteEnhancedMeditationFocus</defName>
-                            <label>major archite enhanced focus gain</label>
-                            <description>Carriers of this gene have a large number of archites in their brains dedicated to helping them clear their minds and gain more focus while meditating.</description>
-                            <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>
-                            <displayOrderInCategory>311.83</displayOrderInCategory>
-                            <biostatArc>3</biostatArc>
-                            <biostatCpx>9</biostatCpx>
-                            <statFactors>
-                                <MeditationFocusGain>4.00</MeditationFocusGain>
-                            </statFactors>
-                        </GeneDef>
-                    </value>
-                </li>
-                
-                <li Class='PatchOperationAdd'>
-                    <xpath>Defs/GeneDef[defName="EBSG_InnatePsychicReader"]</xpath>
-                    <value><exclusionTags><li>EBSGA_PsychicInfluencer</li></exclusionTags></value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThoughtDef[defName="PsychicDrone"]/nullifyingGenes</xpath>
-                    <value><li>EBSG_ArchitePsychicInfluencer</li></value>
-                </li>
-
-                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
-                    <xpath>Defs/ThoughtDef[@Name="PsychicArchotechEmanator"]/nullifyingGenes</xpath>
-                    <value><li>EBSG_ArchitePsychicInfluencer</li></value>
-                </li>
-
-                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
-                    <xpath>Defs/ThoughtDef[defName="PsychicHarmonization"]/nullifyingGenes</xpath>
-                    <value><li>EBSG_ArchitePsychicInfluencer</li></value>
-                </li>
-
-                <li Class="VFECore.PatchOperationToggableSequence">
-                    <enabled>False</enabled>
-                    <label>Archite Psychic Influencer removes Psychic Bond Torn mood:</label>
-                    <operations>
-                        <li Class="PatchOperationAdd">
-                            <xpath>Defs/ThoughtDef[defName="PsychicBondTorn"]/nullifyingGenes</xpath>
-                            <value><li>EBSG_ArchitePsychicInfluencer</li></value>
-                        </li>
-                    </operations>
-                </li>
-            </operations>
         </match>
     </Operation>
 
