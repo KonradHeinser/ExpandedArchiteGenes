@@ -187,11 +187,11 @@
                     <displayOrderInCategory>10</displayOrderInCategory>
                     <biostatArc>1</biostatArc>
                     <biostatCpx>3</biostatCpx>
-                    <modExtensions>
+                    <!--<modExtensions>
                         <li Class="VanillaGenesExpanded.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
                             <caravanCarryingFactor>2</caravanCarryingFactor>
                         </li>
-                    </modExtensions>
+                    </modExtensions>-->
                 </GeneDef>
 
                 <GeneDef ParentName="EBSG_CarryCapacityBase">
@@ -206,11 +206,11 @@
                     <displayOrderInCategory>11</displayOrderInCategory>
                     <biostatArc>2</biostatArc>
                     <biostatCpx>6</biostatCpx>
-                    <modExtensions>
+                    <!--<modExtensions>
                         <li Class="VanillaGenesExpanded.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
                             <caravanCarryingFactor>3</caravanCarryingFactor>
                         </li>
-                    </modExtensions>
+                    </modExtensions>-->
                 </GeneDef>
 
                 <GeneDef ParentName="EBSG_CarryCapacityBase">
@@ -225,11 +225,11 @@
                     <displayOrderInCategory>12</displayOrderInCategory>
                     <biostatArc>3</biostatArc>
                     <biostatCpx>9</biostatCpx>
-                    <modExtensions>
+                    <!--<modExtensions>
                         <li Class="VanillaGenesExpanded.GeneExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
                             <caravanCarryingFactor>4</caravanCarryingFactor>
                         </li>
-                    </modExtensions>
+                    </modExtensions>-->
                 </GeneDef>
             </value>
         </match>
