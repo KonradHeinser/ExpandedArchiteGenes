@@ -670,7 +670,7 @@
                     <biostatArc>1</biostatArc>
                     <biostatCpx>3</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Humanlike>1.20</EBSG_OutgoingDamageFactor_Humanlike>
+                        <EBSG_OutgoingDamageFactor_Humanlike>1.60</EBSG_OutgoingDamageFactor_Humanlike>
                     </statFactors>
                 </GeneDef>
 
@@ -684,7 +684,7 @@
                     <biostatArc>2</biostatArc>
                     <biostatCpx>6</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Humanlike>1.40</EBSG_OutgoingDamageFactor_Humanlike>
+                        <EBSG_OutgoingDamageFactor_Humanlike>2.20</EBSG_OutgoingDamageFactor_Humanlike>
                     </statFactors>
                 </GeneDef>
 
@@ -698,7 +698,7 @@
                     <biostatArc>3</biostatArc>
                     <biostatCpx>9</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Humanlike>1.60</EBSG_OutgoingDamageFactor_Humanlike>
+                        <EBSG_OutgoingDamageFactor_Humanlike>2.80</EBSG_OutgoingDamageFactor_Humanlike>
                     </statFactors>
                 </GeneDef>
 
@@ -712,7 +712,7 @@
                     <biostatArc>1</biostatArc>
                     <biostatCpx>3</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Mechanoid>1.20</EBSG_OutgoingDamageFactor_Mechanoid>
+                        <EBSG_OutgoingDamageFactor_Mechanoid>1.60</EBSG_OutgoingDamageFactor_Mechanoid>
                     </statFactors>
                 </GeneDef>
 
@@ -726,7 +726,7 @@
                     <biostatArc>2</biostatArc>
                     <biostatCpx>6</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Mechanoid>1.40</EBSG_OutgoingDamageFactor_Mechanoid>
+                        <EBSG_OutgoingDamageFactor_Mechanoid>2.20</EBSG_OutgoingDamageFactor_Mechanoid>
                     </statFactors>
                 </GeneDef>
 
@@ -740,7 +740,7 @@
                     <biostatArc>3</biostatArc>
                     <biostatCpx>9</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Mechanoid>1.60</EBSG_OutgoingDamageFactor_Mechanoid>
+                        <EBSG_OutgoingDamageFactor_Mechanoid>2.80</EBSG_OutgoingDamageFactor_Mechanoid>
                     </statFactors>
                 </GeneDef>
 
@@ -754,7 +754,7 @@
                     <biostatArc>1</biostatArc>
                     <biostatCpx>3</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Animal>1.20</EBSG_OutgoingDamageFactor_Animal>
+                        <EBSG_OutgoingDamageFactor_Animal>1.60</EBSG_OutgoingDamageFactor_Animal>
                     </statFactors>
                 </GeneDef>
 
@@ -768,7 +768,7 @@
                     <biostatArc>2</biostatArc>
                     <biostatCpx>6</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Animal>1.40</EBSG_OutgoingDamageFactor_Animal>
+                        <EBSG_OutgoingDamageFactor_Animal>2.20</EBSG_OutgoingDamageFactor_Animal>
                     </statFactors>
                 </GeneDef>
 
@@ -782,7 +782,7 @@
                     <biostatArc>3</biostatArc>
                     <biostatCpx>9</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Animal>1.60</EBSG_OutgoingDamageFactor_Animal>
+                        <EBSG_OutgoingDamageFactor_Animal>2.80</EBSG_OutgoingDamageFactor_Animal>
                     </statFactors>
                 </GeneDef>
 
@@ -796,7 +796,7 @@
                     <biostatArc>1</biostatArc>
                     <biostatCpx>3</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Insect>1.20</EBSG_OutgoingDamageFactor_Insect>
+                        <EBSG_OutgoingDamageFactor_Insect>1.60</EBSG_OutgoingDamageFactor_Insect>
                     </statFactors>
                 </GeneDef>
 
@@ -810,7 +810,7 @@
                     <biostatArc>2</biostatArc>
                     <biostatCpx>6</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Insect>1.40</EBSG_OutgoingDamageFactor_Insect>
+                        <EBSG_OutgoingDamageFactor_Insect>2.20</EBSG_OutgoingDamageFactor_Insect>
                     </statFactors>
                 </GeneDef>
 
@@ -824,7 +824,7 @@
                     <biostatArc>3</biostatArc>
                     <biostatCpx>9</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Insect>1.60</EBSG_OutgoingDamageFactor_Insect>
+                        <EBSG_OutgoingDamageFactor_Insect>2.80</EBSG_OutgoingDamageFactor_Insect>
                     </statFactors>
                 </GeneDef>
 
@@ -838,7 +838,7 @@
                     <biostatArc>1</biostatArc>
                     <biostatCpx>3</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Entity>1.20</EBSG_OutgoingDamageFactor_Entity>
+                        <EBSG_OutgoingDamageFactor_Entity>1.60</EBSG_OutgoingDamageFactor_Entity>
                     </statFactors>
                 </GeneDef>
 
@@ -852,7 +852,7 @@
                     <biostatArc>2</biostatArc>
                     <biostatCpx>6</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Entity>1.40</EBSG_OutgoingDamageFactor_Entity>
+                        <EBSG_OutgoingDamageFactor_Entity>2.20</EBSG_OutgoingDamageFactor_Entity>
                     </statFactors>
                 </GeneDef>
 
@@ -866,7 +866,7 @@
                     <biostatArc>3</biostatArc>
                     <biostatCpx>9</biostatCpx>
                     <statFactors>
-                        <EBSG_OutgoingDamageFactor_Entity>1.60</EBSG_OutgoingDamageFactor_Entity>
+                        <EBSG_OutgoingDamageFactor_Entity>2.80</EBSG_OutgoingDamageFactor_Entity>
                     </statFactors>
                 </GeneDef>
             </value>
