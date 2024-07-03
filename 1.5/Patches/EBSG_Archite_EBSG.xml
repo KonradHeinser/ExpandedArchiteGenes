@@ -1447,6 +1447,8 @@
             </value>
         </match>
     </Operation>
+
+    <!--If you're looking for the Anomaly genes, I put them in the EBSG versions of the mods because I deemed it more performance efficient. They are the ones I expect people to be least interested in by a notable amount.-->
 </Patch>
 
 <!--
