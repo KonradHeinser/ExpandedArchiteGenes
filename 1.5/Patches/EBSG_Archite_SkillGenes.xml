@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
     <Operation Class="PatchOperationFindMod">
-        <mods><li>Expanded Biotech Style Genes Framework</li></mods>
+        <mods><li>EBSG Framework</li></mods>
         <match Class="PatchOperationConditional">
             <xpath>Defs/GeneTemplateDef[defName="AptitudeInstinctive"]</xpath>
             <match Class='PatchOperationAdd'>
