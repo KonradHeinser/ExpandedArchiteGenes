@@ -28,7 +28,7 @@
                     <GeneDef ParentName="MBSG_MinorArchite">
                         <defName>MBSG_MinorArchite_Shooting</defName>
                         <label>minor archite enhanced shooting</label>
-                        <iconPath>UI/Icons/Genes/Skills/Shooting/Strong</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Shooting/Remarkable</iconPath>
                         <displayOrderInCategory>97</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Shooting</li>
@@ -48,7 +48,7 @@
                     <GeneDef ParentName="MBSG_MinorArchite">
                         <defName>MBSG_MinorArchite_Melee</defName>
                         <label>minor archite enhanced melee</label>
-                        <iconPath>UI/Icons/Genes/Skills/Melee/Strong</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Melee/Remarkable</iconPath>
                         <displayOrderInCategory>197</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Melee</li>
@@ -68,7 +68,7 @@
                     <GeneDef ParentName="MBSG_MinorArchite">
                         <defName>MBSG_MinorArchite_Construction</defName>
                         <label>minor archite enhanced construction</label>
-                        <iconPath>UI/Icons/Genes/Skills/Construction/Strong</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Construction/Remarkable</iconPath>
                         <displayOrderInCategory>297</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Construction</li>
@@ -88,7 +88,7 @@
                     <GeneDef ParentName="MBSG_MinorArchite">
                         <defName>MBSG_MinorArchite_Mining</defName>
                         <label>minor archite enhanced mining</label>
-                        <iconPath>UI/Icons/Genes/Skills/Mining/Strong</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Mining/Remarkable</iconPath>
                         <displayOrderInCategory>397</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Mining</li>
@@ -108,7 +108,7 @@
                     <GeneDef ParentName="MBSG_MinorArchite">
                         <defName>MBSG_MinorArchite_Cooking</defName>
                         <label>minor archite enhanced cooking</label>
-                        <iconPath>UI/Icons/Genes/Skills/Cooking/Strong</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Cooking/Remarkable</iconPath>
                         <displayOrderInCategory>497</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Cooking</li>
@@ -128,7 +128,7 @@
                     <GeneDef ParentName="MBSG_MinorArchite">
                         <defName>MBSG_MinorArchite_Plants</defName>
                         <label>minor archite enhanced plants</label>
-                        <iconPath>UI/Icons/Genes/Skills/Plants/Strong</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Plants/Remarkable</iconPath>
                         <displayOrderInCategory>597</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Plants</li>
@@ -148,7 +148,7 @@
                     <GeneDef ParentName="MBSG_MinorArchite">
                         <defName>MBSG_MinorArchite_Animals</defName>
                         <label>minor archite enhanced animals</label>
-                        <iconPath>UI/Icons/Genes/Skills/Animals/Strong</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Animals/Remarkable</iconPath>
                         <displayOrderInCategory>697</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Animals</li>
@@ -168,7 +168,7 @@
                     <GeneDef ParentName="MBSG_MinorArchite">
                         <defName>MBSG_MinorArchite_Crafting</defName>
                         <label>minor archite enhanced crafting</label>
-                        <iconPath>UI/Icons/Genes/Skills/Crafting/Strong</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Crafting/Remarkable</iconPath>
                         <displayOrderInCategory>797</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Crafting</li>
@@ -188,7 +188,7 @@
                     <GeneDef ParentName="MBSG_MinorArchite">
                         <defName>MBSG_MinorArchite_Artistic</defName>
                         <label>minor archite enhanced artistic</label>
-                        <iconPath>UI/Icons/Genes/Skills/Artistic/Strong</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Artistic/Remarkable</iconPath>
                         <displayOrderInCategory>897</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Artistic</li>
@@ -208,7 +208,7 @@
                     <GeneDef ParentName="MBSG_MinorArchite">
                         <defName>MBSG_MinorArchite_Medicine</defName>
                         <label>minor archite enhanced medical</label>
-                        <iconPath>UI/Icons/Genes/Skills/Medicine/Strong</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Medicine/Remarkable</iconPath>
                         <displayOrderInCategory>997</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Medicine</li>
@@ -228,7 +228,7 @@
                     <GeneDef ParentName="MBSG_MinorArchite">
                         <defName>MBSG_MinorArchite_Social</defName>
                         <label>minor archite enhanced social</label>
-                        <iconPath>UI/Icons/Genes/Skills/Social/Strong</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Social/Remarkable</iconPath>
                         <displayOrderInCategory>1097</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Social</li>
@@ -248,7 +248,7 @@
                     <GeneDef ParentName="MBSG_MinorArchite">
                         <defName>MBSG_MinorArchite_Intellectual</defName>
                         <label>minor archite enhanced intellectual</label>
-                        <iconPath>UI/Icons/Genes/Skills/Intellectual/Strong</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Intellectual/Remarkable</iconPath>
                         <displayOrderInCategory>1197</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Intellectual</li>
@@ -281,7 +281,7 @@
                     <GeneDef ParentName="MBSG_Archite">
                         <defName>MBSG_Archite_Shooting</defName>
                         <label>archite enhanced shooting</label>
-                        <iconPath>UI/Icons/Genes/Skills/Shooting/Remarkable</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Shooting/PassionAdd</iconPath>
                         <displayOrderInCategory>99</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Shooting</li>
@@ -302,7 +302,7 @@
                     <GeneDef ParentName="MBSG_Archite">
                         <defName>MBSG_Archite_Melee</defName>
                         <label>archite enhanced melee</label>
-                        <iconPath>UI/Icons/Genes/Skills/Melee/Remarkable</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Melee/PassionAdd</iconPath>
                         <displayOrderInCategory>199</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Melee</li>
@@ -323,7 +323,7 @@
                     <GeneDef ParentName="MBSG_Archite">
                         <defName>MBSG_Archite_Construction</defName>
                         <label>archite enhanced construction</label>
-                        <iconPath>UI/Icons/Genes/Skills/Construction/Remarkable</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Construction/PassionAdd</iconPath>
                         <displayOrderInCategory>299</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Construction</li>
@@ -344,7 +344,7 @@
                     <GeneDef ParentName="MBSG_Archite">
                         <defName>MBSG_Archite_Mining</defName>
                         <label>archite enhanced mining</label>
-                        <iconPath>UI/Icons/Genes/Skills/Mining/Remarkable</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Mining/PassionAdd</iconPath>
                         <displayOrderInCategory>399</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Mining</li>
@@ -365,7 +365,7 @@
                     <GeneDef ParentName="MBSG_Archite">
                         <defName>MBSG_Archite_Cooking</defName>
                         <label>archite enhanced cooking</label>
-                        <iconPath>UI/Icons/Genes/Skills/Cooking/Remarkable</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Cooking/PassionAdd</iconPath>
                         <displayOrderInCategory>499</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Cooking</li>
@@ -386,7 +386,7 @@
                     <GeneDef ParentName="MBSG_Archite">
                         <defName>MBSG_Archite_Plants</defName>
                         <label>archite enhanced plants</label>
-                        <iconPath>UI/Icons/Genes/Skills/Plants/Remarkable</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Plants/PassionAdd</iconPath>
                         <displayOrderInCategory>599</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Plants</li>
@@ -407,7 +407,7 @@
                     <GeneDef ParentName="MBSG_Archite">
                         <defName>MBSG_Archite_Animals</defName>
                         <label>archite enhanced animals</label>
-                        <iconPath>UI/Icons/Genes/Skills/Animals/Remarkable</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Animals/PassionAdd</iconPath>
                         <displayOrderInCategory>699</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Animals</li>
@@ -428,7 +428,7 @@
                     <GeneDef ParentName="MBSG_Archite">
                         <defName>MBSG_Archite_Crafting</defName>
                         <label>archite enhanced crafting</label>
-                        <iconPath>UI/Icons/Genes/Skills/Crafting/Remarkable</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Crafting/PassionAdd</iconPath>
                         <displayOrderInCategory>799</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Crafting</li>
@@ -449,7 +449,7 @@
                     <GeneDef ParentName="MBSG_Archite">
                         <defName>MBSG_Archite_Artistic</defName>
                         <label>archite enhanced artistic</label>
-                        <iconPath>UI/Icons/Genes/Skills/Artistic/Remarkable</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Artistic/PassionAdd</iconPath>
                         <displayOrderInCategory>899</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Artistic</li>
@@ -470,7 +470,7 @@
                     <GeneDef ParentName="MBSG_Archite">
                         <defName>MBSG_Archite_Medicine</defName>
                         <label>archite enhanced medical</label>
-                        <iconPath>UI/Icons/Genes/Skills/Medicine/Remarkable</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Medicine/PassionAdd</iconPath>
                         <displayOrderInCategory>999</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Medicine</li>
@@ -491,7 +491,7 @@
                     <GeneDef ParentName="MBSG_Archite">
                         <defName>MBSG_Archite_Social</defName>
                         <label>archite enhanced social</label>
-                        <iconPath>UI/Icons/Genes/Skills/Social/Remarkable</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Social/PassionAdd</iconPath>
                         <displayOrderInCategory>1099</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Social</li>
@@ -512,7 +512,7 @@
                     <GeneDef ParentName="MBSG_Archite">
                         <defName>MBSG_Archite_Intellectual</defName>
                         <label>archite enhanced intellectual</label>
-                        <iconPath>UI/Icons/Genes/Skills/Intellectual/Remarkable</iconPath>
+                        <iconPath>UI/Icons/Genes/Skills/Intellectual/PassionAdd</iconPath>
                         <displayOrderInCategory>1199</displayOrderInCategory>
                         <exclusionTags>
                             <li>Aptitude_Intellectual</li>
