@@ -648,7 +648,7 @@
 
                 <GeneDef ParentName="EBSG_SlayerBase">
                     <defName>EBSG_MajorArchiteEnhancedSlaying</defName>
-                    <label>majnor archite enhanced slaying</label>
+                    <label>major archite enhanced slaying</label>
                     <description>Carriers of this gene have a large number of archites in their body that enhance their attacks to help them kill any target.</description>
                     <iconPath>EBSG/Gene_ExtremelyGoodSlayer</iconPath>
                     <displayOrderInCategory>92</displayOrderInCategory>
@@ -690,7 +690,7 @@
 
                 <GeneDef ParentName="EBSG_HumanlikeSlayerBase">
                     <defName>EBSG_MajorArchiteEnhancedHumanlikeSlaying</defName>
-                    <label>majnor archite enhanced humanlike slaying</label>
+                    <label>major archite enhanced humanlike slaying</label>
                     <description>Carriers of this gene have a large number of archites in their body that enhance their attacks to help them kill humanlike targets.</description>
                     <iconPath>EBSG/Gene_ExtremelyGoodHumanlikeSlayer</iconPath>
                     <displayOrderInCategory>192</displayOrderInCategory>
@@ -732,7 +732,7 @@
 
                 <GeneDef ParentName="EBSG_MechanoidSlayerBase">
                     <defName>EBSG_MajorArchiteEnhancedMechanoidSlaying</defName>
-                    <label>majnor archite enhanced mechanoid slaying</label>
+                    <label>major archite enhanced mechanoid slaying</label>
                     <description>Carriers of this gene have a large number of archites in their body that enhance their attacks to help them destroy mechanoids.</description>
                     <iconPath>EBSG/Gene_ExtremelyGoodMechanoidSlayer</iconPath>
                     <displayOrderInCategory>292</displayOrderInCategory>
@@ -774,7 +774,7 @@
 
                 <GeneDef ParentName="EBSG_AnimalSlayerBase">
                     <defName>EBSG_MajorArchiteEnhancedAnimalSlaying</defName>
-                    <label>majnor archite enhanced animal slaying</label>
+                    <label>major archite enhanced animal slaying</label>
                     <description>Carriers of this gene have a large number of archites in their body that enhance their attacks to help them kill animals.</description>
                     <iconPath>EBSG/Gene_ExtremelyGoodAnimalSlayer</iconPath>
                     <displayOrderInCategory>392</displayOrderInCategory>
@@ -816,7 +816,7 @@
 
                 <GeneDef ParentName="EBSG_InsectSlayerBase">
                     <defName>EBSG_MajorArchiteEnhancedInsectSlaying</defName>
-                    <label>majnor archite enhanced insect slaying</label>
+                    <label>major archite enhanced insect slaying</label>
                     <description>Carriers of this gene have a large number of archites in their body that enhance their attacks to help them kill insects.</description>
                     <iconPath>EBSG/Gene_ExtremelyGoodInsectSlayer</iconPath>
                     <displayOrderInCategory>492</displayOrderInCategory>
@@ -858,7 +858,7 @@
 
                 <GeneDef ParentName="EBSG_EntitySlayerBase" MayRequire="Ludeon.Rimworld.Anomaly">
                     <defName>EBSG_MajorArchiteEnhancedEntitySlaying</defName>
-                    <label>majnor archite enhanced entity slaying</label>
+                    <label>major archite enhanced entity slaying</label>
                     <description>Carriers of this gene have a large number of archites in their body that enhance their attacks to help them kill entities.</description>
                     <iconPath>EBSG/Gene_ExtremelyGoodEntitySlayer</iconPath>
                     <displayOrderInCategory>592</displayOrderInCategory>
