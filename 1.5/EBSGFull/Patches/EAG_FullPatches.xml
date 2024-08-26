@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_InnatePsychicAmplifier"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class='PatchOperationAdd'>
+                    <xpath>Defs/GeneDef[defName="EBSG_InnatePsychicReader"]</xpath>
+                    <value><exclusionTags><li>EBSGA_PsychicInfluencer</li></exclusionTags></value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThoughtDef[defName="PsychicDrone"]/nullifyingGenes</xpath>
+                    <value><li>EBSG_ArchitePsychicInfluencer</li></value>
+                </li>
+
+                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
+                    <xpath>Defs/ThoughtDef[@Name="PsychicArchotechEmanator"]/nullifyingGenes</xpath>
+                    <value><li>EBSG_ArchitePsychicInfluencer</li></value>
+                </li>
+
+                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+                    <xpath>Defs/ThoughtDef[defName="PsychicHarmonization"]/nullifyingGenes</xpath>
+                    <value><li>EBSG_ArchitePsychicInfluencer</li></value>
+                </li>
+
+                <li Class="EBSGFramework.PatchOperationSetting">
+                    <setting>architePsychicInfluencerBondTorn</setting>
+                    <active Class="PatchOperationConditional">
+                        <xpath>Defs/ThoughtDef[defName="PsychicBondTorn"]/nullifyingGenes</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThoughtDef[defName="PsychicBondTorn"]/nullifyingGenes</xpath>
+                            <value><li>EBSG_ArchitePsychicInfluencer</li></value>
+                        </match>
+                        <nomatch Class="PatchOperationAdd">
+                            <xpath>Defs/ThoughtDef[defName="PsychicBondTorn"]</xpath>
+                            <value>
+                                <nullifyingGenes>
+                                    <li>EBSG_ArchitePsychicInfluencer</li>
+                                </nullifyingGenes>
+                            </value>
+                        </nomatch>
+                    </active>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_Undergrounder"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs/ThoughtDef[defName="SoakingWet"]/nullifyingGenes</xpath>
+            <value><li>EBSGA_BiomeAdaptability</li></value>
+        </match>
+    </Operation>
+</Patch>

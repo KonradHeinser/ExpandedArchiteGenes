@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs> <!--To account for multiple potential sources, the patch will check for the genes themselves instead of specific mods-->
-    <GeneDef ParentName="CellInstabilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, CellStabilityGenes.Mod">
+    <GeneDef ParentName="CellInstabilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,CellStabilityGenes.Mod">
         <defName>EBSG_MinorArchiteCellStability</defName>
         <label>minor archite cell stability</label>
         <description>Carriers of this gene have a small number of archites in their bloodstream dedicated to increasing the stability of their cell-replication machinery.\n\nThese options are here to allow the creation of a long living pawn that isn't ageless.</description>
@@ -16,7 +16,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="CellInstabilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, CellStabilityGenes.Mod">
+    <GeneDef ParentName="CellInstabilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,CellStabilityGenes.Mod">
         <defName>EBSG_ArchiteCellStability</defName>
         <label>archite cell stability</label>
         <description>Carriers of this gene have archites in their bloodstream dedicated to increasing the stability of their cell-replication machinery.\n\nThese options are here to allow the creation of a long living pawn that isn't ageless.</description>
@@ -32,7 +32,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="CellInstabilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, CellStabilityGenes.Mod">
+    <GeneDef ParentName="CellInstabilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,CellStabilityGenes.Mod">
         <defName>EBSG_MajorArchiteCellStability</defName>
         <label>major archite cell stability</label>
         <description>Carriers of this gene have a large number of archites in their bloodstream dedicated to increasing the stability of their cell-replication machinery.\n\nThese options are here to allow the creation of a long living pawn that isn't ageless.</description>
@@ -48,7 +48,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMaxTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, ClimatePreferenceGenes.Mod">
+    <GeneDef ParentName="GeneMaxTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,ClimatePreferenceGenes.Mod">
         <defName>EBSG_MinorArchiteHeatTolerance</defName>
         <label>minor archite heat tolerance</label>
         <labelShortAdj>hot</labelShortAdj>
@@ -72,7 +72,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMaxTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, ClimatePreferenceGenes.Mod">
+    <GeneDef ParentName="GeneMaxTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,ClimatePreferenceGenes.Mod">
         <defName>EBSG_ArchiteHeatTolerance</defName>
         <label>archite heat tolerance</label>
         <labelShortAdj>hot</labelShortAdj>
@@ -96,7 +96,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMaxTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, ClimatePreferenceGenes.Mod">
+    <GeneDef ParentName="GeneMaxTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,ClimatePreferenceGenes.Mod">
         <defName>EBSG_MajorArchiteHeatTolerance</defName>
         <label>major archite heat tolerance</label>
         <labelShortAdj>hot</labelShortAdj>
@@ -120,7 +120,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMinTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, ClimatePreferenceGenes.Mod">
+    <GeneDef ParentName="GeneMinTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,ClimatePreferenceGenes.Mod">
         <defName>EBSG_MinorArchiteColdTolerance</defName>
         <label>minor archite cold tolerance</label>
         <labelShortAdj>cold</labelShortAdj>
@@ -140,7 +140,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMinTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, ClimatePreferenceGenes.Mod">
+    <GeneDef ParentName="GeneMinTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,ClimatePreferenceGenes.Mod">
         <defName>EBSG_ArchiteColdTolerance</defName>
         <label>archite cold tolerance</label>
         <labelShortAdj>cold</labelShortAdj>
@@ -160,7 +160,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMinTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, ClimatePreferenceGenes.Mod">
+    <GeneDef ParentName="GeneMinTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,ClimatePreferenceGenes.Mod">
         <defName>EBSG_MajorArchiteColdTolerance</defName>
         <label>major archite cold tolerance</label>
         <labelShortAdj>cold</labelShortAdj>
@@ -180,7 +180,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="FertilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, FertilityGenes.Mod">
+    <GeneDef ParentName="FertilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,FertilityGenes.Mod">
         <defName>EBSG_ArchiteFertility</defName>
         <label>archite fertility</label>
         <description>Carriers of this gene have archites in their cells that make it exceptionally easy for them to become pregnant or impregnate others. Their reproductive system is so hyperactive that just being in the same room is cause for concern.</description>
@@ -194,7 +194,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="GeneBeautyRepulsiveBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Beauty">
+    <GeneDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Beauty">
         <defName>EBSG_MinorArchiteBeauty</defName>
         <label>minor archite beauty</label>
         <description>Carriers of this gene have some archites in their skin dedicated to making their features distinctive and strong without being exaggerated, and their skin is nearly perfect. They are almost always seen as beautiful.</description>
@@ -217,12 +217,14 @@
                 <li><symbol>smooth</symbol></li>
             </prefixSymbols>
         </symbolPack>
+        <displayCategory>Beauty</displayCategory>
         <exclusionTags>
+            <li>Repulsive</li>
             <li>Beauty</li>
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef ParentName="GeneBeautyRepulsiveBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Beauty">
+    <GeneDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Beauty">
         <defName>EBSG_ArchiteBeauty</defName>
         <label>archite beauty</label>
         <description>Carriers of this gene have archites in their skin dedicated to making their features distinctive and strong without being exaggerated, and their skin is nearly perfect. They are almost always seen as beautiful.</description>
@@ -245,18 +247,21 @@
                 <li><symbol>smooth</symbol></li>
             </prefixSymbols>
         </symbolPack>
+        <displayCategory>Beauty</displayCategory>
         <exclusionTags>
+            <li>Repulsive</li>
             <li>Beauty</li>
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef ParentName="GeneBeautyRepulsiveBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Beauty">
+    <GeneDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Beauty">
         <defName>EBSG_MajorArchiteBeauty</defName>
         <label>major archite beauty</label>
         <description>Carriers of this gene have a lot of archites in their skin dedicated to making their features distinctive and strong without being exaggerated, and their skin is nearly perfect. They are almost always seen as beautiful.</description>
         <iconPath>MBSG/Gene_SuperBeautiful</iconPath>
         <displayOrderInCategory>30.6</displayOrderInCategory>
         <marketValueFactor>2.0</marketValueFactor>
+        <displayCategory>Beauty</displayCategory>
         <biostatCpx>9</biostatCpx>
         <biostatArc>3</biostatArc>
         <statOffsets>
@@ -275,10 +280,11 @@
         </symbolPack>
         <exclusionTags>
             <li>Beauty</li>
+            <li>Repulsive</li>
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMoveSpeedBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Movement">
+    <GeneDef ParentName="GeneMoveSpeedBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Movement">
         <defName>EBSG_MinorArchiteSpeed</defName>
         <label>minor archite speed</label> 
         <labelShortAdj>arch-fast</labelShortAdj>
@@ -312,7 +318,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMoveSpeedBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Movement">
+    <GeneDef ParentName="GeneMoveSpeedBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Movement">
         <defName>EBSG_ArchiteSpeed</defName>
         <label>archite speed</label> 
         <labelShortAdj>arch-fast</labelShortAdj>
@@ -346,7 +352,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMoveSpeedBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Movement">
+    <GeneDef ParentName="GeneMoveSpeedBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Movement">
         <defName>EBSG_MajorArchiteSpeed</defName>
         <label>major archite speed</label> 
         <labelShortAdj>arch-fast</labelShortAdj>
@@ -380,7 +386,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMeleeDamageBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Violence">
+    <GeneDef ParentName="GeneMeleeDamageBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Violence">
         <defName>EBSG_MinorArchiteMeleeDamage</defName>
         <label>minor archite melee damage</label>
         <labelShortAdj>strong</labelShortAdj>
@@ -408,7 +414,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMeleeDamageBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Violence">
+    <GeneDef ParentName="GeneMeleeDamageBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Violence">
         <defName>EBSG_ArchiteMeleeDamage</defName>
         <label>archite melee damage</label>
         <labelShortAdj>strong</labelShortAdj>
@@ -436,7 +442,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMeleeDamageBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Violence">
+    <GeneDef ParentName="GeneMeleeDamageBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Violence">
         <defName>EBSG_MajorArchiteMeleeDamage</defName>
         <label>major archite melee damage</label>
         <labelShortAdj>strong</labelShortAdj>
@@ -464,7 +470,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMoodBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreHappinessGenes.Mod">
+    <GeneDef ParentName="GeneMoodBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreHappinessGenes.Mod">
         <defName>EBSG_MinorArchiteHappiness</defName>
         <label>minor archite induced happiness</label>
         <description>Carriers of this gene have a small number of archites in their brain dedicated to stopping negative thoughts.</description>
@@ -488,7 +494,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMoodBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreHappinessGenes.Mod">
+    <GeneDef ParentName="GeneMoodBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreHappinessGenes.Mod">
         <defName>EBSG_ArchiteHappiness</defName>
         <label>archite induced happiness</label>
         <description>Carriers of this gene have archites in their brain dedicated to stopping negative thoughts.</description>
@@ -512,7 +518,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneMoodBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreHappinessGenes.Mod">
+    <GeneDef ParentName="GeneMoodBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreHappinessGenes.Mod">
         <defName>EBSG_MajorArchiteHappiness</defName>
         <label>major archite induced happiness</label>
         <description>Carriers of this gene have a large number of archites in their brain dedicated to stopping negative thoughts.</description>
@@ -536,7 +542,7 @@
         </symbolPack>
     </GeneDef>
 
-    <ThoughtDef>
+    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreHappinessGenes.Mod">
         <defName>EBSG_MinorArchiteHappiness</defName>
         <workerClass>ThoughtWorker_AlwaysActive</workerClass>
         <validWhileDespawned>true</validWhileDespawned>
@@ -553,7 +559,7 @@
         </stages>
     </ThoughtDef>
 
-    <ThoughtDef>
+    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreHappinessGenes.Mod">
         <defName>EBSG_ArchiteHappiness</defName>
         <workerClass>ThoughtWorker_AlwaysActive</workerClass>
         <validWhileDespawned>true</validWhileDespawned>
@@ -570,7 +576,7 @@
         </stages>
     </ThoughtDef>
 
-    <ThoughtDef>
+    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreHappinessGenes.Mod">
         <defName>EBSG_MajorArchiteHappiness</defName>
         <workerClass>ThoughtWorker_AlwaysActive</workerClass>
         <validWhileDespawned>true</validWhileDespawned>
@@ -587,7 +593,7 @@
         </stages>
     </ThoughtDef>
 
-    <GeneDef>
+    <GeneDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Hemogenic">
         <defName>EBSG_MinorArchiteHemogenRecovery</defName>
         <label>minor archite hemogen recovery</label>
         <labelShortAdj>rejuvenating</labelShortAdj>
@@ -608,7 +614,7 @@
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef>
+    <GeneDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Hemogenic">
         <defName>EBSG_ArchiteHemogenRecovery</defName>
         <label>archite hemogen recovery</label>
         <labelShortAdj>rejuvenating</labelShortAdj>
@@ -629,7 +635,7 @@
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef>
+    <GeneDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Hemogenic">
         <defName>EBSG_MajorArchiteHemogenRecovery</defName>
         <label>major archite hemogen recovery</label>
         <labelShortAdj>rejuvenating</labelShortAdj>
@@ -650,7 +656,7 @@
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef ParentName="GenePainBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MorePainGenes.Mod">
+    <GeneDef ParentName="GenePainBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MorePainGenes.Mod">
         <defName>EBSG_ArchiteRelentlessness</defName>
         <label>archite relentlessness</label>
         <description>Carriers of this gene have archites in their brain that stop them from feeling pain and stop them from being slowed down when being hit by damage.</description>
@@ -677,7 +683,7 @@
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef ParentName="GenePsychicAbilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MorePsychicSensitivityGenes.Mod">
+    <GeneDef ParentName="GenePsychicAbilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MorePsychicSensitivityGenes.Mod">
         <defName>EBSG_MinorArchitePsychicSensitivity</defName>
         <label>minor archite psy-sensitivity</label> 
         <labelShortAdj>psy-super-extreme</labelShortAdj>
@@ -703,7 +709,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GenePsychicAbilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MorePsychicSensitivityGenes.Mod">
+    <GeneDef ParentName="GenePsychicAbilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MorePsychicSensitivityGenes.Mod">
         <defName>EBSG_ArchitePsychicSensitivity</defName>
         <label>archite psy-sensitivity</label> 
         <labelShortAdj>psy-super-extreme</labelShortAdj>
@@ -729,7 +735,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GenePsychicAbilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MorePsychicSensitivityGenes.Mod">
+    <GeneDef ParentName="GenePsychicAbilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MorePsychicSensitivityGenes.Mod">
         <defName>EBSG_MajorArchitePsychicSensitivity</defName>
         <label>major archite psy-sensitivity</label> 
         <labelShortAdj>psy-super-extreme</labelShortAdj>
@@ -755,7 +761,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneSleepBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreSleepyGenes.Mod">
+    <GeneDef ParentName="GeneSleepBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreSleepyGenes.Mod">
         <defName>EBSG_ArchiteWakefulness</defName>
         <label>archite wakefulness</label>
         <description>Carriers of this gene have archites in their brain that ensure they get tired less quickly than others.</description>
@@ -775,7 +781,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneSleepBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreSleepyGenes.Mod">
+    <GeneDef ParentName="GeneSleepBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreSleepyGenes.Mod">
         <defName>EBSG_ArchiteNeverSleep</defName>
         <label>archite circadian ryhthm</label>
         <description>Carriers of this gene have archites in their brain which allows clusters of neurons to sleep while the rest of the brain stays awake. They never need to sleep.</description>
@@ -798,7 +804,7 @@
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef ParentName="GeneToughnessBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreToughnessGenes.Mod">
+    <GeneDef ParentName="GeneToughnessBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreToughnessGenes.Mod">
         <defName>EBSG_MinorArchiteRobustness</defName>
         <label>minor archite robustness</label>
         <description>Carriers of this gene have a small number of archites throughout their skin and bones dedicated to reducing the amount of damage they receive.</description>
@@ -824,7 +830,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneToughnessBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreToughnessGenes.Mod">
+    <GeneDef ParentName="GeneToughnessBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreToughnessGenes.Mod">
         <defName>EBSG_ArchiteRobustness</defName>
         <label>archite robustness</label>
         <description>Carriers of this gene have archites throughout their skin and bones dedicated to reducing the amount of damage they receive.</description>
@@ -850,7 +856,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneToughnessBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreToughnessGenes.Mod">
+    <GeneDef ParentName="GeneToughnessBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreToughnessGenes.Mod">
         <defName>EBSG_MajorArchiteRobustness</defName>
         <label>major archite robustness</label>
         <description>Carriers of this gene have a large number of archites throughout their skin and bones dedicated to reducing the amount of damage they receive.</description>
@@ -876,7 +882,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneLearningBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreStudyGenes.Mod">
+    <GeneDef ParentName="GeneLearningBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreStudyGenes.Mod">
         <defName>EBSG_MinorArchiteLearning</defName>
         <label>minor archite learning</label>
         <description>Carriers of this gene have a small number of archites in their brain that their memories and ability to grasp new ideas quickly.</description>
@@ -905,7 +911,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneLearningBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreStudyGenes.Mod">
+    <GeneDef ParentName="GeneLearningBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreStudyGenes.Mod">
         <defName>EBSG_ArchiteLearning</defName>
         <label>archite learning</label>
         <description>Carriers of this gene have archites in their brain that their memories and ability to grasp new ideas quickly.</description>
@@ -934,7 +940,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneLearningBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreStudyGenes.Mod">
+    <GeneDef ParentName="GeneLearningBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreStudyGenes.Mod">
         <defName>EBSG_MajorArchiteLearning</defName>
         <label>major archite learning</label>
         <description>Carriers of this gene have a large number of archites in their brain that their memories and ability to grasp new ideas quickly.</description>
@@ -963,7 +969,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneToxResistBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreAntitoxicGenes.Mod">
+    <GeneDef ParentName="GeneToxResistBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreAntitoxicGenes.Mod">
         <defName>EBSG_ArchiteToxImmunity</defName>
         <label>archite tox immunity</label>
         <labelShortAdj>tox-immune</labelShortAdj>
@@ -993,7 +999,7 @@
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef ParentName="GeneHealingRateBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreWoundHealingGenes.Mod">
+    <GeneDef ParentName="GeneHealingRateBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreWoundHealingGenes.Mod">
         <defName>EBSG_MinorArchiteWoundHealing</defName>
         <label>minor archite wound healing</label>
         <labelShortAdj>super-heal</labelShortAdj>
@@ -1014,7 +1020,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneHealingRateBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreWoundHealingGenes.Mod">
+    <GeneDef ParentName="GeneHealingRateBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreWoundHealingGenes.Mod">
         <defName>EBSG_ArchiteWoundHealing</defName>
         <label>archite wound healing</label>
         <labelShortAdj>super-heal</labelShortAdj>
@@ -1035,7 +1041,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef ParentName="GeneHealingRateBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreWoundHealingGenes.Mod">
+    <GeneDef ParentName="GeneHealingRateBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreWoundHealingGenes.Mod">
         <defName>EBSG_MajorArchiteWoundHealing</defName>
         <label>major archite wound healing</label>
         <labelShortAdj>super-heal</labelShortAdj>
