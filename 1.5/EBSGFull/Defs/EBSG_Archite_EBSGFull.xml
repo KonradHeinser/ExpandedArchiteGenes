@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef ParentName="EBSG_Biomes" MayRequireAnyOf="EBSG.AiO, EBSG.Biomes">
+        <defName>EBSGA_BiomeAdaptability</defName>
+        <label>biome adaptability</label>
+        <description>Carriers of this gene never get stressed from being underground or outside too long, and don't care about being soaking wet.</description>
+        <iconPath>EBSG/Gene_Overgrounder</iconPath>
+        <displayOrderInCategory>100.4</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <disablesNeeds>
+            <li>Outdoors</li>
+        </disablesNeeds>
+        <suppressedTraits>
+            <li>
+                <def>Undergrounder</def>
+            </li>
+        </suppressedTraits>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_DeathrestSpeedBase" MayRequireAnyOf="EBSG.AiO, EBSG.Deathrest">
+        <defName>EBSG_MinorArchiteEnhancedDeathrestSpeed</defName>
+        <label>minor archite enhanced deathrest speed</label>
+        <description>Carriers of this gene have a small number of archites in their brains dedicated to decreasing the amount of time the pawn needs to spend deathresting.</description>
+        <iconPath>EBSG/Gene_DeathrestSpeed</iconPath>
+        <displayOrderInCategory>667.2</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_DeathrestEfficiency>2.00</EBSG_DeathrestEfficiency>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_DeathrestSpeedBase" MayRequireAnyOf="EBSG.AiO, EBSG.Deathrest">
+        <defName>EBSG_ArchiteEnhancedDeathrestSpeed</defName>
+        <label>archite enhanced deathrest speed</label>
+        <description>Carriers of this gene have archites in their brains dedicated to decreasing the amount of time the pawn needs to spend deathresting.</description>
+        <iconPath>EBSG/Gene_ExtremeDeathrestSpeed</iconPath>
+        <displayOrderInCategory>667.3</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <EBSG_DeathrestEfficiency>3.00</EBSG_DeathrestEfficiency>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_DeathrestSpeedBase" MayRequireAnyOf="EBSG.AiO, EBSG.Deathrest">
+        <defName>EBSG_MajorArchiteEnhancedDeathrestSpeed</defName>
+        <label>major archite enhanced deathrest speed</label>
+        <description>Carriers of this gene have a large number of archites in their brains dedicated to decreasing the amount of time the pawn needs to spend deathresting.</description>
+        <iconPath>EBSG/Gene_ExtremeDeathrestSpeed</iconPath>
+        <displayOrderInCategory>667.4</displayOrderInCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <EBSG_DeathrestEfficiency>4.00</EBSG_DeathrestEfficiency>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BloodRestoration" MayRequireAnyOf="EBSG.AiO, EBSG.Bleeding">
+        <defName>EBSG_MinorArchiteEnhancedBloodRecovery</defName>
+        <label>minor archite enhanced blood recovery</label>
+        <description>Carriers of this gene have a small number of archites in their bodies dedicated to replenishing blood they've lost. This is only active while the pawn is not bleeding.</description>
+        <iconPath>EBSG/Gene_BloodRecovery</iconPath>
+        <displayOrderInCategory>98.91</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statOffsets>
+            <EBSG_BloodlossRecoveryBonus>2.00</EBSG_BloodlossRecoveryBonus>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BloodRestoration" MayRequireAnyOf="EBSG.AiO, EBSG.Bleeding">
+        <defName>EBSG_ArchiteEnhancedBloodRecovery</defName>
+        <label>archite enhanced blood recovery</label>
+        <description>Carriers of this gene have archites in their bodies dedicated to replenishing blood they've lost. This is only active while the pawn is not bleeding.</description>
+        <iconPath>EBSG/Gene_ExtremeBloodRecovery</iconPath>
+        <displayOrderInCategory>98.92</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statOffsets>
+            <EBSG_BloodlossRecoveryBonus>3.00</EBSG_BloodlossRecoveryBonus>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BloodRestoration" MayRequireAnyOf="EBSG.AiO, EBSG.Bleeding">
+        <defName>EBSG_MajorArchiteEnhancedBloodRecovery</defName>
+        <label>major archite enhanced blood recovery</label>
+        <description>Carriers of this gene have a large number of archites in their bodies dedicated to replenishing blood they've lost. This is only active while the pawn is not bleeding.</description>
+        <iconPath>EBSG/Gene_ExtremeBloodRecovery</iconPath>
+        <displayOrderInCategory>98.93</displayOrderInCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statOffsets>
+            <EBSG_BloodlossRecoveryBonus>4.00</EBSG_BloodlossRecoveryBonus>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GestationSpeed" MayRequireAnyOf="EBSG.AiO, EBSG.Reproduction">
+        <defName>EBSG_MinorArchiteEnhancedGestationSpeed</defName>
+        <label>minor archite enhanced gestation speed</label>
+        <description>Carriers of this gene have a small number of archites in their bodies dedicated to decreasing how long their pregnancies last.\n\nFor obvious reasons, this doesn't usually have an effect on males.</description>
+        <iconPath>EBSG/Gene_GestationSpeed</iconPath>
+        <displayOrderInCategory>201.1</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_PawnGestationSpeed>3.00</EBSG_PawnGestationSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GestationSpeed" MayRequireAnyOf="EBSG.AiO, EBSG.Reproduction">
+        <defName>EBSG_ArchiteEnhancedGestationSpeed</defName>
+        <label>archite enhanced gestation speed</label>
+        <description>Carriers of this gene have archites in their bodies dedicated to decreasing how long their pregnancies last.\n\nFor obvious reasons, this doesn't usually have an effect on males.</description>
+        <iconPath>EBSG/Gene_GestationSpeedExtreme</iconPath>
+        <displayOrderInCategory>201.2</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <EBSG_PawnGestationSpeed>5.00</EBSG_PawnGestationSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GestationSpeed" MayRequireAnyOf="EBSG.AiO, EBSG.Reproduction">
+        <defName>EBSG_MajorArchiteEnhancedGestationSpeed</defName>
+        <label>major archite enhanced gestation speed</label>
+        <description>Carriers of this gene have a large number of archites in their bodies dedicated to decreasing how long their pregnancies last.\n\nFor obvious reasons, this doesn't usually have an effect on males.</description>
+        <iconPath>EBSG/Gene_GestationSpeedExtreme</iconPath>
+        <displayOrderInCategory>201.3</displayOrderInCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <EBSG_PawnGestationSpeed>7.00</EBSG_PawnGestationSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <!-- <GeneDef ParentName="EBSG_ComfortChangeBase" MayRequireAnyOf="EBSG.AiO, EBSG.Needs">
+        <defName>EBSG_MinorArchiteInducedAsceticism</defName>
+        <label>minor archite induced asceticism</label>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to preventing them from feeling discomfort.</description>
+        <iconPath>EBSG/Gene_Asceticism</iconPath>
+        <displayOrderInCategory>1.3</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_ComfortRiseRate>2.00</EBSG_ComfortRiseRate>
+            <EBSG_ComfortFallRate>0.6</EBSG_ComfortFallRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BeautyChangeBase" MayRequireAnyOf="EBSG.AiO, EBSG.Needs">
+        <defName>EBSG_ArchiteInducedAsceticism</defName>
+        <label>archite induced asceticism</label>
+        <description>Carriers of this gene have archites in their brain dedicated to stopping them from caring about physical comforts.\n\nWhile I did not encounter any issues arising from completely disabling the comfort need, please keep in mind that this may have unintended side effects.</description>
+        <iconPath>EBSG/Gene_ExtremeAsceticism</iconPath>
+        <displayOrderInCategory>1.4</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <disablesNeeds>
+            <li>Comfort</li>
+        </disablesNeeds>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BeautyChangeBase" MayRequireAnyOf="EBSG.AiO, EBSG.Needs">
+        <defName>EBSG_MinorArchiteInducedPhilisthinism</defName>
+        <label>minor archite induced philistinism</label>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to preventing them from feeling sad about the appearance of ugly environments while also making it take less time for them to be happy to see pretty environments.</description>
+        <iconPath>EBSG/Gene_Philisthinism</iconPath>
+        <displayOrderInCategory>11.3</displayOrderInCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_BeautyRiseRate>2.00</EBSG_BeautyRiseRate>
+            <EBSG_BeautyFallRate>0.6</EBSG_BeautyFallRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_ComfortChangeBase" MayRequireAnyOf="EBSG.AiO, EBSG.Needs">
+        <defName>EBSG_ArchiteInducedPhilisthinism</defName>
+        <label>archite induced philisthinism</label>
+        <description>Carriers of this gene have archites in their brain dedicated to stopping them from caring about the appearance of their environments.\n\nWhile I did not encounter any issues arising from completely disabling the beauty need, please keep in mind that this may have unintended side effects.</description>
+        <iconPath>EBSG/Gene_ExtremePhilisthinism</iconPath>
+        <displayOrderInCategory>11.4</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <disablesNeeds>
+            <li>Beauty</li>
+        </disablesNeeds>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RecreationChangeBase" MayRequireAnyOf="EBSG.AiO, EBSG.Needs">
+        <defName>EBSG_MinorArchiteInducedJoviality</defName>
+        <label>minor archite induced joviality</label>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to remain happy even when they don't have time to dedicate to recreational activities.</description>
+        <iconPath>EBSG/Gene_Joviality</iconPath>
+        <displayOrderInCategory>21.3</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_JoyRiseRate>2.00</EBSG_JoyRiseRate>
+            <JoyFallRateFactor>0.6</JoyFallRateFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RecreationChangeBase" MayRequireAnyOf="EBSG.AiO, EBSG.Needs">
+        <defName>EBSG_ArchiteInducedJoviality</defName>
+        <label>archite induced joviality</label>
+        <description>Carriers of this gene have archites in their brain dedicated to stopping them from requiring special activities to feel happy.\n\nWhile I did not encounter any issues arising from completely disabling the recreation need, please keep in mind that this may have unintended side effects.</description>
+        <iconPath>EBSG/Gene_ExtremeJoviality</iconPath>
+        <displayOrderInCategory>21.4</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <disablesNeeds>
+            <li>Beauty</li>
+        </disablesNeeds>
+    </GeneDef>
+
+    <ThoughtDef MayRequireAnyOf="EBSG.AiO, EBSG.Needs">
+        <defName>EBSG_ArchiteInducedJoviality</defName>
+        <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <requiredGenes>
+            <li>EBSG_ArchiteInducedJoviality</li>
+        </requiredGenes>
+        <stages>
+            <li>
+                <label>archite induced jovial</label>
+                <description>Natural bonus from the archite induced joviality gene.</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <GeneDef ParentName="EBSG_MoodChangeBase" MayRequireAnyOf="EBSG.AiO, EBSG.Needs">
+        <defName>EBSG_MinorArchiteInducedOptimism</defName>
+        <label>minor archite induced philistinism</label>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to helping them remain positive by minimizing the negative impacts neurotransmitters have when bad events occur.</description>
+        <iconPath>EBSG/Gene_Optimism</iconPath>
+        <displayOrderInCategory>111.3</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_MoodRiseRate>2.00</EBSG_MoodRiseRate>
+            <EBSG_MoodFallRate>0.6</EBSG_MoodFallRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MoodChangeBase" MayRequireAnyOf="EBSG.AiO, EBSG.Needs">
+        <defName>EBSG_ArchiteInducedOptimism</defName>
+        <label>archite induced philisthinism</label>
+        <description>Carriers of this gene have archites in their brain dedicated to helping them remain positive by minimizing the negative impacts neurotransmitters have when bad events occur.</description>
+        <iconPath>EBSG/Gene_ExtremeOptimism</iconPath>
+        <displayOrderInCategory>111.4</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <EBSG_MoodRiseRate>3.00</EBSG_MoodRiseRate>
+            <EBSG_MoodFallRate>0.2</EBSG_MoodFallRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MoodChangeBase" MayRequireAnyOf="EBSG.AiO, EBSG.Needs">
+        <defName>EBSG_Emotionless</defName>
+        <label>emotionless</label>
+        <description>Carriers of this gene have a large number of archites in their brain dedicated to supressing all emotions.\n\nWhile I did not encounter any issues arising from completely disabling the mood need, please keep in mind that this may have unintended side effects. Also, even at this cost it's probably not very balanced, even by archite gene standards.</description>
+        <iconPath>EBSG/Gene_Emotionless</iconPath>
+        <displayOrderInCategory>111.5</displayOrderInCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <disablesNeeds>
+            <li>Mood</li>
+        </disablesNeeds>
+        <exclusionTags>
+            <li>Mood</li>
+        </exclusionTags>
+    </GeneDef> -->
+
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO, EBSG.Psychic"> 
+        <defName>EBSG_ArchitePsychicInfluencer</defName>
+        <label>archite psychic influencer</label>
+        <iconPath>EBSG/Gene_InnatePsychicInsulation</iconPath>
+        <description>Carriers of this gene have an innate psychic reader, harmonizer, and shield. The shield protects them from most external mood and opinion altering psychic effect. Unlike Psychic insulation, this only stops both negative moods and dynamic moods(like a harmonizer and drones).</description>
+        <displayOrderInCategory>310.4</displayOrderInCategory>
+        <displayCategory>Psychic</displayCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>4</biostatCpx>
+        <customEffectDescriptions>
+            <li>Colonist will not be effected by external psychic thought and opinion changers.</li>
+            <li>Colonist will still be effected by other effects of psychic abilties, even if those abilities include a thought or opinion change.</li>
+            <li>The harmonizer and bond break moods look strange on the list because they don't have a source. This is just a visual bug caused by the base game's naming structure.</li>
+            <li>Gives a psychic harmonizer.</li>
+            <li>Gives a psychic reader.</li>
+        </customEffectDescriptions>
+        <exclusionTags>
+            <li>EBSG_PsychicMood</li>
+            <li>EBSGA_PsychicInfluencer</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply>
+                    <li>
+                        <hediff>PsychicHarmonizer</hediff>
+                        <bodyParts>
+                            <li>Brain</li>
+                        </bodyParts>
+                    </li>
+                    <li>
+                        <hediff>PsychicReader</hediff>
+                        <bodyParts>
+                            <li>Brain</li>
+                        </bodyParts>
+                    </li>
+                </hediffsToApply>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyMaxBase" MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO, EBSG.Psychic">
+        <defName>EBSG_MinorArchiteEnhancedEntropyMax</defName>
+        <label>minor archite enhanced entropy max</label>
+        <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping them avoid suffering damage from storing large amounts of neural heat.</description>
+        <iconPath>EBSG/Gene_EntropyMax</iconPath>
+        <displayOrderInCategory>312.81</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <PsychicEntropyMax>2.00</PsychicEntropyMax>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyMaxBase" MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO, EBSG.Psychic">
+        <defName>EBSG_ArchiteEnhancedEntropyMax</defName>
+        <label>archite enhanced entropy max</label>
+        <description>Carriers of this gene have archites in their bodies dedicated to helping them avoid suffering damage from storing large amounts of neural heat.</description>
+        <iconPath>EBSG/Gene_ExtremeEntropyMax</iconPath>
+        <displayOrderInCategory>312.82</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <PsychicEntropyMax>3.00</PsychicEntropyMax>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyMaxBase" MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO, EBSG.Psychic">
+        <defName>EBSG_MajorArchiteEnhancedEntropyMax</defName>
+        <label>major archite enhanced entropy max</label>
+        <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping them avoid suffering damage from storing large amounts of neural heat.</description>
+        <iconPath>EBSG/Gene_ExtremeEntropyMax</iconPath>
+        <displayOrderInCategory>312.83</displayOrderInCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <PsychicEntropyMax>4.00</PsychicEntropyMax>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase" MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO, EBSG.Psychic">
+        <defName>EBSG_MinorArchiteEnhancedEntropyRecovery</defName>
+        <label>minor archite enhanced entropy recovery</label>
+        <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping them dissipate neural heat.</description>
+        <iconPath>EBSG/Gene_EntropyRecovery</iconPath>
+        <displayOrderInCategory>313.81</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>2.00</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase" MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO, EBSG.Psychic">
+        <defName>EBSG_ArchiteEnhancedEntropyRecovery</defName>
+        <label>archite enhanced entropy recovery</label>
+        <description>Carriers of this gene have archites in their bodies dedicated to helping them dissipate neural heat.</description>
+        <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
+        <displayOrderInCategory>313.82</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>3.00</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase" MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO, EBSG.Psychic">
+        <defName>EBSG_MajorArchiteEnhancedEntropyRecovery</defName>
+        <label>major archite enhanced entropy recovery</label>
+        <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping them dissipate neural heat.</description>
+        <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
+        <displayOrderInCategory>313.83</displayOrderInCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>4.00</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MeditationFocusBase" MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO, EBSG.Psychic">
+        <defName>EBSG_MinorArchiteEnhancedMeditationFocus</defName>
+        <label>minor archite enhanced focus gain</label>
+        <description>Carriers of this gene have a small number of archites in their brains dedicated to helping them clear their minds and gain more focus while meditating.</description>
+        <iconPath>EBSG/Gene_MeditationFocus</iconPath>
+        <displayOrderInCategory>311.81</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <MeditationFocusGain>2.00</MeditationFocusGain>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MeditationFocusBase" MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO, EBSG.Psychic">
+        <defName>EBSG_ArchiteEnhancedMeditationFocus</defName>
+        <label>archite enhanced focus gain</label>
+        <description>Carriers of this gene have archites in their brains dedicated to helping them clear their minds and gain more focus while meditating.</description>
+        <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>
+        <displayOrderInCategory>311.82</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <MeditationFocusGain>3.00</MeditationFocusGain>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MeditationFocusBase" MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO, EBSG.Psychic">
+        <defName>EBSG_MajorArchiteEnhancedMeditationFocus</defName>
+        <label>major archite enhanced focus gain</label>
+        <description>Carriers of this gene have a large number of archites in their brains dedicated to helping them clear their minds and gain more focus while meditating.</description>
+        <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>
+        <displayOrderInCategory>311.83</displayOrderInCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <MeditationFocusGain>4.00</MeditationFocusGain>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_SlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_MinorArchiteEnhancedSlaying</defName>
+        <label>minor archite enhanced slaying</label>
+        <description>Carriers of this gene have a small number of archites in their body that enhance their attacks to help them kill any target.</description>
+        <iconPath>EBSG/Gene_GoodSlayer</iconPath>
+        <displayOrderInCategory>90</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor>1.20</EBSG_OutgoingDamageFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_SlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_ArchiteEnhancedSlaying</defName>
+        <label>archite enhanced slaying</label>
+        <description>Carriers of this gene have archites in their body that enhance their attacks to help them kill any target.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodSlayer</iconPath>
+        <displayOrderInCategory>91</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor>1.40</EBSG_OutgoingDamageFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_SlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_MajorArchiteEnhancedSlaying</defName>
+        <label>major archite enhanced slaying</label>
+        <description>Carriers of this gene have a large number of archites in their body that enhance their attacks to help them kill any target.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodSlayer</iconPath>
+        <displayOrderInCategory>92</displayOrderInCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor>1.60</EBSG_OutgoingDamageFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HumanlikeSlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_MinorArchiteEnhancedHumanlikeSlaying</defName>
+        <label>minor archite enhanced humanlike slaying</label>
+        <description>Carriers of this gene have a small number of archites in their body that enhance their attacks to help them kill humanlike targets.</description>
+        <iconPath>EBSG/Gene_GoodHumanlikeSlayer</iconPath>
+        <displayOrderInCategory>190</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Humanlike>1.60</EBSG_OutgoingDamageFactor_Humanlike>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HumanlikeSlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_ArchiteEnhancedHumanlikeSlaying</defName>
+        <label>archite enhanced humanlike slaying</label>
+        <description>Carriers of this gene have archites in their body that enhance their attacks to help them kill humanlike targets.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodHumanlikeSlayer</iconPath>
+        <displayOrderInCategory>191</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Humanlike>2.20</EBSG_OutgoingDamageFactor_Humanlike>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HumanlikeSlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_MajorArchiteEnhancedHumanlikeSlaying</defName>
+        <label>major archite enhanced humanlike slaying</label>
+        <description>Carriers of this gene have a large number of archites in their body that enhance their attacks to help them kill humanlike targets.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodHumanlikeSlayer</iconPath>
+        <displayOrderInCategory>192</displayOrderInCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Humanlike>2.80</EBSG_OutgoingDamageFactor_Humanlike>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechanoidSlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_MinorArchiteEnhancedMechanoidSlaying</defName>
+        <label>minor archite enhanced mechanoid slaying</label>
+        <description>Carriers of this gene have a small number of archites in their body that enhance their attacks to help them destroy mechanoids.</description>
+        <iconPath>EBSG/Gene_GoodMechanoidSlayer</iconPath>
+        <displayOrderInCategory>290</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Mechanoid>1.60</EBSG_OutgoingDamageFactor_Mechanoid>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechanoidSlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_ArchiteEnhancedMechanoidSlaying</defName>
+        <label>archite enhanced mechanoid slaying</label>
+        <description>Carriers of this gene have archites in their body that enhance their attacks to help them destroy mechanoids.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodMechanoidSlayer</iconPath>
+        <displayOrderInCategory>291</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Mechanoid>2.20</EBSG_OutgoingDamageFactor_Mechanoid>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechanoidSlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_MajorArchiteEnhancedMechanoidSlaying</defName>
+        <label>major archite enhanced mechanoid slaying</label>
+        <description>Carriers of this gene have a large number of archites in their body that enhance their attacks to help them destroy mechanoids.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodMechanoidSlayer</iconPath>
+        <displayOrderInCategory>292</displayOrderInCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Mechanoid>2.80</EBSG_OutgoingDamageFactor_Mechanoid>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_AnimalSlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_MinorArchiteEnhancedAnimalSlaying</defName>
+        <label>minor archite enhanced animal slaying</label>
+        <description>Carriers of this gene have a small number of archites in their body that enhance their attacks to help them kill animals.</description>
+        <iconPath>EBSG/Gene_GoodAnimalSlayer</iconPath>
+        <displayOrderInCategory>390</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Animal>1.60</EBSG_OutgoingDamageFactor_Animal>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_AnimalSlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_ArchiteEnhancedAnimalSlaying</defName>
+        <label>archite enhanced animal slaying</label>
+        <description>Carriers of this gene have archites in their body that enhance their attacks to help them kill animals.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodAnimalSlayer</iconPath>
+        <displayOrderInCategory>391</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Animal>2.20</EBSG_OutgoingDamageFactor_Animal>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_AnimalSlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_MajorArchiteEnhancedAnimalSlaying</defName>
+        <label>major archite enhanced animal slaying</label>
+        <description>Carriers of this gene have a large number of archites in their body that enhance their attacks to help them kill animals.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodAnimalSlayer</iconPath>
+        <displayOrderInCategory>392</displayOrderInCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Animal>2.80</EBSG_OutgoingDamageFactor_Animal>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_InsectSlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_MinorArchiteEnhancedInsectSlaying</defName>
+        <label>minor archite enhanced insect slaying</label>
+        <description>Carriers of this gene have a small number of archites in their body that enhance their attacks to help them kill insects.</description>
+        <iconPath>EBSG/Gene_GoodInsectSlayer</iconPath>
+        <displayOrderInCategory>490</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Insect>1.60</EBSG_OutgoingDamageFactor_Insect>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_InsectSlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_ArchiteEnhancedInsectSlaying</defName>
+        <label>archite enhanced insect slaying</label>
+        <description>Carriers of this gene have archites in their body that enhance their attacks to help them kill insects.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodInsectSlayer</iconPath>
+        <displayOrderInCategory>491</displayOrderInCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Insect>2.20</EBSG_OutgoingDamageFactor_Insect>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_InsectSlayerBase" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+        <defName>EBSG_MajorArchiteEnhancedInsectSlaying</defName>
+        <label>major archite enhanced insect slaying</label>
+        <description>Carriers of this gene have a large number of archites in their body that enhance their attacks to help them kill insects.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodInsectSlayer</iconPath>
+        <displayOrderInCategory>492</displayOrderInCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Insect>2.80</EBSG_OutgoingDamageFactor_Insect>
+        </statFactors>
+    </GeneDef>
+
+</Defs>

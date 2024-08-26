@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<loadFolders>
+	<v1.4>
+		<li>/</li>
+		<li>1.4</li>
+	</v1.4>
+	<v1.5>
+		<li>/</li>
+		<li>1.5</li>
+		<li IfModActive="EBSG.Framework">1.5/EBSGFull</li>
+		<li IfModActive="Ludeon.Rimworld.Ideology">1.5/Ideology</li>
+	</v1.5>
+</loadFolders>

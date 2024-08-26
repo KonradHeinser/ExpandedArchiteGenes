@@ -1,0 +1,1331 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> <!--To account for multiple potential sources, the patch will check for the genes themselves instead of specific mods-->
+    <GeneDef MayRequireAnyOf="EBSG.AiO, EBSG.Sensory">
+        <defName>EBSG_MinorArchiteSenses</defName>
+        <label>minor archite senses</label>
+        <iconPath>EBSG/Gene_AmazingVision</iconPath>
+        <description>Carriers of this gene have a small number archites in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
+        <displayOrderInCategory>30</displayOrderInCategory>
+        <displayCategory>EBSG_Sensory</displayCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <ignoreDarkness>true</ignoreDarkness>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <CookSpeed>1.25</CookSpeed>
+            <SocialImpact>1.1</SocialImpact>
+        </statFactors>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>1.25</postFactor>
+            </li>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>1.25</postFactor>
+            </li>
+        </capMods>
+        <exclusionTags>
+            <li>EBSG_Sight</li>
+            <li>EBSG_Hearing</li>
+            <li>EBSG_Smelling</li>
+            <li>EBSG_ArchiteSenses</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO, EBSG.Sensory">
+        <defName>EBSG_ArchiteSenses</defName>
+        <label>archite senses</label>
+        <iconPath>EBSG/Gene_AmazingVision</iconPath>
+        <description>Carriers of this gene have archites in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
+        <displayOrderInCategory>31</displayOrderInCategory>
+        <displayCategory>EBSG_Sensory</displayCategory>
+        <marketValueFactor>2.0</marketValueFactor>
+        <ignoreDarkness>true</ignoreDarkness>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <CookSpeed>1.25</CookSpeed>
+            <SocialImpact>1.22</SocialImpact>
+        </statFactors>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>1.50</postFactor>
+            </li>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>1.50</postFactor>
+            </li>
+        </capMods>
+        <exclusionTags>
+            <li>EBSG_Sight</li>
+            <li>EBSG_Hearing</li>
+            <li>EBSG_Smelling</li>
+            <li>EBSG_ArchiteSenses</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO, EBSG.Sensory">
+        <defName>EBSG_MajorArchiteSenses</defName>
+        <label>major archite senses</label>
+        <iconPath>EBSG/Gene_AmazingVision</iconPath>
+        <description>Carriers of this gene have a large number archites in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
+        <displayOrderInCategory>32</displayOrderInCategory>
+        <displayCategory>EBSG_Sensory</displayCategory>
+        <marketValueFactor>2.5</marketValueFactor>
+        <ignoreDarkness>true</ignoreDarkness>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <CookSpeed>1.75</CookSpeed>
+            <SocialImpact>1.35</SocialImpact>
+        </statFactors>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>1.75</postFactor>
+            </li>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>1.75</postFactor>
+            </li>
+        </capMods>
+        <exclusionTags>
+            <li>EBSG_Sight</li>
+            <li>EBSG_Hearing</li>
+            <li>EBSG_Smelling</li>
+            <li>EBSG_ArchiteSenses</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO, EBSG.Sensory">
+        <defName>EBSG_ExtremeArchiteSenses</defName>
+        <label>extreme archite senses</label>
+        <iconPath>EBSG/Gene_AmazingVision</iconPath>
+        <description>Carriers of this gene have a small number of compressed archite clumps in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
+        <displayOrderInCategory>33</displayOrderInCategory>
+        <displayCategory>EBSG_Sensory</displayCategory>
+        <marketValueFactor>3.0</marketValueFactor>
+        <ignoreDarkness>true</ignoreDarkness>
+        <biostatArc>4</biostatArc>
+        <biostatCpx>12</biostatCpx>
+        <statFactors>
+            <CookSpeed>2.00</CookSpeed>
+            <SocialImpact>1.5</SocialImpact>
+        </statFactors>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>2.00</postFactor>
+            </li>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>2.00</postFactor>
+            </li>
+        </capMods>
+        <exclusionTags>
+            <li>EBSG_Sight</li>
+            <li>EBSG_Hearing</li>
+            <li>EBSG_Smelling</li>
+            <li>EBSG_ArchiteSenses</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_CarryCapacityBase" MayRequireAnyOf="EBSG.AiO, EBSG.CarryCap">
+        <defName>EBSG_MinorArchiteCarry</defName>
+        <label>minor archite carry capacity</label>
+        <description>Carriers of this gene have a small number of archites spread throughout their arms and back that increase their carry capacity.</description>
+        <iconPath>EBSG/Gene_HighCarryCapacity</iconPath>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statFactors>
+            <CarryingCapacity>2</CarryingCapacity>
+            <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2</VEF_MassCarryCapacity>
+        </statFactors>
+        <displayOrderInCategory>10</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_CarryCapacityBase" MayRequireAnyOf="EBSG.AiO, EBSG.CarryCap">
+        <defName>EBSG_ArchiteCarry</defName>
+        <label>archite carry capacity</label>
+        <description>Carriers of this gene have archites spread throughout their arms and back that increase their carry capacity.</description>
+        <iconPath>EBSG/Gene_SuperHighCarryCapacity</iconPath>
+        <marketValueFactor>1.50</marketValueFactor>
+        <statFactors>
+            <CarryingCapacity>3</CarryingCapacity>
+            <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">3</VEF_MassCarryCapacity>
+        </statFactors>
+        <displayOrderInCategory>11</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_CarryCapacityBase" MayRequireAnyOf="EBSG.AiO, EBSG.CarryCap">
+        <defName>EBSG_MajorArchiteCarry</defName>
+        <label>major archite carry capacity</label>
+        <description>Carriers of this gene have a large number of archites spread throughout their arms and back that increase their carry capacity.</description>
+        <iconPath>EBSG/Gene_SuperHighCarryCapacity</iconPath>
+        <marketValueFactor>2.0</marketValueFactor>
+        <statFactors>
+            <CarryingCapacity>4</CarryingCapacity>
+            <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">4</VEF_MassCarryCapacity>
+        </statFactors>
+        <displayOrderInCategory>12</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO, EBSG.Food">
+        <defName>EBSG_ArchiteDigestion</defName>
+        <label>archite enhanced digestion</label>
+        <description>Carriers of this gene have archites in their stomach that protect them from food poisoning and process raw foods with unbelievable efficiency.</description>
+        <iconPath>UI/Icons/Genes/Gene_RobustDigestion</iconPath>
+        <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+        <dontMindRawFood>true</dontMindRawFood>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <displayCategory>EBSG_Food</displayCategory>
+        <displayOrderInCategory>10.1</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <statFactors>
+            <RawNutritionFactor>2.0</RawNutritionFactor>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>dura</symbol></li>
+                <li><symbol>eat</symbol></li>
+                <li><symbol>feed</symbol></li>
+                <li><symbol>cram</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>vore</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>MBSG_Digestion</li>
+            <li>EBSG_StrongStomachs</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EatingSpeedBase" MayRequireAnyOf="EBSG.AiO, EBSG.Food">
+        <defName>EBSGA_MinorArchiteEatingSpeed</defName>
+        <label>minor archite eating speed</label>
+        <iconPath>EBSG/Gene_EatingSpeed</iconPath>
+        <description>Carriers of this gene have a small number of archites in their mouth dedicated to rapidly breaking down food to make consuming it easier.</description>
+        <displayOrderInCategory>18.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EatingSpeed>3.00</EatingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EatingSpeedBase" MayRequireAnyOf="EBSG.AiO, EBSG.Food">
+        <defName>EBSGA_ArchiteEatingSpeed</defName>
+        <label>archite eating speed</label>
+        <iconPath>EBSG/Gene_ExtremeEatingSpeed</iconPath>
+        <description>Carriers of this gene have archites in their mouth dedicated to rapidly breaking down food to make consuming it easier.</description>
+        <displayOrderInCategory>18.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <EatingSpeed>5.00</EatingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EatingSpeedBase" MayRequireAnyOf="EBSG.AiO, EBSG.Food">
+        <defName>EBSGA_MajorArchiteEatingSpeed</defName>
+        <label>major archite eating speed</label>
+        <iconPath>EBSG/Gene_ExtremeEatingSpeed</iconPath>
+        <description>Carriers of this gene have a large number of archites in their mouth dedicated to rapidly breaking down food to make consuming it easier.</description>
+        <displayOrderInCategory>18.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <EatingSpeed>7.00</EatingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HemogenGain" MayRequireAnyOf="EBSG.AiO, EBSG.Hemogen">
+        <defName>EBSG_MinorArchiteHemogenGain</defName>
+        <label>minor archite hemo-processing efficiency</label>
+        <iconPath>EBSG/Gene_HemogenGain</iconPath>
+        <description>Carriers of this gene have a small number of archites in their blood that allow them to process the blood of others into hemogen unbelievably efficiently.</description>
+        <displayOrderInCategory>1.9</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statFactors>
+            <HemogenGainFactor>2</HemogenGainFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HemogenGain" MayRequireAnyOf="EBSG.AiO, EBSG.Hemogen">
+        <defName>EBSG_ArchiteHemogenGain</defName>
+        <label>archite hemo-processing efficiency</label>
+        <iconPath>EBSG/Gene_HemogenGainExtreme</iconPath>
+        <description>Carriers of this gene have archites in their blood that allow them to process the blood of others into hemogen unbelievably efficiently.</description>
+        <displayOrderInCategory>2.0</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <marketValueFactor>1.5</marketValueFactor>
+        <statFactors>
+            <HemogenGainFactor>3</HemogenGainFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_HemogenGain" MayRequireAnyOf="EBSG.AiO, EBSG.Hemogen">
+        <defName>EBSG_MajorArchiteHemogenGain</defName>
+        <label>major archite hemo-processing efficiency</label>
+        <iconPath>EBSG/Gene_HemogenGainExtreme</iconPath>
+        <description>Carriers of this gene have a large number of archites in their blood that allow them to process the blood of others into hemogen unbelievably efficiently.</description>
+        <displayOrderInCategory>2.1</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <marketValueFactor>2.00</marketValueFactor>
+        <statFactors>
+            <HemogenGainFactor>4</HemogenGainFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MentalFortitude" MayRequireAnyOf="EBSG.AiO, EBSG.Mental">
+        <defName>EBSG_ArchiteMentalFortitude</defName>
+        <label>archite mental fortitude</label>
+        <description>Carriers of this gene have archites in their brains that help defend their mind from being unsettled by outside influences. This will make it much less likely for them to have a mental break. For those who have Ideology, this also makes it much harder to keep them suppressed and change their beliefs.</description>
+        <iconPath>EBSG/Gene_ExtremelyStubborn</iconPath>
+        <displayOrderInCategory>99.99</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statOffsets>
+            <MentalBreakThreshold>-0.40</MentalBreakThreshold>
+        </statOffsets>
+        <statFactors>
+            <SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">3</SlaveSuppressionFallRate>
+            <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.25</CertaintyLossFactor>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>stub</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Burrowing" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MinorArchiteEnhancedBurrowing</defName>
+        <label>minor archite enhanced burrowing</label>
+        <iconPath>EBSG/Gene_Burrowing</iconPath>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to helping them mine more efficiently.\n\nThis enhancement will not impact how much they get from mining, only the speed at which they do it. This will impact both normal mining and deep drilling.</description>
+        <displayOrderInCategory>67.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <MiningSpeed>2</MiningSpeed>
+            <DeepDrillingSpeed>2</DeepDrillingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Burrowing" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_ArchiteEnhancedBurrowing</defName>
+        <label>archite enhanced burrowing</label>
+        <iconPath>EBSG/Gene_BurrowingExtreme</iconPath>
+        <description>Carriers of this gene have archites in their brain dedicated to helping them mine more efficiently.\n\nThis enhancement will not impact how much they get from mining, only the speed at which they do it. This will impact both normal mining and deep drilling.</description>
+        <displayOrderInCategory>67.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <MiningSpeed>3</MiningSpeed>
+            <DeepDrillingSpeed>3</DeepDrillingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Burrowing" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MajorArchiteEnhancedBurrowing</defName>
+        <label>major archite enhanced burrowing</label>
+        <iconPath>EBSG/Gene_BurrowingExtreme</iconPath>
+        <description>Carriers of this gene have a large number of archites in their brain dedicated to helping them mine more efficiently.\n\nThis enhancement will not impact how much they get from mining, only the speed at which they do it. This will impact both normal mining and deep drilling.</description>
+        <displayOrderInCategory>67.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <MiningSpeed>4</MiningSpeed>
+            <DeepDrillingSpeed>4</DeepDrillingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Caring" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MinorArchiteEnhancedCaring</defName>
+        <label>minor archite enhanced caring</label>
+        <iconPath>EBSG/Gene_Caring</iconPath>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to helping them figure out what is wrong with a person much faster than normal.\n\nThis instinct will not help them with more complex operations, nor will it help them know how to tend the individual well.</description>
+        <displayOrderInCategory>7.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <MedicalTendSpeed>2</MedicalTendSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Caring" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_ArchiteEnhancedCaring</defName>
+        <label>archite enhanced caring</label>
+        <iconPath>EBSG/Gene_CaringExtreme</iconPath>
+        <description>Carriers of this gene have archites in their brain dedicated to helping them figure out what is wrong with a person much faster than normal.\n\nThis instinct will not help them with more complex operations, nor will it help them know how to tend the individual well.</description>
+        <displayOrderInCategory>7.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <MedicalTendSpeed>3</MedicalTendSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Caring" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MajorArchiteEnhancedCaring</defName>
+        <label>major archite enhanced caring</label>
+        <iconPath>EBSG/Gene_CaringExtreme</iconPath>
+        <description>Carriers of this gene have a large number of archites in their brain dedicated to helping them figure out what is wrong with a person much faster than normal.\n\nThis instinct will not help them with more complex operations, nor will it help them know how to tend the individual well.</description>
+        <displayOrderInCategory>7.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <MedicalTendSpeed>4</MedicalTendSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Construction" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MinorArchiteEnhancedConstruction</defName>
+        <label>minor archite enhanced construction</label>
+        <iconPath>EBSG/Gene_Construction</iconPath>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to helping them build structures a lot faster than normal to protect themselves from outside dangers.\n\nThis instinct will not help them avoid failure while building, just accelerate the rate that they build.</description>
+        <displayOrderInCategory>47.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <ConstructionSpeed>2</ConstructionSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Construction" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_ArchiteEnhancedConstruction</defName>
+        <label>archite enhanced construction</label>
+        <iconPath>EBSG/Gene_ConstructionExtreme</iconPath>
+        <description>Carriers of this gene have archites in their brain dedicated to helping them build structures a lot faster than normal to protect themselves from outside dangers.\n\nThis instinct will not help them avoid failure while building, just accelerate the rate that they build.</description>
+        <displayOrderInCategory>47.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <ConstructionSpeed>3</ConstructionSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Construction" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MajorArchiteEnhancedConstruction</defName>
+        <label>major archite enhanced construction</label>
+        <iconPath>EBSG/Gene_ConstructionExtreme</iconPath>
+        <description>Carriers of this gene have a large number of archites in their brain dedicated to helping them build structures a lot faster than normal to protect themselves from outside dangers.\n\nThis instinct will not help them avoid failure while building, just accelerate the rate that they build.</description>
+        <displayOrderInCategory>47.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <ConstructionSpeed>4</ConstructionSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Curiosity" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MinorArchiteEnhancedCuriosity</defName>
+        <label>minor archite enhanced curiosity</label>
+        <iconPath>EBSG/Gene_Curiosity</iconPath>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to helping them discoverer concepts that were previously unknown, increasing their research speed by a little bit.\n\nThis will not impact their learning rate, just the rate that they research things.\n\nFor more options involving the rate a pawn learns, take a look at More Study Genes. You can use those to alter how well a pawn can better themselves.</description>
+        <displayOrderInCategory>57.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <ResearchSpeed>2</ResearchSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Curiosity" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_ArchiteEnhancedCuriosity</defName>
+        <label>archite enhanced curiosity</label>
+        <iconPath>EBSG/Gene_CuriosityExtreme</iconPath>
+        <description>Carriers of this gene have archites in their brain dedicated to helping them discoverer concepts that were previously unknown, increasing their research speed by a little bit.\n\nThis will not impact their learning rate, just the rate that they research things.\n\nFor more options involving the rate a pawn learns, take a look at More Study Genes. You can use those to alter how well a pawn can better themselves.</description>
+        <displayOrderInCategory>57.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <ResearchSpeed>3</ResearchSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Curiosity" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MajorArchiteEnhancedCuriosity</defName>
+        <label>major archite enhanced curiosity</label>
+        <iconPath>EBSG/Gene_CuriosityExtreme</iconPath>
+        <description>Carriers of this gene have a large number of archites in their brain dedicated to helping them discoverer concepts that were previously unknown, increasing their research speed by a little bit.\n\nThis will not impact their learning rate, just the rate that they research things.\n\nFor more options involving the rate a pawn learns, take a look at More Study Genes. You can use those to alter how well a pawn can better themselves.</description>
+        <displayOrderInCategory>57.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <ResearchSpeed>4</ResearchSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Foraging" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MinorArchiteEnhancedForaging</defName>
+        <label>minor archite enhanced foraging</label>
+        <iconPath>EBSG/Gene_Foraging</iconPath>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to helping them plant and harvest plants a lot faster than most.\n\nThis instinct will not help them get more from the plants, just help them gather the materials faster.</description>
+        <displayOrderInCategory>27.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <PlantWorkSpeed>2</PlantWorkSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Foraging" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_ArchiteEnhancedForaging</defName>
+        <label>archite enhanced foraging</label>
+        <iconPath>EBSG/Gene_ForagingExtreme</iconPath>
+        <description>Carriers of this gene have archites in their brain dedicated to helping them plant and harvest plants a lot faster than most.\n\nThis instinct will not help them get more from the plants, just help them gather the materials faster.</description>
+        <displayOrderInCategory>27.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <PlantWorkSpeed>3</PlantWorkSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Foraging" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MajorArchiteEnhancedForaging</defName>
+        <label>major archite enhanced foraging</label>
+        <iconPath>EBSG/Gene_ForagingExtreme</iconPath>
+        <description>Carriers of this gene have a large number of archites in their brain dedicated to helping them plant and harvest plants a lot faster than most.\n\nThis instinct will not help them get more from the plants, just help them gather the materials faster.</description>
+        <displayOrderInCategory>27.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <PlantWorkSpeed>4</PlantWorkSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Herding" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MinorArchiteEnhancedHerding</defName>
+        <label>minor archite enhanced herding</label>
+        <iconPath>EBSG/Gene_Herding</iconPath>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to helping them harvest materials from animals a little faster than most.\n\nThis instinct will not help them gather more materials from animals, just accelerate the rate that they can get materials.</description>
+        <displayOrderInCategory>37.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <AnimalGatherSpeed>2</AnimalGatherSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Herding" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_ArchiteEnhancedHerding</defName>
+        <label>archite enhanced herding</label>
+        <iconPath>EBSG/Gene_HerdingExtreme</iconPath>
+        <description>Carriers of this gene have archites in their brain dedicated to helping them harvest materials from animals a little faster than most.\n\nThis instinct will not help them gather more materials from animals, just accelerate the rate that they can get materials.</description>
+        <displayOrderInCategory>37.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <AnimalGatherSpeed>3</AnimalGatherSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Herding" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MajorArchiteEnhancedHerding</defName>
+        <label>major archite enhanced herding</label>
+        <iconPath>EBSG/Gene_HerdingExtreme</iconPath>
+        <description>Carriers of this gene have a large number of archites in their brain dedicated to helping them harvest materials from animals a little faster than most.\n\nThis instinct will not help them gather more materials from animals, just accelerate the rate that they can get materials.</description>
+        <displayOrderInCategory>37.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <AnimalGatherSpeed>4</AnimalGatherSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Hunting" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MinorArchiteEnhancedHunting</defName>
+        <label>minor archite enhanced hunting</label>
+        <iconPath>EBSG/Gene_Hunting</iconPath>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to helping them hunt animals without being noticed a little more easily than normal.</description>
+        <displayOrderInCategory>17.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <HuntingStealth>2</HuntingStealth>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Hunting" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_ArchiteEnhancedHunting</defName>
+        <label>archite enhanced hunting</label>
+        <iconPath>EBSG/Gene_HuntingExtreme</iconPath>
+        <description>Carriers of this gene have archites in their brain dedicated to helping them hunt animals without being noticed a little more easily than normal.</description>
+        <displayOrderInCategory>17.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <HuntingStealth>3</HuntingStealth>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Hunting" MayRequireAnyOf="EBSG.AiO, EBSG.Productivity">
+        <defName>EBSG_MajorArchiteEnhancedHunting</defName>
+        <label>major archite enhanced hunting</label>
+        <iconPath>EBSG/Gene_HuntingExtreme</iconPath>
+        <description>Carriers of this gene have a large number of archites in their brain dedicated to helping them hunt animals without being noticed a little more easily than normal.</description>
+        <displayOrderInCategory>17.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <HuntingStealth>4</HuntingStealth>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Social_Convincing" MayRequireAnyOf="EBSG.AiO, EBSG.Social">
+        <defName>EBSG_MinorArchiteEnhancedConvincing</defName>
+        <label>minor archite enhanced convincing</label>
+        <description>Carriers of this gene have a small number of archites in their brains dedicated to making them a lot more convincing compared to most people. They have an easier time convincing others to join their side.</description>
+        <iconPath>EBSG/Gene_Convincing</iconPath>
+        <displayOrderInCategory>105.5</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <NegotiationAbility>2.00</NegotiationAbility>
+            <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">2.00</ConversionPower>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>conv</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Social_Convincing" MayRequireAnyOf="EBSG.AiO, EBSG.Social">
+        <defName>EBSG_ArchiteEnhancedConvincing</defName>
+        <label>archite enhanced convincing</label>
+        <description>Carriers of this gene have archites in their brains dedicated to making them a lot more convincing compared to most people. They have an easier time convincing others to join their side.</description>
+        <iconPath>EBSG/Gene_ExtremelyConvincing</iconPath>
+        <displayOrderInCategory>105.6</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <NegotiationAbility>3.00</NegotiationAbility>
+            <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">3.00</ConversionPower>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>conv</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Social_Convincing" MayRequireAnyOf="EBSG.AiO, EBSG.Social">
+        <defName>EBSG_MajorArchiteEnhancedConvincing</defName>
+        <label>major archite enhanced convincing</label>
+        <description>Carriers of this gene have a large number of archites in their brains dedicated to making them a lot more convincing compared to most people. They have an easier time convincing others to join their side.</description>
+        <iconPath>EBSG/Gene_ExtremelyConvincing</iconPath>
+        <displayOrderInCategory>105.7</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <NegotiationAbility>4.00</NegotiationAbility>
+            <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">4.00</ConversionPower>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>conv</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Social_Suave" MayRequireAnyOf="EBSG.AiO, EBSG.Social">
+        <defName>EBSG_MinorArchiteEnhancedSuave</defName>
+        <label>minor archite enhanced suave</label>
+        <description>Carriers of this gene have a small number of archites in their brains dedicated to making them a lot more suave compared to most people. This helps them keep others interested in what you're talking about.\n\nThis has a trade price improvement that is so high it can cause weird issues later in the game.</description>
+        <iconPath>EBSG/Gene_Suave</iconPath>
+        <displayOrderInCategory>103.5</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <SocialImpact>2.00</SocialImpact>
+            <TradePriceImprovement>2.00</TradePriceImprovement>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>sua</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Social_Suave" MayRequireAnyOf="EBSG.AiO, EBSG.Social">
+        <defName>EBSG_ArchiteEnhancedSuave</defName>
+        <label>archite enhanced suave</label>
+        <description>Carriers of this gene have archites in their brains dedicated to making them a lot more suave compared to most people. This helps them keep others interested in what you're talking about.\n\nThis has a trade price improvement that is so high it can cause weird issues later in the game.</description>
+        <iconPath>EBSG/Gene_ExtremelySuave</iconPath>
+        <displayOrderInCategory>103.6</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <SocialImpact>3.00</SocialImpact>
+            <TradePriceImprovement>3.00</TradePriceImprovement>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>sua</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Social_Suave" MayRequireAnyOf="EBSG.AiO, EBSG.Social">
+        <defName>EBSG_MajorArchiteEnhancedSuave</defName>
+        <label>major archite enhanced suave</label>
+        <description>Carriers of this gene have a large number of archites in their brains dedicated to making them a lot more suave compared to most people. This helps them keep others interested in what you're talking about.\n\nThis has a trade price improvement that is so high it can cause weird issues later in the game.</description>
+        <iconPath>EBSG/Gene_ExtremelySuave</iconPath>
+        <displayOrderInCategory>103.7</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <SocialImpact>4.00</SocialImpact>
+            <TradePriceImprovement>4.00</TradePriceImprovement>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>sua</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Social_Terrifying" MayRequireAnyOf="EBSG.AiO, EBSG.Social">
+        <defName>EBSG_MinorArchiteEnhancedTerrifying</defName>
+        <label>minor archite enhanced terrifying</label>
+        <description>Carriers of this gene have a small number of archites in their brains dedicated to making them a lot more terrifying compared to most people. They are more likely to be able to keep others in line when the need arises.</description>
+        <iconPath>EBSG/Gene_Terrifying</iconPath>
+        <displayOrderInCategory>101.5</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <ArrestSuccessChance>2.00</ArrestSuccessChance>
+            <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">2.00</SuppressionPower>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>terri</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Social_Terrifying" MayRequireAnyOf="EBSG.AiO, EBSG.Social">
+        <defName>EBSG_ArchiteEnhancedTerrifying</defName>
+        <label>archite enhanced terrifying</label>
+        <description>Carriers of this gene have archites in their brains dedicated to making them a lot more terrifying compared to most people. They are more likely to be able to keep others in line when the need arises.</description>
+        <iconPath>EBSG/Gene_ExtremelyTerrifying</iconPath>
+        <displayOrderInCategory>101.6</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <ArrestSuccessChance>3.00</ArrestSuccessChance>
+            <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">3.00</SuppressionPower>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>terri</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Social_Terrifying" MayRequireAnyOf="EBSG.AiO, EBSG.Social">
+        <defName>EBSG_MajorArchiteEnhancedTerrifying</defName>
+        <label>major archite enhanced terrifying</label>
+        <description>Carriers of this gene have a large number of archites in their brains dedicated to making them a lot more terrifying compared to most people. They are more likely to be able to keep others in line when the need arises.</description>
+        <iconPath>EBSG/Gene_ExtremelyTerrifying</iconPath>
+        <displayOrderInCategory>101.7</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <ArrestSuccessChance>4.00</ArrestSuccessChance>
+            <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">4.00</SuppressionPower>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>terri</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO, EBSG.Social">
+        <defName>EBSG_ArchiteEnchantment</defName>
+        <label>archite enchantment</label>
+        <description>Carriers of this gene have archites in system that make it exceptionally easy to seduce others. The archites in their system prevent others with archite enchantment from influencing them, though it does nothing to stop enchanting pawns from influencing them.</description>
+        <iconPath>EBSG/Gene_Enchanting</iconPath>
+        <marketValueFactor>1.50</marketValueFactor>
+        <displayCategory>Beauty</displayCategory>
+        <displayOrderInCategory>99.79</displayOrderInCategory>
+        <missingGeneRomanceChanceFactor>10</missingGeneRomanceChanceFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>enchant</symbol></li>
+                <li><symbol>sedu</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_MissingRomance</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <Operation Class="PatchOperationConditional" MayRequireAnyOf="EBSG.AiO, EBSG.Food">
+        <xpath>Defs/GeneDef[defName="EBSG_HyperRecklessBrawler"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs</xpath>
+            <value>
+                <GeneDef ParentName="EBSG_Brawler" MayRequireAnyOf="EBSG.AiO, EBSG.Violence">
+                    <defName>EBSG_MinorArchiteEnhancedBrawler</defName>
+                    <label>minor archite enhanced brawling</label>
+                    <description>Carriers of this gene have a small number of archites in their bodies dedicated to making them a much better brawler compared to most people. This helps them fight enemies in melee combat by making them more accurate and evasive.</description>
+                    <iconPath>EBSG/Gene_RecklessBrawler</iconPath>
+                    <displayOrderInCategory>101.3</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <MeleeHitChance>1.40</MeleeHitChance>
+                        <MeleeDodgeChance>1.40</MeleeDodgeChance>
+                    </statFactors>
+                    <symbolPack>
+                        <prefixSymbols>
+                            <li><symbol>fight</symbol></li>
+                        </prefixSymbols>
+                    </symbolPack>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_Brawler" MayRequireAnyOf="EBSG.AiO, EBSG.Violence">
+                    <defName>EBSG_ArchiteEnhancedBrawler</defName>
+                    <label>archite enhanced brawling</label>
+                    <description>Carriers of this gene have archites in their bodies dedicated to making them a much better brawler compared to most people. This helps them fight enemies in melee combat by making them more accurate and evasive.</description>
+                    <iconPath>EBSG/Gene_ExtremelyRecklessBrawler</iconPath>
+                    <displayOrderInCategory>101.4</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <MeleeHitChance>1.80</MeleeHitChance>
+                        <MeleeDodgeChance>1.80</MeleeDodgeChance>
+                    </statFactors>
+                    <symbolPack>
+                        <prefixSymbols>
+                            <li><symbol>fight</symbol></li>
+                        </prefixSymbols>
+                    </symbolPack>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_Brawler" MayRequireAnyOf="EBSG.AiO, EBSG.Violence">
+                    <defName>EBSG_MajorArchiteEnhancedBrawler</defName>
+                    <label>major archite enhanced brawling</label>
+                    <description>Carriers of this gene have a large number of archites in their bodies dedicated to making them a much better brawler compared to most people. This helps them fight enemies in melee combat by making them more accurate and evasive.</description>
+                    <iconPath>EBSG/Gene_ExtremelyRecklessBrawler</iconPath>
+                    <displayOrderInCategory>101.5</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <MeleeHitChance>2.20</MeleeHitChance>
+                        <MeleeDodgeChance>2.20</MeleeDodgeChance>
+                    </statFactors>
+                    <symbolPack>
+                        <prefixSymbols>
+                            <li><symbol>fight</symbol></li>
+                        </prefixSymbols>
+                    </symbolPack>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_Shooter" MayRequireAnyOf="EBSG.AiO, EBSG.Violence">
+                    <defName>EBSG_MinorArchiteEnhancedShooter</defName>
+                    <label>minor archite enhanced shooting</label>
+                    <description>Carriers of this gene have a small number of archites in their brains dedicated to making them a much better shooter compared to most people. This helps them snipe enemies in melee combat by making them more accurate and evasive.</description>
+                    <iconPath>EBSG/Gene_CarefulShooter</iconPath>
+                    <displayOrderInCategory>103.5</displayOrderInCategory>
+                    <biostatArc>1</biostatArc>
+                    <biostatCpx>3</biostatCpx>
+                    <statFactors>
+                        <ShootingAccuracyPawn>1.40</ShootingAccuracyPawn>
+                        <AimingDelayFactor>0.60</AimingDelayFactor>
+                    </statFactors>
+                    <symbolPack>
+                        <prefixSymbols>
+                            <li><symbol>snipe</symbol></li>
+                        </prefixSymbols>
+                    </symbolPack>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_Shooter" MayRequireAnyOf="EBSG.AiO, EBSG.Violence">
+                    <defName>EBSG_ArchiteEnhancedShooter</defName>
+                    <label>archite enhanced shooting</label>
+                    <description>Carriers of this gene have archites in their brains dedicated to making them a much better shooter compared to most people. This helps them snipe enemies in melee combat by making them more accurate and evasive.</description>
+                    <iconPath>EBSG/Gene_ExtremelyCarefulShooter</iconPath>
+                    <displayOrderInCategory>103.6</displayOrderInCategory>
+                    <biostatArc>2</biostatArc>
+                    <biostatCpx>6</biostatCpx>
+                    <statFactors>
+                        <ShootingAccuracyPawn>1.80</ShootingAccuracyPawn>
+                        <AimingDelayFactor>0.20</AimingDelayFactor>
+                    </statFactors>
+                    <symbolPack>
+                        <prefixSymbols>
+                            <li><symbol>snipe</symbol></li>
+                        </prefixSymbols>
+                    </symbolPack>
+                </GeneDef>
+
+                <GeneDef ParentName="EBSG_Shooter" MayRequireAnyOf="EBSG.AiO, EBSG.Violence">
+                    <defName>EBSG_MajorArchiteEnhancedShooter</defName>
+                    <label>major archite enhanced shooting</label>
+                    <description>Carriers of this gene have a large number of archites in their brains dedicated to making them a much better shooter compared to most people. This helps them snipe enemies in melee combat by making them more accurate and evasive.</description>
+                    <iconPath>EBSG/Gene_ExtremelyCarefulShooter</iconPath>
+                    <displayOrderInCategory>103.7</displayOrderInCategory>
+                    <biostatArc>3</biostatArc>
+                    <biostatCpx>9</biostatCpx>
+                    <statFactors>
+                        <ShootingAccuracyPawn>2.20</ShootingAccuracyPawn>
+                        <AimingDelayFactor>0.01</AimingDelayFactor>
+                    </statFactors>
+                    <symbolPack>
+                        <prefixSymbols>
+                            <li><symbol>snipe</symbol></li>
+                        </prefixSymbols>
+                    </symbolPack>
+                </GeneDef>
+            </value>
+        </match>
+    </Operation>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO, EBSG.Resistance">
+        <defName>EBSG_MinorElementalProtection</defName>
+        <label>minor elemental protection</label>
+        <description>Carriers of this gene have a small number of archites in their body dedicated to protecting them from various types of elemental damage. The number of items on this list may increase based on what mods you have enabled.</description>
+        <iconPath>EBSG/Gene_ElementalProtection</iconPath>
+        <displayOrderInCategory>-0.3</displayOrderInCategory>
+        <displayCategory>ResistanceAndWeakness</displayCategory>
+        <statFactors>
+            <Flammability>0.66</Flammability>
+        </statFactors>
+        <damageFactors>
+                <!--Base Game Damages-->
+            <AcidBurn>0.66</AcidBurn>
+            <Frostbite>0.66</Frostbite>
+            <Flame>0.66</Flame>
+
+                <!--Superhero Genes Damages-->
+            <SHG_Ice MayRequire="SuperheroGenesBase.Mod">0.66</SHG_Ice>
+            <SHG_Petrification MayRequire="SuperheroGenesBase.Mod">0.66</SHG_Petrification>
+            <SHG_Lightning MayRequire="SuperheroGenesBase.Mod">0.66</SHG_Lightning>
+            <SHG_Water MayRequire="SuperheroGenesBase.Mod">0.66</SHG_Water>
+
+                <!--Cryoweapons Damages-->
+            <CW_CryoDamagePistolBullet MayRequire="SA.Cryoweapons">0.66</CW_CryoDamagePistolBullet>
+            <CW_CryoDamageRifleBullet MayRequire="SA.Cryoweapons">0.66</CW_CryoDamageRifleBullet>
+            <CW_CryoDamageShell MayRequire="SA.Cryoweapons">0.66</CW_CryoDamageShell>
+            <CW_CryoDamageRailShot MayRequire="SA.Cryoweapons">0.66</CW_CryoDamageRailShot>
+            <CW_SecondaryFrostBurn MayRequire="SA.Cryoweapons">0.66</CW_SecondaryFrostBurn>
+            
+                <!--Alpha Genes Damages-->
+            <AG_Electric MayRequire="Sarg.AlphaGenes">0.66</AG_Electric>
+            <AG_AcidSpit MayRequire="Sarg.AlphaGenes">0.66</AG_AcidSpit>
+
+                <!--VEF Damages-->
+            <VEF_SecondaryAcidBurn MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.66</VEF_SecondaryAcidBurn>
+        </damageFactors>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <exclusionTags>
+            <li>AcidDamage</li>
+            <li>FrostbiteDamage</li>
+            <li>FireDamage</li>
+            <li>LightningDamage</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO, EBSG.Resistance">
+        <defName>EBSG_ElementalProtection</defName>
+        <label>elemental protection</label>
+        <description>Carriers of this gene have archites in their body dedicated to protecting them from various types of elemental damage. The number of items on this list may increase based on what mods you have enabled.</description>
+        <iconPath>EBSG/Gene_ElementalProtection</iconPath>
+        <displayOrderInCategory>-0.2</displayOrderInCategory>
+        <displayCategory>ResistanceAndWeakness</displayCategory>
+        <statFactors>
+            <Flammability>0.33</Flammability>
+        </statFactors>
+        <damageFactors>
+                <!--Base Game Damages-->
+            <AcidBurn>0.33</AcidBurn>
+            <Frostbite>0.33</Frostbite>
+            <Flame>0.33</Flame>
+
+                <!--Superhero Genes Damages-->
+            <SHG_Ice MayRequire="SuperheroGenesBase.Mod">0.33</SHG_Ice>
+            <SHG_Petrification MayRequire="SuperheroGenesBase.Mod">0.33</SHG_Petrification>
+            <SHG_Lightning MayRequire="SuperheroGenesBase.Mod">0.33</SHG_Lightning>
+            <SHG_Water MayRequire="SuperheroGenesBase.Mod">0.33</SHG_Water>
+
+                <!--Cryoweapons Damages-->
+            <CW_CryoDamagePistolBullet MayRequire="SA.Cryoweapons">0.33</CW_CryoDamagePistolBullet>
+            <CW_CryoDamageRifleBullet MayRequire="SA.Cryoweapons">0.33</CW_CryoDamageRifleBullet>
+            <CW_CryoDamageShell MayRequire="SA.Cryoweapons">0.33</CW_CryoDamageShell>
+            <CW_CryoDamageRailShot MayRequire="SA.Cryoweapons">0.33</CW_CryoDamageRailShot>
+            <CW_SecondaryFrostBurn MayRequire="SA.Cryoweapons">0.33</CW_SecondaryFrostBurn>
+            
+                <!--Alpha Genes Damages-->
+            <AG_Electric MayRequire="Sarg.AlphaGenes">0.33</AG_Electric>
+            <AG_AcidSpit MayRequire="Sarg.AlphaGenes">0.33</AG_AcidSpit>
+
+                <!--VEF Damages-->
+            <VEF_SecondaryAcidBurn MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.33</VEF_SecondaryAcidBurn>
+        </damageFactors>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <exclusionTags>
+            <li>AcidDamage</li>
+            <li>FrostbiteDamage</li>
+            <li>FireDamage</li>
+            <li>LightningDamage</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO, EBSG.Resistance">
+        <defName>EBSG_ElementalImmunity</defName>
+        <label>elemental Immunity</label>
+        <description>Carriers of this gene have a large number archites in their body dedicated to protecting them from various types of elemental damage. The number of items on this list may increase based on what mods you have enabled.\n\nThis does NOT render a pawn immune to all damage. Bullets and blades can still kill the pawn, along with certain types of damages that were intentionally excluded from the list.</description>
+        <iconPath>EBSG/Gene_ElementalProtection</iconPath>
+        <displayOrderInCategory>-0.1</displayOrderInCategory>
+        <displayCategory>ResistanceAndWeakness</displayCategory>
+        <statFactors>
+            <Flammability>0</Flammability>
+        </statFactors>
+        <damageFactors>
+                <!--Base Game Damages-->
+            <AcidBurn>0</AcidBurn>
+            <Frostbite>0</Frostbite>
+            <Flame>0</Flame>
+
+                <!--Superhero Genes Damages-->
+            <SHG_Ice MayRequire="SuperheroGenesBase.Mod">0</SHG_Ice>
+            <SHG_Petrification MayRequire="SuperheroGenesBase.Mod">0</SHG_Petrification>
+            <SHG_Lightning MayRequire="SuperheroGenesBase.Mod">0</SHG_Lightning>
+            <SHG_Water MayRequire="SuperheroGenesBase.Mod">0</SHG_Water>
+
+                <!--Cryoweapons Damages-->
+            <CW_CryoDamagePistolBullet MayRequire="SA.Cryoweapons">0</CW_CryoDamagePistolBullet>
+            <CW_CryoDamageRifleBullet MayRequire="SA.Cryoweapons">0</CW_CryoDamageRifleBullet>
+            <CW_CryoDamageShell MayRequire="SA.Cryoweapons">0</CW_CryoDamageShell>
+            <CW_CryoDamageRailShot MayRequire="SA.Cryoweapons">0</CW_CryoDamageRailShot>
+            <CW_SecondaryFrostBurn MayRequire="SA.Cryoweapons">0</CW_SecondaryFrostBurn>
+            
+                <!--Alpha Genes Damages-->
+            <AG_Electric MayRequire="Sarg.AlphaGenes">0</AG_Electric>
+            <AG_AcidSpit MayRequire="Sarg.AlphaGenes">0</AG_AcidSpit>
+
+                <!--VEF Damages-->
+            <VEF_SecondaryAcidBurn MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0</VEF_SecondaryAcidBurn>
+        </damageFactors>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <exclusionTags>
+            <li>AcidDamage</li>
+            <li>FrostbiteDamage</li>
+            <li>FireDamage</li>
+            <li>LightningDamage</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RemoteShieldBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MinorArchiteEnhancedRemoteShield</defName>
+        <label>minor archite enhanced remote shielding</label>
+        <description>Carriers of this gene have a small number of archites in their brains dedicated to increasing the range at which the pawn can shield distant mechanoids, along with increasing the amount of energy the shield has.</description>
+        <iconPath>EBSG/Gene_RemoteShield</iconPath>
+        <displayOrderInCategory>19.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <MechRemoteShieldDistance>2.00</MechRemoteShieldDistance>
+            <MechRemoteShieldEnergy>2.00</MechRemoteShieldEnergy>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RemoteShieldBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_ArchiteEnhancedRemoteShield</defName>
+        <label>archite enhanced remote shielding</label>
+        <description>Carriers of this gene have archites in their brains dedicated to increasing the range at which the pawn can shield distant mechanoids, along with increasing the amount of energy the shield has.</description>
+        <iconPath>EBSG/Gene_ExtremeRemoteShield</iconPath>
+        <displayOrderInCategory>19.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <MechRemoteShieldDistance>3.00</MechRemoteShieldDistance>
+            <MechRemoteShieldEnergy>3.00</MechRemoteShieldEnergy>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RemoteShieldBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MajorArchiteEnhancedRemoteShield</defName>
+        <label>major archite enhanced remote shielding</label>
+        <description>Carriers of this gene have a large number of archites in their brains dedicated to increasing the range at which the pawn can shield distant mechanoids, along with increasing the amount of energy the shield has.</description>
+        <iconPath>EBSG/Gene_ExtremeRemoteShield</iconPath>
+        <displayOrderInCategory>19.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <MechRemoteShieldDistance>4.00</MechRemoteShieldDistance>
+            <MechRemoteShieldEnergy>4.00</MechRemoteShieldEnergy>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RemoteRepairBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MinorArchiteEnhancedRemoteRepair</defName>
+        <label>minor archite enhanced remote repairing</label>
+        <description>Carriers of this gene have a small number of archites in their brains dedicated to increasing the range at which the pawn can repair distant mechanoids.</description>
+        <iconPath>EBSG/Gene_RemoteRepair</iconPath>
+        <displayOrderInCategory>29.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <MechRemoteRepairDistance>2.00</MechRemoteRepairDistance>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RemoteRepairBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_ArchiteEnhancedRemoteRepair</defName>
+        <label>archite enhanced remote repairing</label>
+        <description>Carriers of this gene have archites in their brains dedicated to increasing the range at which the pawn can repair distant mechanoids.</description>
+        <iconPath>EBSG/Gene_ExtremeRemoteRepair</iconPath>
+        <displayOrderInCategory>29.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <MechRemoteRepairDistance>3.00</MechRemoteRepairDistance>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RemoteRepairBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MajorArchiteEnhancedRemoteRepair</defName>
+        <label>major archite enhanced remote repairing</label>
+        <description>Carriers of this gene have a large number of archites in their brains dedicated to increasing the range at which the pawn can repair distant mechanoids.</description>
+        <iconPath>EBSG/Gene_ExtremeRemoteRepair</iconPath>
+        <displayOrderInCategory>29.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <MechRemoteRepairDistance>4.00</MechRemoteRepairDistance>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechRepairBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MinorArchiteEnhancedMechRepair</defName>
+        <label>minor archite enhanced mech repair speed</label>
+        <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
+        <iconPath>EBSG/Gene_MechRepair</iconPath>
+        <displayOrderInCategory>39.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <MechRepairSpeed>2.00</MechRepairSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechRepairBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_ArchiteEnhancedMechRepair</defName>
+        <label>archite enhanced mech repair speed</label>
+        <description>Carriers of this gene have archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
+        <iconPath>EBSG/Gene_ExtremeMechRepair</iconPath>
+        <displayOrderInCategory>39.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <MechRepairSpeed>3.00</MechRepairSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechRepairBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MajorArchiteEnhancedMechRepair</defName>
+        <label>major archite enhanced mech repair speed</label>
+        <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
+        <iconPath>EBSG/Gene_ExtremeMechRepair</iconPath>
+        <displayOrderInCategory>39.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <MechRepairSpeed>4.00</MechRepairSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechControlBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MinorArchiteEnhancedMechControl</defName>
+        <label>minor archite enhanced mech control</label>
+        <description>Carriers of this gene have a small number of archites in their brains dedicated to helping them control more mechanoids at the same time.</description>
+        <iconPath>EBSG/Gene_MechControl</iconPath>
+        <displayOrderInCategory>49.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <MechBandwidth>2.00</MechBandwidth>
+        </statFactors>
+        <statOffsets>
+            <MechControlGroups>1</MechControlGroups>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechControlBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_ArchiteEnhancedMechControl</defName>
+        <label>archite enhanced mech control</label>
+        <description>Carriers of this gene have archites in their brains dedicated to helping them control more mechanoids at the same time.</description>
+        <iconPath>EBSG/Gene_ExtremeMechControl</iconPath>
+        <displayOrderInCategory>49.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <MechBandwidth>3.00</MechBandwidth>
+        </statFactors>
+        <statOffsets>
+            <MechControlGroups>2</MechControlGroups>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechControlBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MajorArchiteEnhancedMechControl</defName>
+        <label>major archite enhanced mech control</label>
+        <description>Carriers of this gene have a large number of archites in their brains dedicated to helping them control more mechanoids at the same time.</description>
+        <iconPath>EBSG/Gene_ExtremeMechControl</iconPath>
+        <displayOrderInCategory>49.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <MechBandwidth>4.00</MechBandwidth>
+        </statFactors>
+        <statOffsets>
+            <MechControlGroups>3</MechControlGroups>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechFormingBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MinorArchiteEnhancedMechForming</defName>
+        <label>minor archite enhanced mech gestation speed</label>
+        <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping the pawn direct mechanites used in mechanoid.</description>
+        <iconPath>EBSG/Gene_MechForming</iconPath>
+        <displayOrderInCategory>59.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <MechFormingSpeed>2.00</MechFormingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechFormingBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_ArchiteEnhancedMechForming</defName>
+        <label>archite enhanced mech gestation speed</label>
+        <description>Carriers of this gene have archites in their bodies dedicated to helping the pawn direct mechanites used in mechanoid.</description>
+        <iconPath>EBSG/Gene_ExtremeMechForming</iconPath>
+        <displayOrderInCategory>59.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <MechFormingSpeed>3.00</MechFormingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechFormingBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MajorArchiteEnhancedMechForming</defName>
+        <label>major archite enhanced mech gestation speed</label>
+        <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping the pawn direct mechanites used in mechanoid.</description>
+        <iconPath>EBSG/Gene_ExtremeMechForming</iconPath>
+        <displayOrderInCategory>59.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <MechFormingSpeed>4.00</MechFormingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EncodingSpeedBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MinorArchiteEnhancedEncodingSpeed</defName>
+        <label>minor archite enhanced encoding speed</label>
+        <description>Carriers of this gene have a small number of archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
+        <iconPath>EBSG/Gene_EncodingSpeed</iconPath>
+        <displayOrderInCategory>69.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <SubcoreEncodingSpeed>2.00</SubcoreEncodingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EncodingSpeedBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_ArchiteEnhancedEncodingSpeed</defName>
+        <label>archite enhanced encoding speed</label>
+        <description>Carriers of this gene have archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
+        <iconPath>EBSG/Gene_ExtremeEncodingSpeed</iconPath>
+        <displayOrderInCategory>69.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <SubcoreEncodingSpeed>3.00</SubcoreEncodingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EncodingSpeedBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MajorArchiteEnhancedEncodingSpeed</defName>
+        <label>major archite enhanced encoding speed</label>
+        <description>Carriers of this gene have a large number of archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
+        <iconPath>EBSG/Gene_ExtremeEncodingSpeed</iconPath>
+        <displayOrderInCategory>69.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <SubcoreEncodingSpeed>4.00</SubcoreEncodingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechWorkSpeedBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MinorArchiteEnhancedMechWorkSpeed</defName>
+        <label>minor archite enhanced mech work speed</label>
+        <description>Carriers of this gene have a small number of archites in their brains dedicated to increasing the work speed of all mechanoids under the carrier's control.</description>
+        <iconPath>EBSG/Gene_MechWorkSpeed</iconPath>
+        <displayOrderInCategory>79.1</displayOrderInCategory>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statOffsets>
+            <WorkSpeedGlobalOffsetMech>1.00</WorkSpeedGlobalOffsetMech>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechWorkSpeedBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_ArchiteEnhancedMechWorkSpeed</defName>
+        <label>archite enhanced mech work speed</label>
+        <description>Carriers of this gene have archites in their brains dedicated to increasing the work speed of all mechanoids under the carrier's control.</description>
+        <iconPath>EBSG/Gene_ExtremeMechWorkSpeed</iconPath>
+        <displayOrderInCategory>79.2</displayOrderInCategory>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statOffsets>
+            <WorkSpeedGlobalOffsetMech>2.00</WorkSpeedGlobalOffsetMech>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechWorkSpeedBase" MayRequireAnyOf="EBSG.AiO, EBSG.Mechanitor">
+        <defName>EBSG_MajorArchiteEnhancedMechWorkSpeed</defName>
+        <label>major archite enhanced mech work speed</label>
+        <description>Carriers of this gene have a large number of archites in their brains dedicated to increasing the work speed of all mechanoids under the carrier's control.</description>
+        <iconPath>EBSG/Gene_ExtremeMechWorkSpeed</iconPath>
+        <displayOrderInCategory>79.3</displayOrderInCategory>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statOffsets>
+            <WorkSpeedGlobalOffsetMech>3.00</WorkSpeedGlobalOffsetMech>
+        </statOffsets>
+    </GeneDef>
+
+    <!--If you're looking for the Anomaly genes, I put them in the EBSG versions of the mods because I deemed it more performance efficient. They are the ones I expect people to be least interested in by a notable amount.-->
+</Defs>

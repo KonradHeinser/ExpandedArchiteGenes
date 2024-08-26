@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch> <!--To account for multiple potential sources, the patch will check for the genes themselves instead of specific mods-->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_EnhancedVision"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/GeneDef[defName="DarkVision"]/exclusionTags</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/GeneDef[defName="DarkVision"]/exclusionTags</xpath>
+                        <value><li>EBSG_ArchiteSenses</li></value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/GeneDef[defName="DarkVision"]</xpath>
+                        <value>
+                            <exclusionTags>
+                                <li>EBSG_ArchiteSenses</li>
+                            </exclusionTags>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThoughtDef[defName="EnvironmentDark"]/nullifyingGenes</xpath>
+                    <value>
+                        <li>EBSG_MinorArchiteSenses</li>
+                        <li>EBSG_ArchiteSenses</li>
+                        <li>EBSG_MajorArchiteSenses</li>
+                        <li>EBSG_ExtremeArchiteSenses</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_ResistantStomach"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThoughtDef[defName="AteRawFood"]/nullifyingGenes</xpath>
+                    <value>
+                        <li>EBSG_ArchiteDigestion</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/GeneCategoryDef[defName="AG_FoodConsumption"]</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/GeneDef[defName="EBSG_ArchiteDigestion"]/displayCategory</xpath>
+                        <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_Undergrounder"]</xpath>
+        <match Class='PatchOperationAdd'>
+            <xpath>Defs/ThoughtDef[defName="SoakingWet"]/nullifyingGenes</xpath>
+            <value><li>EBSGA_BiomeAdaptability</li></value>
+        </match>
+    </Operation>
+
+               
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="EBSG_InnatePsychicAmplifier"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class='PatchOperationAdd'>
+                    <xpath>Defs/GeneDef[defName="EBSG_InnatePsychicReader"]</xpath>
+                    <value><exclusionTags><li>EBSGA_PsychicInfluencer</li></exclusionTags></value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThoughtDef[defName="PsychicDrone"]/nullifyingGenes</xpath>
+                    <value><li>EBSG_ArchitePsychicInfluencer</li></value>
+                </li>
+
+                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
+                    <xpath>Defs/ThoughtDef[@Name="PsychicArchotechEmanator"]/nullifyingGenes</xpath>
+                    <value><li>EBSG_ArchitePsychicInfluencer</li></value>
+                </li>
+
+                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+                    <xpath>Defs/ThoughtDef[defName="PsychicHarmonization"]/nullifyingGenes</xpath>
+                    <value><li>EBSG_ArchitePsychicInfluencer</li></value>
+                </li>
+
+                <li Class="EBSGFramework.PatchOperationSetting">
+                    <setting>architePsychicInfluencerBondTorn</setting>
+                    <active Class="PatchOperationConditional">
+                        <xpath>Defs/ThoughtDef[defName="PsychicBondTorn"]/nullifyingGenes</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThoughtDef[defName="PsychicBondTorn"]/nullifyingGenes</xpath>
+                            <value><li>EBSG_ArchitePsychicInfluencer</li></value>
+                        </match>
+                        <nomatch Class="PatchOperationAdd">
+                            <xpath>Defs/ThoughtDef[defName="PsychicBondTorn"]</xpath>
+                            <value>
+                                <nullifyingGenes>
+                                    <li>EBSG_ArchitePsychicInfluencer</li>
+                                </nullifyingGenes>
+                            </value>
+                        </nomatch>
+                    </active>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/displayOrderInCategory</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/displayOrderInCategory</xpath>
+            <value><displayOrderInCategory>998.8</displayOrderInCategory></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]</xpath>
+            <value><displayOrderInCategory>998.8</displayOrderInCategory></value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/exclusionTags</xpath>
+            <value><li>ArchiteMetabolism</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>ArchiteMetabolism</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneCategoryDef[defName="AG_FoodConsumption"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_MinorArchiteMetabolism"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_StrongArchiteMetabolism"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+            </operations>
+        </match>
+        <nomatch Class="PatchOperationConditional">
+            <xpath>Defs/GeneCategoryDef[defName="EBSG_Food"]</xpath>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/GeneDef[defName="EBSG_MinorArchiteMetabolism"]/displayCategory</xpath>
+                        <value><displayCategory>EBSG_Food</displayCategory></value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/GeneDef[defName="ArchiteMetabolism"]/displayCategory</xpath>
+                        <value><displayCategory>EBSG_Food</displayCategory></value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/GeneDef[defName="EBSG_StrongArchiteMetabolism"]/displayCategory</xpath>
+                        <value><displayCategory>EBSG_Food</displayCategory></value>
+                    </li>
+                </operations>
+            </match>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="Immunity_Hyper"]/displayOrderInCategory</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/GeneDef[defName="PerfectImmunity"]/displayOrderInCategory</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/GeneDef[defName="PerfectImmunity"]/displayOrderInCategory</xpath>
+                        <value><displayOrderInCategory>21.1</displayOrderInCategory></value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/GeneDef[defName="PerfectImmunity"]</xpath>
+                        <value><displayOrderInCategory>21.1</displayOrderInCategory></value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="PerfectImmunity"]/displayCategory</xpath>
+                    <value><displayCategory>Healing</displayCategory></value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+
+</Patch>
