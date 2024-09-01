@@ -182,7 +182,7 @@
         </statFactors>
     </GeneDef>
 
-    <!-- <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Needs">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Needs">
         <defName>EBSG_MinorArchiteInducedAsceticism</defName>
         <label>minor archite induced asceticism</label>
         <description>Carriers of this gene have a small number of archites in their brain dedicated to preventing them from feeling discomfort.</description>
@@ -197,7 +197,7 @@
         <biostatCpx>3</biostatCpx>
         <statFactors>
             <EBSG_ComfortRiseRate>2.00</EBSG_ComfortRiseRate>
-            <EBSG_ComfortFallRate>0.6</EBSG_ComfortFallRate>
+            <EBSG_ComfortFallRate>0.5</EBSG_ComfortFallRate>
         </statFactors>
     </GeneDef>
 
@@ -234,7 +234,7 @@
         <biostatCpx>3</biostatCpx>
         <statFactors>
             <EBSG_BeautyRiseRate>2.00</EBSG_BeautyRiseRate>
-            <EBSG_BeautyFallRate>0.6</EBSG_BeautyFallRate>
+            <EBSG_BeautyFallRate>0.5</EBSG_BeautyFallRate>
         </statFactors>
     </GeneDef>
 
@@ -271,7 +271,7 @@
         <biostatCpx>3</biostatCpx>
         <statFactors>
             <EBSG_JoyRiseRate>2.00</EBSG_JoyRiseRate>
-            <JoyFallRateFactor>0.6</JoyFallRateFactor>
+            <JoyFallRateFactor>0.5</JoyFallRateFactor>
         </statFactors>
     </GeneDef>
 
@@ -289,7 +289,7 @@
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <disablesNeeds>
-            <li>Beauty</li>
+            <li>Joy</li>
         </disablesNeeds>
     </GeneDef>
 
@@ -357,6 +357,7 @@
         <displayCategory>Mood</displayCategory>
         <exclusionTags>
             <li>EBSG_MoodChange</li>
+            <li>Mood</li>
         </exclusionTags>
         <marketValueFactor>2.5</marketValueFactor>
         <biostatArc>3</biostatArc>
@@ -364,10 +365,7 @@
         <disablesNeeds>
             <li>Mood</li>
         </disablesNeeds>
-        <exclusionTags>
-            <li>Mood</li>
-        </exclusionTags>
-    </GeneDef> -->
+    </GeneDef>
 
     <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic"> 
         <defName>EBSG_ArchitePsychicInfluencer</defName>
