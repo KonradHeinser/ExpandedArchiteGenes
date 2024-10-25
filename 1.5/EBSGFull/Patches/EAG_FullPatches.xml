@@ -4,12 +4,12 @@
         <xpath>Defs/GeneDef[defName="EBSG_InnatePsychicAmplifier"]</xpath>
         <match Class="PatchOperationSequence">
             <operations>
-                <li Class='PatchOperationAdd'>
+                <li Class='PatchOperationAdd' MayRequire="Ludeon.Rimworld.Royalty">
                     <xpath>Defs/GeneDef[defName="EBSG_InnatePsychicReader"]</xpath>
                     <value><exclusionTags><li>EBSGA_PsychicInfluencer</li></exclusionTags></value>
                 </li>
 
-                <li Class="PatchOperationAdd">
+                <li Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Royalty">
                     <xpath>Defs/ThoughtDef[defName="PsychicDrone"]/nullifyingGenes</xpath>
                     <value><li>EBSG_ArchitePsychicInfluencer</li></value>
                 </li>
