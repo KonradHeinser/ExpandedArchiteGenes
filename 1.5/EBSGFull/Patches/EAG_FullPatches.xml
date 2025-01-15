@@ -42,13 +42,6 @@
                         </nomatch>
                     </active>
                 </li>
-
-                <li Class="EBSGFramework.PatchOperationSetting">
-                    <setting>noInnatePsylinkPrereq</setting>
-                    <active Class="PatchOperationRemove">
-                        <xpath>Defs/GeneDef[@Name="EBSGA_PsychicBase"]/prerequisite</xpath>
-                    </active>
-                </li>
             </operations>
         </match>
     </Operation>
@@ -58,16 +51,6 @@
         <match Class='PatchOperationAdd'>
             <xpath>Defs/ThoughtDef[defName="SoakingWet"]/nullifyingGenes</xpath>
             <value><li>EBSGA_BiomeAdaptability</li></value>
-        </match>
-    </Operation>
-
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/GeneDef[defName="EBSG_InnateMechlink"]</xpath>
-        <match Class="EBSGFramework.PatchOperationSetting">
-            <setting>noInnateMechlinkPrereq</setting>
-            <active Class="PatchOperationRemove">
-                <xpath>Defs/GeneDef[@Name="EBSGA_MechanitorBase"]/prerequisite</xpath>
-            </active>
         </match>
     </Operation>
 </Patch>
