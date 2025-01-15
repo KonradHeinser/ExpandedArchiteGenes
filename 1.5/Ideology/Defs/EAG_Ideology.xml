@@ -6,7 +6,7 @@
         <description>Carriers of this gene have a small number of archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
         <iconPath>EBSG/Gene_BiosculptingSpeed</iconPath>
         <displayOrderInCategory>200.9</displayOrderInCategory>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <displayCategory>Healing</displayCategory>
         <exclusionTags>
             <li>EBSG_BiosculptingSpeed</li>
@@ -24,7 +24,7 @@
         <description>Carriers of this gene have archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
         <iconPath>EBSG/Gene_ExtremeBiosculptingSpeed</iconPath>
         <displayOrderInCategory>201.0</displayOrderInCategory>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <displayCategory>Healing</displayCategory>
         <exclusionTags>
             <li>EBSG_BiosculptingSpeed</li>
@@ -42,7 +42,7 @@
         <description>Carriers of this gene have a large number of archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
         <iconPath>EBSG/Gene_ExtremeBiosculptingSpeed</iconPath>
         <displayOrderInCategory>201.1</displayOrderInCategory>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <displayCategory>Healing</displayCategory>
         <exclusionTags>
             <li>EBSG_BiosculptingSpeed</li>

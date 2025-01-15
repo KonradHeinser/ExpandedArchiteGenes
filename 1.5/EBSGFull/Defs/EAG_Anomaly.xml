@@ -10,7 +10,7 @@
         <exclusionTags>
             <li>EBSG_EntitySlayer</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -28,7 +28,7 @@
         <exclusionTags>
             <li>EBSG_EntitySlayer</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <statFactors>
@@ -46,7 +46,7 @@
         <exclusionTags>
             <li>EBSG_EntitySlayer</li>
         </exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
         <statFactors>

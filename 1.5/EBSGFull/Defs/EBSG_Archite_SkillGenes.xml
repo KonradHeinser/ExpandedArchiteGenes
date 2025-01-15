@@ -264,7 +264,7 @@
         <description>The carrier's aptitude in this skill is raised to 20 due to specialized archites in their brain. These archites are also wired to trigger dopamine any time the carrier utilizes the aptitude, raising the passion for it by two.</description>
         <biostatCpx>6</biostatCpx>
         <biostatArc>2</biostatArc>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <customEffectDescriptions>
             <li>Raises skill level by 20.</li>
             <li>Increases passion level by 2.</li>

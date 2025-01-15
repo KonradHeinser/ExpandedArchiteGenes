@@ -10,7 +10,7 @@
         <exclusionTags>
             <li>EBSG_Biomes</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <disablesNeeds>
@@ -33,7 +33,7 @@
         <displayCategory>Hemogen</displayCategory>
         <minAgeActive>3</minAgeActive>
         <exclusionTags><li>EBSG_DeathrestSpeed</li></exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -51,7 +51,7 @@
         <displayCategory>Hemogen</displayCategory>
         <minAgeActive>3</minAgeActive>
         <exclusionTags><li>EBSG_DeathrestSpeed</li></exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <statFactors>
@@ -69,7 +69,7 @@
         <displayCategory>Hemogen</displayCategory>
         <minAgeActive>3</minAgeActive>
         <exclusionTags><li>EBSG_DeathrestSpeed</li></exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
         <statFactors>
@@ -85,7 +85,7 @@
         <displayOrderInCategory>98.91</displayOrderInCategory>
         <displayCategory>Healing</displayCategory>
         <exclusionTags><li>BloodRecovery</li></exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statOffsets>
@@ -101,7 +101,7 @@
         <displayOrderInCategory>98.92</displayOrderInCategory>
         <displayCategory>Healing</displayCategory>
         <exclusionTags><li>BloodRecovery</li></exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <statOffsets>
@@ -117,7 +117,7 @@
         <displayOrderInCategory>98.93</displayOrderInCategory>
         <displayCategory>Healing</displayCategory>
         <exclusionTags><li>BloodRecovery</li></exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
         <statOffsets>
@@ -136,7 +136,7 @@
         <exclusionTags>
             <li>EBSG_GestationSpeed</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -155,7 +155,7 @@
         <exclusionTags>
             <li>EBSG_GestationSpeed</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <statFactors>
@@ -174,7 +174,7 @@
         <exclusionTags>
             <li>EBSG_GestationSpeed</li>
         </exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
         <statFactors>
@@ -192,7 +192,7 @@
         <exclusionTags>
             <li>EBSG_ComfortChange</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -211,7 +211,7 @@
         <exclusionTags>
             <li>EBSG_ComfortChange</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <disablesNeeds>
@@ -229,7 +229,7 @@
         <exclusionTags>
             <li>EBSG_BeautyChange</li>
         </exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -248,7 +248,7 @@
         <exclusionTags>
             <li>EBSG_BeautyChange</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <disablesNeeds>
@@ -266,7 +266,7 @@
         <exclusionTags>
             <li>EBSG_RecreationChange</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -285,7 +285,7 @@
         <exclusionTags>
             <li>EBSG_RecreationChange</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <disablesNeeds>
@@ -320,7 +320,7 @@
         <exclusionTags>
             <li>EBSG_MoodChange</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -339,7 +339,7 @@
         <exclusionTags>
             <li>EBSG_MoodChange</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <statFactors>
@@ -359,7 +359,7 @@
             <li>EBSG_MoodChange</li>
             <li>Mood</li>
         </exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
         <disablesNeeds>
@@ -374,7 +374,7 @@
         <description>Carriers of this gene have an innate psychic reader, harmonizer, and shield. The shield protects them from most external mood and opinion altering psychic effect. Unlike Psychic insulation, this only stops both negative moods and dynamic moods(like a harmonizer and drones).</description>
         <displayOrderInCategory>310.4</displayOrderInCategory>
         <displayCategory>Psychic</displayCategory>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>4</biostatCpx>
         <customEffectDescriptions>
@@ -408,18 +408,21 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic">
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic" Name="EBSGA_PsychicBase" Abstract="True">
+        <displayCategory>Psychic</displayCategory>
+        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
+    </GeneDef>
+
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic" ParentName="EBSGA_PsychicBase">
         <defName>EBSG_MinorArchiteEnhancedEntropyMax</defName>
         <label>minor archite enhanced entropy max</label>
         <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping them avoid suffering damage from storing large amounts of neural heat.</description>
         <iconPath>EBSG/Gene_EntropyMax</iconPath>
         <displayOrderInCategory>312.81</displayOrderInCategory>
-        <displayCategory>Psychic</displayCategory>
-        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
         <exclusionTags>
             <li>EBSG_EntropyMax</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -427,18 +430,16 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic">
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic" ParentName="EBSGA_PsychicBase">
         <defName>EBSG_ArchiteEnhancedEntropyMax</defName>
         <label>archite enhanced entropy max</label>
         <description>Carriers of this gene have archites in their bodies dedicated to helping them avoid suffering damage from storing large amounts of neural heat.</description>
         <iconPath>EBSG/Gene_ExtremeEntropyMax</iconPath>
         <displayOrderInCategory>312.82</displayOrderInCategory>
-        <displayCategory>Psychic</displayCategory>
-        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
         <exclusionTags>
             <li>EBSG_EntropyMax</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <statFactors>
@@ -446,18 +447,16 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic">
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic" ParentName="EBSGA_PsychicBase">
         <defName>EBSG_MajorArchiteEnhancedEntropyMax</defName>
         <label>major archite enhanced entropy max</label>
         <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping them avoid suffering damage from storing large amounts of neural heat.</description>
         <iconPath>EBSG/Gene_ExtremeEntropyMax</iconPath>
         <displayOrderInCategory>312.83</displayOrderInCategory>
-        <displayCategory>Psychic</displayCategory>
-        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
         <exclusionTags>
             <li>EBSG_EntropyMax</li>
         </exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
         <statFactors>
@@ -465,18 +464,16 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic">
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic" ParentName="EBSGA_PsychicBase">
         <defName>EBSG_MinorArchiteEnhancedEntropyRecovery</defName>
         <label>minor archite enhanced entropy recovery</label>
         <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping them dissipate neural heat.</description>
         <iconPath>EBSG/Gene_EntropyRecovery</iconPath>
         <displayOrderInCategory>313.81</displayOrderInCategory>
-        <displayCategory>Psychic</displayCategory>
-        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
         <exclusionTags>
             <li>EBSG_EntropyRecovery</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -484,18 +481,16 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic">
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic" ParentName="EBSGA_PsychicBase">
         <defName>EBSG_ArchiteEnhancedEntropyRecovery</defName>
         <label>archite enhanced entropy recovery</label>
         <description>Carriers of this gene have archites in their bodies dedicated to helping them dissipate neural heat.</description>
         <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
         <displayOrderInCategory>313.82</displayOrderInCategory>
-        <displayCategory>Psychic</displayCategory>
-        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
         <exclusionTags>
             <li>EBSG_EntropyRecovery</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <statFactors>
@@ -503,18 +498,16 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic">
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic" ParentName="EBSGA_PsychicBase">
         <defName>EBSG_MajorArchiteEnhancedEntropyRecovery</defName>
         <label>major archite enhanced entropy recovery</label>
         <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping them dissipate neural heat.</description>
         <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
         <displayOrderInCategory>313.83</displayOrderInCategory>
-        <displayCategory>Psychic</displayCategory>
-        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
         <exclusionTags>
             <li>EBSG_EntropyRecovery</li>
         </exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
         <statFactors>
@@ -522,18 +515,16 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic">
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic" ParentName="EBSGA_PsychicBase">
         <defName>EBSG_MinorArchiteEnhancedMeditationFocus</defName>
         <label>minor archite enhanced focus gain</label>
         <description>Carriers of this gene have a small number of archites in their brains dedicated to helping them clear their minds and gain more focus while meditating.</description>
         <iconPath>EBSG/Gene_MeditationFocus</iconPath>
         <displayOrderInCategory>311.81</displayOrderInCategory>
-        <displayCategory>Psychic</displayCategory>
-        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
         <exclusionTags>
             <li>EBSG_MeditationFocus</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -541,18 +532,16 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic">
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic" ParentName="EBSGA_PsychicBase">
         <defName>EBSG_ArchiteEnhancedMeditationFocus</defName>
         <label>archite enhanced focus gain</label>
         <description>Carriers of this gene have archites in their brains dedicated to helping them clear their minds and gain more focus while meditating.</description>
         <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>
         <displayOrderInCategory>311.82</displayOrderInCategory>
-        <displayCategory>Psychic</displayCategory>
-        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
         <exclusionTags>
             <li>EBSG_MeditationFocus</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <statFactors>
@@ -560,18 +549,16 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic">
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic" ParentName="EBSGA_PsychicBase">
         <defName>EBSG_MajorArchiteEnhancedMeditationFocus</defName>
         <label>major archite enhanced focus gain</label>
         <description>Carriers of this gene have a large number of archites in their brains dedicated to helping them clear their minds and gain more focus while meditating.</description>
         <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>
         <displayOrderInCategory>311.83</displayOrderInCategory>
-        <displayCategory>Psychic</displayCategory>
-        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
         <exclusionTags>
             <li>EBSG_MeditationFocus</li>
         </exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
         <statFactors>
@@ -589,7 +576,7 @@
         <exclusionTags>
             <li>EBSG_Slayer</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -607,7 +594,7 @@
         <exclusionTags>
             <li>EBSG_Slayer</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <statFactors>
@@ -625,7 +612,7 @@
         <exclusionTags>
             <li>EBSG_Slayer</li>
         </exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
         <statFactors>
@@ -643,7 +630,7 @@
         <exclusionTags>
             <li>EBSG_HumanlikeSlayer</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -661,7 +648,7 @@
         <exclusionTags>
             <li>EBSG_HumanlikeSlayer</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <statFactors>
@@ -679,7 +666,7 @@
         <exclusionTags>
             <li>EBSG_HumanlikeSlayer</li>
         </exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
         <statFactors>
@@ -697,7 +684,7 @@
         <exclusionTags>
             <li>EBSG_MechanoidSlayer</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -715,7 +702,7 @@
         <exclusionTags>
             <li>EBSG_MechanoidSlayer</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <statFactors>
@@ -733,7 +720,7 @@
         <exclusionTags>
             <li>EBSG_MechanoidSlayer</li>
         </exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
         <statFactors>
@@ -751,7 +738,7 @@
         <exclusionTags>
             <li>EBSG_AnimalSlayer</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -769,7 +756,7 @@
         <exclusionTags>
             <li>EBSG_AnimalSlayer</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <statFactors>
@@ -787,7 +774,7 @@
         <exclusionTags>
             <li>EBSG_AnimalSlayer</li>
         </exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
         <statFactors>
@@ -805,7 +792,7 @@
         <exclusionTags>
             <li>EBSG_InsectSlayer</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statFactors>
@@ -823,7 +810,7 @@
         <exclusionTags>
             <li>EBSG_InsectSlayer</li>
         </exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
         <statFactors>
@@ -841,7 +828,7 @@
         <exclusionTags>
             <li>EBSG_InsectSlayer</li>
         </exclusionTags>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
         <statFactors>
@@ -960,14 +947,17 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" Name="EBSGA_MechanitorBase" Abstract="True">
+        <displayCategory>EBSG_Mechanitor</displayCategory>
+        <prerequisite>EBSG_InnateMechlink</prerequisite>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_MinorArchiteEnhancedMechRepair</defName>
         <label>minor archite enhanced mech repair speed</label>
         <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
         <iconPath>EBSG/Gene_MechRepair</iconPath>
         <displayOrderInCategory>39.1</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_MechRepair</li>
         </exclusionTags>
@@ -978,14 +968,12 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_ArchiteEnhancedMechRepair</defName>
         <label>archite enhanced mech repair speed</label>
         <description>Carriers of this gene have archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
         <iconPath>EBSG/Gene_ExtremeMechRepair</iconPath>
         <displayOrderInCategory>39.2</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_MechRepair</li>
         </exclusionTags>
@@ -996,14 +984,12 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_MajorArchiteEnhancedMechRepair</defName>
         <label>major archite enhanced mech repair speed</label>
         <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
         <iconPath>EBSG/Gene_ExtremeMechRepair</iconPath>
         <displayOrderInCategory>39.3</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_MechRepair</li>
         </exclusionTags>
@@ -1014,14 +1000,12 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_MinorArchiteEnhancedMechControl</defName>
         <label>minor archite enhanced mech control</label>
         <description>Carriers of this gene have a small number of archites in their brains dedicated to helping them control more mechanoids at the same time.</description>
         <iconPath>EBSG/Gene_MechControl</iconPath>
         <displayOrderInCategory>49.1</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_MechControl</li>
         </exclusionTags>
@@ -1035,14 +1019,12 @@
         </statOffsets>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_ArchiteEnhancedMechControl</defName>
         <label>archite enhanced mech control</label>
         <description>Carriers of this gene have archites in their brains dedicated to helping them control more mechanoids at the same time.</description>
         <iconPath>EBSG/Gene_ExtremeMechControl</iconPath>
         <displayOrderInCategory>49.2</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_MechControl</li>
         </exclusionTags>
@@ -1056,14 +1038,12 @@
         </statOffsets>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_MajorArchiteEnhancedMechControl</defName>
         <label>major archite enhanced mech control</label>
         <description>Carriers of this gene have a large number of archites in their brains dedicated to helping them control more mechanoids at the same time.</description>
         <iconPath>EBSG/Gene_ExtremeMechControl</iconPath>
         <displayOrderInCategory>49.3</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_MechControl</li>
         </exclusionTags>
@@ -1077,14 +1057,12 @@
         </statOffsets>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_MinorArchiteEnhancedMechForming</defName>
         <label>minor archite enhanced mech gestation speed</label>
         <description>Carriers of this gene have a small number of archites in their bodies dedicated to helping the pawn direct mechanites used in mechanoid.</description>
         <iconPath>EBSG/Gene_MechForming</iconPath>
         <displayOrderInCategory>59.1</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_MechForming</li>
         </exclusionTags>
@@ -1095,14 +1073,12 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_ArchiteEnhancedMechForming</defName>
         <label>archite enhanced mech gestation speed</label>
         <description>Carriers of this gene have archites in their bodies dedicated to helping the pawn direct mechanites used in mechanoid.</description>
         <iconPath>EBSG/Gene_ExtremeMechForming</iconPath>
         <displayOrderInCategory>59.2</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_MechForming</li>
         </exclusionTags>
@@ -1113,14 +1089,12 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_MajorArchiteEnhancedMechForming</defName>
         <label>major archite enhanced mech gestation speed</label>
         <description>Carriers of this gene have a large number of archites in their bodies dedicated to helping the pawn direct mechanites used in mechanoid.</description>
         <iconPath>EBSG/Gene_ExtremeMechForming</iconPath>
         <displayOrderInCategory>59.3</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_MechForming</li>
         </exclusionTags>
@@ -1131,14 +1105,12 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_MinorArchiteEnhancedEncodingSpeed</defName>
         <label>minor archite enhanced encoding speed</label>
         <description>Carriers of this gene have a small number of archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
         <iconPath>EBSG/Gene_EncodingSpeed</iconPath>
         <displayOrderInCategory>69.1</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_EncodingSpeed</li>
         </exclusionTags>
@@ -1149,14 +1121,12 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_ArchiteEnhancedEncodingSpeed</defName>
         <label>archite enhanced encoding speed</label>
         <description>Carriers of this gene have archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
         <iconPath>EBSG/Gene_ExtremeEncodingSpeed</iconPath>
         <displayOrderInCategory>69.2</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_EncodingSpeed</li>
         </exclusionTags>
@@ -1167,14 +1137,12 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_MajorArchiteEnhancedEncodingSpeed</defName>
         <label>major archite enhanced encoding speed</label>
         <description>Carriers of this gene have a large number of archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
         <iconPath>EBSG/Gene_ExtremeEncodingSpeed</iconPath>
         <displayOrderInCategory>69.3</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_EncodingSpeed</li>
         </exclusionTags>
@@ -1185,14 +1153,12 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_MinorArchiteEnhancedMechWorkSpeed</defName>
         <label>minor archite enhanced mech work speed</label>
         <description>Carriers of this gene have a small number of archites in their brains dedicated to increasing the work speed of all mechanoids under the carrier's control.</description>
         <iconPath>EBSG/Gene_MechWorkSpeed</iconPath>
         <displayOrderInCategory>79.1</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_MechWorkSpeed</li>
         </exclusionTags>
@@ -1203,14 +1169,12 @@
         </statOffsets>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_ArchiteEnhancedMechWorkSpeed</defName>
         <label>archite enhanced mech work speed</label>
         <description>Carriers of this gene have archites in their brains dedicated to increasing the work speed of all mechanoids under the carrier's control.</description>
         <iconPath>EBSG/Gene_ExtremeMechWorkSpeed</iconPath>
         <displayOrderInCategory>79.2</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_MechWorkSpeed</li>
         </exclusionTags>
@@ -1221,14 +1185,12 @@
         </statOffsets>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_MajorArchiteEnhancedMechWorkSpeed</defName>
         <label>major archite enhanced mech work speed</label>
         <description>Carriers of this gene have a large number of archites in their brains dedicated to increasing the work speed of all mechanoids under the carrier's control.</description>
         <iconPath>EBSG/Gene_ExtremeMechWorkSpeed</iconPath>
         <displayOrderInCategory>79.3</displayOrderInCategory>
-        <displayCategory>EBSG_Mechanitor</displayCategory>
-        <prerequisite>EBSG_InnateMechlink</prerequisite>
         <exclusionTags>
             <li>EBSG_MechWorkSpeed</li>
         </exclusionTags>

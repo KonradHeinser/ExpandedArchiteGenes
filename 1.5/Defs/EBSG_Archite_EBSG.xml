@@ -7,7 +7,7 @@
         <description>Carriers of this gene have a small number archites in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
         <displayOrderInCategory>30</displayOrderInCategory>
         <displayCategory>EBSG_Sensory</displayCategory>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <ignoreDarkness>true</ignoreDarkness>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
@@ -40,7 +40,7 @@
         <description>Carriers of this gene have archites in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
         <displayOrderInCategory>31</displayOrderInCategory>
         <displayCategory>EBSG_Sensory</displayCategory>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <ignoreDarkness>true</ignoreDarkness>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
@@ -73,7 +73,7 @@
         <description>Carriers of this gene have a large number archites in their brain that allow them to more easily process sensory information.\n\nDue to the nature of this gene, this is incompatible with most of the genes in the senses category.</description>
         <displayOrderInCategory>32</displayOrderInCategory>
         <displayCategory>EBSG_Sensory</displayCategory>
-        <marketValueFactor>2.5</marketValueFactor>
+        <marketValueFactor>2</marketValueFactor>
         <ignoreDarkness>true</ignoreDarkness>
         <biostatArc>3</biostatArc>
         <biostatCpx>9</biostatCpx>
@@ -179,7 +179,7 @@
         <exclusionTags>
 			<li>EBSG_CarryCapacities</li>
 		</exclusionTags>
-        <marketValueFactor>2.0</marketValueFactor>
+        <marketValueFactor>1.5</marketValueFactor>
         <statFactors>
             <CarryingCapacity>4</CarryingCapacity>
             <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">4</VEF_MassCarryCapacity>
@@ -200,7 +200,7 @@
         <biostatCpx>3</biostatCpx>
         <displayCategory>EBSG_Food</displayCategory>
         <displayOrderInCategory>10.1</displayOrderInCategory>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <statFactors>
             <RawNutritionFactor>2.0</RawNutritionFactor>
         </statFactors>
@@ -337,7 +337,7 @@
         </exclusionTags>
         <biostatArc>2</biostatArc>
         <biostatCpx>6</biostatCpx>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <statFactors>
             <HemogenGainFactor>3</HemogenGainFactor>
         </statFactors>
@@ -372,7 +372,7 @@
         <exclusionTags>
             <li>EBSG_MentalFortitude</li>
         </exclusionTags>
-        <marketValueFactor>1.5</marketValueFactor>
+        <marketValueFactor>1.25</marketValueFactor>
         <biostatArc>1</biostatArc>
         <biostatCpx>3</biostatCpx>
         <statOffsets>
