@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <GeneDef MayRequireAnyOf="EBSG.AiO, EBSG.Health">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Health">
         <defName>EBSG_MinorArchiteEnhancedBiosculptingSpeed</defName>
         <label>minor archite enhanced biosculpting speed</label>
         <description>Carriers of this gene have a small number of archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
@@ -18,7 +18,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO, EBSG.Health">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Health">
         <defName>EBSG_ArchiteEnhancedBiosculptingSpeed</defName>
         <label>archite enhanced biosculpting speed</label>
         <description>Carriers of this gene have archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
@@ -36,7 +36,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO, EBSG.Health">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Health">
         <defName>EBSG_MajorArchiteEnhancedBiosculptingSpeed</defName>
         <label>major archite enhanced biosculpting speed</label>
         <description>Carriers of this gene have a large number of archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>

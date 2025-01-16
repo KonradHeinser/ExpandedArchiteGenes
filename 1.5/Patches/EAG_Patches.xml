@@ -23,10 +23,10 @@
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThoughtDef[defName="EnvironmentDark"]/nullifyingGenes</xpath>
                     <value>
-                        <li>EBSG_MinorArchiteSenses</li>
-                        <li>EBSG_ArchiteSenses</li>
-                        <li>EBSG_MajorArchiteSenses</li>
-                        <li>EBSG_ExtremeArchiteSenses</li>
+                        <li MayRequireAnyOf="EBSG.AiO,EBSG.Food">EBSG_MinorArchiteSenses</li>
+                        <li MayRequireAnyOf="EBSG.AiO,EBSG.Food,EBSG.Lite">EBSG_ArchiteSenses</li>
+                        <li MayRequireAnyOf="EBSG.AiO,EBSG.Food">EBSG_MajorArchiteSenses</li>
+                        <li MayRequireAnyOf="EBSG.AiO,EBSG.Food,EBSG.Lite">EBSG_ExtremeArchiteSenses</li>
                     </value>
                 </li>
             </operations>
@@ -146,6 +146,4 @@
             </operations>
         </match>
     </Operation>
-
-
 </Patch>

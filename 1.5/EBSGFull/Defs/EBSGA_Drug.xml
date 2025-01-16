@@ -15,7 +15,7 @@
     </HediffDef>
 
         <!--Luciferium-->
-    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_LuciferiumBlood</defName>
         <label>luciferium blood</label>
         <description>Carriers of this gene have archites in their bloodstream that provide bonuses similar to those received while high on luciferium.\n\nConsuming the drug will cause the carrier to receive double effects. Unlike other drug blood genes, this will not protect against the luciferium need if the user decides to consume some luciferium.</description>
@@ -31,7 +31,7 @@
 		</modExtensions>
     </GeneDef>
 
-    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_LuciferiumBlood</defName>
         <label>luciferium blood</label>
         <description>Active luciferium mechanites in the body controlled by a large number of archites. They improve the body's functioning in all respects.</description>
@@ -76,7 +76,7 @@
     </HediffDef>
 
         <!--Alcohol-->
-    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_AlcoholBlood</defName>
         <label>alcohol blood</label>
         <description>Carriers of this gene have archites in their bloodstream that provide bonuses similar to those received after consuming a small amount of alcohol.\n\nConsuming the drug will cause the carrier to receive double effects. Chemical blood genes will protect against needs created, but won't do anything for things like drug overdose.\n\nIf taken with this drug's dependency gene, this will NOT satisfy the dependency.</description>
@@ -95,7 +95,7 @@
 		</modExtensions>
     </GeneDef>
 
-    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_AlcoholBlood</defName>
         <label>alcohol blood</label>
         <description>Alcohol in the bloodstream due to a gene. It makes people happy, but reduces manipulation and increases social fight chance.</description>        <stages>
@@ -113,7 +113,7 @@
         </stages>
     </HediffDef>
 
-    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_AlcoholBlood</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
         <hediff>EBSGA_AlcoholBlood</hediff>
@@ -129,7 +129,7 @@
     </ThoughtDef>
 
         <!--Ambrosia-->
-    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_AmbrosiaBlood</defName>
         <label>ambrosia blood</label>
         <description>Carriers of this gene have archites in their bloodstream that provide bonuses similar to those received while high on luciferium.\n\nConsuming the drug will cause the carrier to receive double effects. Chemical blood genes will protect against needs created, but won't do anything for things like drug overdose.\n\nIf taken with this drug's dependency gene, this will NOT satisfy the dependency.</description>
@@ -148,14 +148,14 @@
 		</modExtensions>
     </GeneDef>
 
-    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_AmbrosiaBlood</defName>
         <label>ambrosia blood</label>
         <description>Ambrosia chemicals in the bloodstream due to a gene. It lifts the mood of the pawn.</description>
         <stages><li/></stages>
     </HediffDef>
 
-    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_AmbrosiaBlood</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
         <hediff>EBSGA_AmbrosiaBlood</hediff>
@@ -171,7 +171,7 @@
     </ThoughtDef>
 
         <!--Go juice-->
-    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_GoJuiceBlood</defName>
         <label>go-juice blood</label>
         <description>Carriers of this gene have archites in their bloodstream that provide bonuses similar to those received while high on go-juice.\n\nConsuming the drug will cause the carrier to receive double effects. Chemical blood genes will protect against needs created, but won't do anything for things like drug overdose.\n\nIf taken with this drug's dependency gene, this will NOT satisfy the dependency.</description>
@@ -190,7 +190,7 @@
 		</modExtensions>
     </GeneDef>
 
-    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_GoJuiceBlood</defName>
         <label>go-juice blood</label>
         <description>Go-juice in the bloodstream due to a gene. It supercharges combat-related abilities.</description>
@@ -215,7 +215,7 @@
         </stages>
     </HediffDef>
 
-    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_GoJuiceBlood</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
         <hediff>EBSGA_GoJuiceBlood</hediff>
@@ -231,7 +231,7 @@
     </ThoughtDef>
 
         <!--Psychite Tea-->
-    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_PsychiteBlood</defName>
         <label>psychite blood</label>
         <description>Carriers of this gene have archites in their bloodstream that provide bonuses similar to those received while high on psychite tea.\n\nConsuming the drug will cause the carrier to receive double effects. Chemical blood genes will protect against needs created, but won't do anything for things like drug overdose.\n\nIf taken with this drug's dependency gene, this will NOT satisfy the dependency.</description>
@@ -250,7 +250,7 @@
 		</modExtensions>
     </GeneDef>
 
-    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_PsychiteBlood</defName>
         <label>psychite blood</label>
         <description>Active psychite in the bloodstream due to a gene. Generates a mild euphoric effect.</description>
@@ -264,7 +264,7 @@
         </stages>
     </HediffDef>
     
-    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_PsychiteBlood</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
         <hediff>EBSGA_PsychiteBlood</hediff>
@@ -280,7 +280,7 @@
     </ThoughtDef>
 
         <!--Flake-->
-    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_FlakeBlood</defName>
         <label>flake blood</label>
         <description>Carriers of this gene have archites in their bloodstream that provide bonuses similar to those received while high on flake.\n\nConsuming the drug will cause the carrier to receive double effects. Chemical blood genes will protect against needs created, but won't do anything for things like drug overdose.\n\nIf taken with this drug's dependency gene, this will NOT satisfy the dependency.</description>
@@ -299,7 +299,7 @@
 		</modExtensions>
     </GeneDef>
 
-    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_FlakeBlood</defName>
         <label>flake blood</label>
         <description>Active flake in the bloodstream due to a gene. Generates a euphoric, debilitating high.</description>
@@ -313,7 +313,7 @@
         </stages>
     </HediffDef>
 
-    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_FlakeBlood</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
         <hediff>EBSGA_FlakeBlood</hediff>
@@ -329,7 +329,7 @@
     </ThoughtDef>
 
         <!--Yayo-->
-    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_YayoBlood</defName>
         <label>yayo blood</label>
         <description>Carriers of this gene have archites in their bloodstream that provide bonuses similar to those received while high on yayo.\n\nConsuming the drug will cause the carrier to receive double effects. Chemical blood genes will protect against needs created, but won't do anything for things like drug overdose.\n\nIf taken with this drug's dependency gene, this will NOT satisfy the dependency.</description>
@@ -348,7 +348,7 @@
 		</modExtensions>
     </GeneDef>
 
-    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_YayoBlood</defName>
         <label>yayo blood</label>
         <description>Active yayo in the bloodstream due to a gene. Generates an intense euphoric high.</description>
@@ -368,7 +368,7 @@
         </stages>
     </HediffDef>
 
-    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_YayoBlood</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
         <hediff>EBSGA_YayoBlood</hediff>
@@ -384,7 +384,7 @@
     </ThoughtDef>
 
         <!--Smokeleaf-->
-    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_SmokeleafBlood</defName>
         <label>smokeleaf blood</label>
         <description>Carriers of this gene have archites in their bloodstream that provide bonuses similar to those received while high on smokeleaf, minus the increased hunger rate and decreased Consciousness.\n\nConsuming the drug will cause the carrier to receive double effects. Chemical blood genes will protect against needs created, but won't do anything for things like drug overdose.\n\nIf taken with this drug's dependency gene, this will NOT satisfy the dependency.</description>
@@ -403,7 +403,7 @@
 		</modExtensions>
     </GeneDef>
 
-    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_SmokeleafBlood</defName>
         <label>smokeleaf blood</label>
         <description>Smokeleaf's active chemical in the bloodstream due to a gene. Generates a soft feeling of fuzzy well-being.</description>
@@ -420,7 +420,7 @@
         </stages>
     </HediffDef>
     
-    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_SmokeleafBlood</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
         <hediff>EBSGA_SmokeleafBlood</hediff>
@@ -436,7 +436,7 @@
     </ThoughtDef>
 
         <!--Wake up-->
-    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <GeneDef ParentName="EBSGA_Drugs" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_WakeUpBlood</defName>
         <label>wake-up blood</label>
         <description>Carriers of this gene have archites in their bloodstream that provide bonuses similar to those received while high on wake-up, minus the risk of heart attack.\n\nConsuming the drug will cause the carrier to receive double effects. Chemical blood genes will protect against needs created, but won't do anything for things like drug overdose.\n\nIf taken with this drug's dependency gene, this will NOT satisfy the dependency.</description>
@@ -455,7 +455,7 @@
 		</modExtensions>
     </GeneDef>
 
-    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MBSG.Drug">
+    <HediffDef ParentName="EBSGA_DrugHediff" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Drug">
         <defName>EBSGA_WakeUpBlood</defName>
         <label>wake-up blood</label>
         <description>Wake-up in the bloodstream due to a gene. It fills the need for rest by stimulating the brain, and increases focus, allowing faster work. It also increases the psyfocus gains from meditation.</description>

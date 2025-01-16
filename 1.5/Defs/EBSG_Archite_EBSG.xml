@@ -33,7 +33,7 @@
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Sensory">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Sensory,EBSG.Lite">
         <defName>EBSG_ArchiteSenses</defName>
         <label>archite senses</label>
         <iconPath>EBSG/Gene_AmazingVision</iconPath>
@@ -99,7 +99,7 @@
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Sensory">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Sensory,EBSG.Lite">
         <defName>EBSG_ExtremeArchiteSenses</defName>
         <label>extreme archite senses</label>
         <iconPath>EBSG/Gene_AmazingVision</iconPath>
@@ -151,7 +151,7 @@
         <biostatCpx>3</biostatCpx>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.CarryCap">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.CarryCap,EBSG.Lite">
         <defName>EBSG_ArchiteCarry</defName>
         <label>archite carry capacity</label>
         <description>Carriers of this gene have archites spread throughout their arms and back that increase their carry capacity.</description>
@@ -189,7 +189,7 @@
         <biostatCpx>9</biostatCpx>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Food">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Food,EBSG.Lite">
         <defName>EBSG_ArchiteDigestion</defName>
         <label>archite enhanced digestion</label>
         <description>Carriers of this gene have archites in their stomach that protect them from food poisoning and process raw foods with unbelievable efficiency.</description>
@@ -324,7 +324,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Hemogen">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Hemogen,EBSG.Lite">
         <defName>EBSG_ArchiteHemogenGain</defName>
         <label>archite hemo-processing efficiency</label>
         <iconPath>EBSG/Gene_HemogenGainExtreme</iconPath>
@@ -362,7 +362,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mental">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mental,EBSG.Lite">
         <defName>EBSG_ArchiteMentalFortitude</defName>
         <label>archite mental fortitude</label>
         <description>Carriers of this gene have archites in their brains that help defend their mind from being unsettled by outside influences. This will make it much less likely for them to have a mental break. For those who have Ideology, this also makes it much harder to keep them suppressed and change their beliefs.</description>
@@ -407,7 +407,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedBurrowing</defName>
         <label>archite enhanced burrowing</label>
         <iconPath>EBSG/Gene_BurrowingExtreme</iconPath>
@@ -460,7 +460,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedCaring</defName>
         <label>archite enhanced caring</label>
         <iconPath>EBSG/Gene_CaringExtreme</iconPath>
@@ -511,7 +511,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedConstruction</defName>
         <label>archite enhanced construction</label>
         <iconPath>EBSG/Gene_ConstructionExtreme</iconPath>
@@ -562,7 +562,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedCuriosity</defName>
         <label>archite enhanced curiosity</label>
         <iconPath>EBSG/Gene_CuriosityExtreme</iconPath>
@@ -613,7 +613,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedForaging</defName>
         <label>archite enhanced foraging</label>
         <iconPath>EBSG/Gene_ForagingExtreme</iconPath>
@@ -664,7 +664,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedHerding</defName>
         <label>archite enhanced herding</label>
         <iconPath>EBSG/Gene_HerdingExtreme</iconPath>
@@ -715,7 +715,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedHunting</defName>
         <label>archite enhanced hunting</label>
         <iconPath>EBSG/Gene_HuntingExtreme</iconPath>
@@ -772,7 +772,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Social">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Social,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedConvincing</defName>
         <label>archite enhanced convincing</label>
         <description>Carriers of this gene have archites in their brains dedicated to making them a lot more convincing compared to most people. They have an easier time convincing others to join their side.</description>
@@ -841,7 +841,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Social">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Social,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedSuave</defName>
         <label>archite enhanced suave</label>
         <description>Carriers of this gene have archites in their brains dedicated to making them a lot more suave compared to most people. This helps them keep others interested in what you're talking about.\n\nThis has a trade price improvement that is so high it can cause weird issues later in the game.</description>
@@ -910,7 +910,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Social">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Social,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedTerrifying</defName>
         <label>archite enhanced terrifying</label>
         <description>Carriers of this gene have archites in their brains dedicated to making them a lot more terrifying compared to most people. They are more likely to be able to keep others in line when the need arises.</description>
@@ -956,7 +956,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Social">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Social,EBSG.Lite">
         <defName>EBSG_ArchiteEnchantment</defName>
         <label>archite enchantment</label>
         <description>Carriers of this gene have archites in system that make it exceptionally easy to seduce others. The archites in their system prevent others with archite enchantment from influencing them, though it does nothing to stop enchanting pawns from influencing them.</description>
@@ -1001,7 +1001,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Violence">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Violence,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedBrawler</defName>
         <label>archite enhanced brawling</label>
         <description>Carriers of this gene have archites in their bodies dedicated to making them a much better brawler compared to most people. This helps them fight enemies in melee combat by making them more accurate and evasive.</description>
@@ -1070,7 +1070,7 @@
         </symbolPack>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Violence">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Violence,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedShooter</defName>
         <label>archite enhanced shooting</label>
         <description>Carriers of this gene have archites in their brains dedicated to making them a much better shooter compared to most people. This helps them snipe enemies in melee combat by making them more accurate and evasive.</description>
@@ -1208,7 +1208,7 @@
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Resistance">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Resistance,EBSG.Lite">
         <defName>EBSG_ElementalImmunity</defName>
         <label>elemental Immunity</label>
         <description>Carriers of this gene have a large number archites in their body dedicated to protecting them from various types of elemental damage. The number of items on this list may increase based on what mods you have enabled.\n\nThis does NOT render a pawn immune to all damage. Bullets and blades can still kill the pawn, along with certain types of damages that were intentionally excluded from the list.</description>

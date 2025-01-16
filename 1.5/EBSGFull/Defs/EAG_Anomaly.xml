@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <GeneDef  MayRequire="Ludeon.Rimworld.Anomaly" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+    <GeneDef  MayRequire="Ludeon.Rimworld.Anomaly" MayRequireAnyOf="EBSG.AiO,EBSG.Slayer">
         <defName>EBSG_MinorArchiteEnhancedEntitySlaying</defName>
         <label>minor archite enhanced entity slaying</label>
         <description>Carriers of this gene have a small number of archites in their body that enhance their attacks to help them kill entities.</description>
@@ -18,7 +18,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef  MayRequire="Ludeon.Rimworld.Anomaly" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+    <GeneDef  MayRequire="Ludeon.Rimworld.Anomaly" MayRequireAnyOf="EBSG.AiO,EBSG.Slayer,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedEntitySlaying</defName>
         <label>archite enhanced entity slaying</label>
         <description>Carriers of this gene have archites in their body that enhance their attacks to help them kill entities.</description>
@@ -36,7 +36,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef  MayRequire="Ludeon.Rimworld.Anomaly" MayRequireAnyOf="EBSG.AiO, EBSG.Slayer">
+    <GeneDef  MayRequire="Ludeon.Rimworld.Anomaly" MayRequireAnyOf="EBSG.AiO,EBSG.Slayer">
         <defName>EBSG_MajorArchiteEnhancedEntitySlaying</defName>
         <label>major archite enhanced entity slaying</label>
         <description>Carriers of this gene have a large number of archites in their body that enhance their attacks to help them kill entities.</description>

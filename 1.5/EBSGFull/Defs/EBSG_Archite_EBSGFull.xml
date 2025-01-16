@@ -41,7 +41,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Deathrest">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Deathrest,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedDeathrestSpeed</defName>
         <label>archite enhanced deathrest speed</label>
         <description>Carriers of this gene have archites in their brains dedicated to decreasing the amount of time the pawn needs to spend deathresting.</description>
@@ -93,7 +93,7 @@
         </statOffsets>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Bleeding">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Bleeding,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedBloodRecovery</defName>
         <label>archite enhanced blood recovery</label>
         <description>Carriers of this gene have archites in their bodies dedicated to replenishing blood they've lost. This is only active while the pawn is not bleeding.</description>
@@ -144,7 +144,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Reproduction">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Reproduction,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedGestationSpeed</defName>
         <label>archite enhanced gestation speed</label>
         <description>Carriers of this gene have archites in their bodies dedicated to decreasing how long their pregnancies last.\n\nFor obvious reasons, this doesn't usually have an effect on males.</description>
@@ -201,7 +201,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Needs">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Needs,EBSG.Lite">
         <defName>EBSG_ArchiteInducedAsceticism</defName>
         <label>archite induced asceticism</label>
         <description>Carriers of this gene have archites in their brain dedicated to stopping them from caring about physical comforts.\n\nWhile I did not encounter any issues arising from completely disabling the comfort need, please keep in mind that this may have unintended side effects.</description>
@@ -238,7 +238,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Needs">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Needs,EBSG.Lite">
         <defName>EBSG_ArchiteInducedPhilisthinism</defName>
         <label>archite induced philisthinism</label>
         <description>Carriers of this gene have archites in their brain dedicated to stopping them from caring about the appearance of their environments.\n\nWhile I did not encounter any issues arising from completely disabling the beauty need, please keep in mind that this may have unintended side effects.</description>
@@ -275,7 +275,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Needs">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Needs,EBSG.Lite">
         <defName>EBSG_ArchiteInducedJoviality</defName>
         <label>archite induced joviality</label>
         <description>Carriers of this gene have archites in their brain dedicated to stopping them from requiring special activities to feel happy.\n\nWhile I did not encounter any issues arising from completely disabling the recreation need, please keep in mind that this may have unintended side effects.</description>
@@ -293,7 +293,7 @@
         </disablesNeeds>
     </GeneDef>
 
-    <ThoughtDef MayRequireAnyOf="EBSG.AiO,EBSG.Needs">
+    <ThoughtDef MayRequireAnyOf="EBSG.AiO,EBSG.Needs,EBSG.Lite">
         <defName>EBSG_ArchiteInducedJoviality</defName>
         <workerClass>ThoughtWorker_AlwaysActive</workerClass>
         <validWhileDespawned>true</validWhileDespawned>
@@ -329,7 +329,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Needs">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Needs,EBSG.Lite">
         <defName>EBSG_ArchiteInducedOptimism</defName>
         <label>archite induced philisthinism</label>
         <description>Carriers of this gene have archites in their brain dedicated to helping them remain positive by minimizing the negative impacts neurotransmitters have when bad events occur.</description>
@@ -367,7 +367,7 @@
         </disablesNeeds>
     </GeneDef>
 
-    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic"> 
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic,EBSG.Lite"> 
         <defName>EBSG_ArchitePsychicInfluencer</defName>
         <label>archite psychic influencer</label>
         <iconPath>EBSG/Gene_InnatePsychicInsulation</iconPath>
@@ -430,7 +430,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic" ParentName="EBSGA_PsychicBase">
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic,EBSG.Lite" ParentName="EBSGA_PsychicBase">
         <defName>EBSG_ArchiteEnhancedEntropyMax</defName>
         <label>archite enhanced entropy max</label>
         <description>Carriers of this gene have archites in their bodies dedicated to helping them avoid suffering damage from storing large amounts of neural heat.</description>
@@ -481,7 +481,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic" ParentName="EBSGA_PsychicBase">
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic,EBSG.Lite" ParentName="EBSGA_PsychicBase">
         <defName>EBSG_ArchiteEnhancedEntropyRecovery</defName>
         <label>archite enhanced entropy recovery</label>
         <description>Carriers of this gene have archites in their bodies dedicated to helping them dissipate neural heat.</description>
@@ -532,7 +532,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic" ParentName="EBSGA_PsychicBase">
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty" MayRequireAnyOf="EBSG.AiO,EBSG.Psychic,EBSG.Lite" ParentName="EBSGA_PsychicBase">
         <defName>EBSG_ArchiteEnhancedMeditationFocus</defName>
         <label>archite enhanced focus gain</label>
         <description>Carriers of this gene have archites in their brains dedicated to helping them clear their minds and gain more focus while meditating.</description>
@@ -584,7 +584,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Slayer">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Slayer,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedSlaying</defName>
         <label>archite enhanced slaying</label>
         <description>Carriers of this gene have archites in their body that enhance their attacks to help them kill any target.</description>
@@ -638,7 +638,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Slayer">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Slayer,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedHumanlikeSlaying</defName>
         <label>archite enhanced humanlike slaying</label>
         <description>Carriers of this gene have archites in their body that enhance their attacks to help them kill humanlike targets.</description>
@@ -692,7 +692,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Slayer">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Slayer,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedMechanoidSlaying</defName>
         <label>archite enhanced mechanoid slaying</label>
         <description>Carriers of this gene have archites in their body that enhance their attacks to help them destroy mechanoids.</description>
@@ -746,7 +746,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Slayer">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Slayer,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedAnimalSlaying</defName>
         <label>archite enhanced animal slaying</label>
         <description>Carriers of this gene have archites in their body that enhance their attacks to help them kill animals.</description>
@@ -800,7 +800,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Slayer">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Slayer,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedInsectSlaying</defName>
         <label>archite enhanced insect slaying</label>
         <description>Carriers of this gene have archites in their body that enhance their attacks to help them kill insects.</description>
@@ -855,7 +855,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedRemoteShield</defName>
         <label>archite enhanced remote shielding</label>
         <description>Carriers of this gene have archites in their brains dedicated to increasing the range at which the pawn can shield distant mechanoids, along with increasing the amount of energy the shield has.</description>
@@ -911,7 +911,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor,EBSG.Lite">
         <defName>EBSG_ArchiteEnhancedRemoteRepair</defName>
         <label>archite enhanced remote repairing</label>
         <description>Carriers of this gene have archites in their brains dedicated to increasing the range at which the pawn can repair distant mechanoids.</description>
@@ -968,7 +968,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor,EBSG.Lite" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_ArchiteEnhancedMechRepair</defName>
         <label>archite enhanced mech repair speed</label>
         <description>Carriers of this gene have archites in their bodies dedicated to helping the pawn focus a mechanoid's energy to repairing faster.\n\nThis will not change the total amount of energy required for repairing.</description>
@@ -1019,7 +1019,7 @@
         </statOffsets>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor,EBSG.Lite" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_ArchiteEnhancedMechControl</defName>
         <label>archite enhanced mech control</label>
         <description>Carriers of this gene have archites in their brains dedicated to helping them control more mechanoids at the same time.</description>
@@ -1073,7 +1073,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor,EBSG.Lite" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_ArchiteEnhancedMechForming</defName>
         <label>archite enhanced mech gestation speed</label>
         <description>Carriers of this gene have archites in their bodies dedicated to helping the pawn direct mechanites used in mechanoid.</description>
@@ -1121,7 +1121,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor,EBSG.Lite" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_ArchiteEnhancedEncodingSpeed</defName>
         <label>archite enhanced encoding speed</label>
         <description>Carriers of this gene have archites in their brains dedicated to helping them encode new subcores quickly.\n\nThis normally only impacts the encoding rate of basic subcores, though other mods that add craftable subcores may utilize this speed as well.</description>
@@ -1169,7 +1169,7 @@
         </statOffsets>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor" ParentName="EBSGA_MechanitorBase">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Mechanitor,EBSG.Lite" ParentName="EBSGA_MechanitorBase">
         <defName>EBSG_ArchiteEnhancedMechWorkSpeed</defName>
         <label>archite enhanced mech work speed</label>
         <description>Carriers of this gene have archites in their brains dedicated to increasing the work speed of all mechanoids under the carrier's control.</description>

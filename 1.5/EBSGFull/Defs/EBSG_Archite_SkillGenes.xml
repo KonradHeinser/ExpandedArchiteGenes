@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <GeneCategoryDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneCategoryDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>EBSGA_ArchiteAptitudes</defName>
         <label>archite aptitudes</label>
         <displayPriorityInXenotype>201</displayPriorityInXenotype>
     </GeneCategoryDef>
 
-    <GeneDef Name="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes" Abstract="True">
+    <GeneDef Name="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes" Abstract="True">
         <geneClass>EBSGFramework.Gene_SkillChanging</geneClass>
         <displayCategory>EBSGA_ArchiteAptitudes</displayCategory>
         <description>The carrier's aptitude in this skill is raised to 16 due to a small number of specialized archites in their brain.</description>
@@ -18,7 +18,7 @@
         </customEffectDescriptions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_MinorArchite_Shooting</defName>
         <label>minor archite enhanced shooting</label>
         <iconPath>UI/Icons/Genes/Skills/Shooting/Remarkable</iconPath>
@@ -38,7 +38,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_MinorArchite_Melee</defName>
         <label>minor archite enhanced melee</label>
         <iconPath>UI/Icons/Genes/Skills/Melee/Remarkable</iconPath>
@@ -58,7 +58,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_MinorArchite_Construction</defName>
         <label>minor archite enhanced construction</label>
         <iconPath>UI/Icons/Genes/Skills/Construction/Remarkable</iconPath>
@@ -78,7 +78,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_MinorArchite_Mining</defName>
         <label>minor archite enhanced mining</label>
         <iconPath>UI/Icons/Genes/Skills/Mining/Remarkable</iconPath>
@@ -98,7 +98,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_MinorArchite_Cooking</defName>
         <label>minor archite enhanced cooking</label>
         <iconPath>UI/Icons/Genes/Skills/Cooking/Remarkable</iconPath>
@@ -118,7 +118,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_MinorArchite_Plants</defName>
         <label>minor archite enhanced plants</label>
         <iconPath>UI/Icons/Genes/Skills/Plants/Remarkable</iconPath>
@@ -138,7 +138,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_MinorArchite_Animals</defName>
         <label>minor archite enhanced animals</label>
         <iconPath>UI/Icons/Genes/Skills/Animals/Remarkable</iconPath>
@@ -158,7 +158,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_MinorArchite_Crafting</defName>
         <label>minor archite enhanced crafting</label>
         <iconPath>UI/Icons/Genes/Skills/Crafting/Remarkable</iconPath>
@@ -178,7 +178,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_MinorArchite_Artistic</defName>
         <label>minor archite enhanced artistic</label>
         <iconPath>UI/Icons/Genes/Skills/Artistic/Remarkable</iconPath>
@@ -198,7 +198,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_MinorArchite_Medicine</defName>
         <label>minor archite enhanced medical</label>
         <iconPath>UI/Icons/Genes/Skills/Medicine/Remarkable</iconPath>
@@ -218,7 +218,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_MinorArchite_Social</defName>
         <label>minor archite enhanced social</label>
         <iconPath>UI/Icons/Genes/Skills/Social/Remarkable</iconPath>
@@ -238,7 +238,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_MinorArchite_Intellectual</defName>
         <label>minor archite enhanced intellectual</label>
         <iconPath>UI/Icons/Genes/Skills/Intellectual/Remarkable</iconPath>
@@ -258,7 +258,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef Name="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes" Abstract="True">
+    <GeneDef Name="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes" Abstract="True">
         <geneClass>EBSGFramework.Gene_SkillChanging</geneClass>
         <displayCategory>EBSGA_ArchiteAptitudes</displayCategory>
         <description>The carrier's aptitude in this skill is raised to 20 due to specialized archites in their brain. These archites are also wired to trigger dopamine any time the carrier utilizes the aptitude, raising the passion for it by two.</description>
@@ -271,7 +271,7 @@
         </customEffectDescriptions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_Archite_Shooting</defName>
         <label>archite enhanced shooting</label>
         <iconPath>UI/Icons/Genes/Skills/Shooting/PassionAdd</iconPath>
@@ -292,7 +292,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_Archite_Melee</defName>
         <label>archite enhanced melee</label>
         <iconPath>UI/Icons/Genes/Skills/Melee/PassionAdd</iconPath>
@@ -313,7 +313,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_Archite_Construction</defName>
         <label>archite enhanced construction</label>
         <iconPath>UI/Icons/Genes/Skills/Construction/PassionAdd</iconPath>
@@ -334,7 +334,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_Archite_Mining</defName>
         <label>archite enhanced mining</label>
         <iconPath>UI/Icons/Genes/Skills/Mining/PassionAdd</iconPath>
@@ -355,7 +355,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_Archite_Cooking</defName>
         <label>archite enhanced cooking</label>
         <iconPath>UI/Icons/Genes/Skills/Cooking/PassionAdd</iconPath>
@@ -376,7 +376,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_Archite_Plants</defName>
         <label>archite enhanced plants</label>
         <iconPath>UI/Icons/Genes/Skills/Plants/PassionAdd</iconPath>
@@ -397,7 +397,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_Archite_Animals</defName>
         <label>archite enhanced animals</label>
         <iconPath>UI/Icons/Genes/Skills/Animals/PassionAdd</iconPath>
@@ -418,7 +418,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_Archite_Crafting</defName>
         <label>archite enhanced crafting</label>
         <iconPath>UI/Icons/Genes/Skills/Crafting/PassionAdd</iconPath>
@@ -439,7 +439,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_Archite_Artistic</defName>
         <label>archite enhanced artistic</label>
         <iconPath>UI/Icons/Genes/Skills/Artistic/PassionAdd</iconPath>
@@ -460,7 +460,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_Archite_Medicine</defName>
         <label>archite enhanced medical</label>
         <iconPath>UI/Icons/Genes/Skills/Medicine/PassionAdd</iconPath>
@@ -481,7 +481,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_Archite_Social</defName>
         <label>archite enhanced social</label>
         <iconPath>UI/Icons/Genes/Skills/Social/PassionAdd</iconPath>
@@ -502,7 +502,7 @@
         </modExtensions>
     </GeneDef>
 
-    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod, MoreBiotechStyleGenes.Aptitudes">
+    <GeneDef ParentName="MBSG_Archite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>MBSG_Archite_Intellectual</defName>
         <label>archite enhanced intellectual</label>
         <iconPath>UI/Icons/Genes/Skills/Intellectual/PassionAdd</iconPath>
