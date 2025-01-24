@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch> <!--To account for multiple potential sources, the patch will check for the genes themselves instead of specific mods-->
     <Operation Class="PatchOperationConditional">
-        <xpath>Defs/GeneDef[defName="EBSG_EnhancedVision"]</xpath>
+        <xpath>Defs/GeneDef[defName="EBSG_StrongVision"]</xpath>
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationConditional">

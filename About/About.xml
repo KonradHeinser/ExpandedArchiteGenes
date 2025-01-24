@@ -24,6 +24,8 @@
     <li>MoreBiotechStyleGenes.Mod</li>
     <li>EBSG.Food</li>
     <li>EBSG.Biomes</li>
+    <li>vanillaracesexpanded.insector</li>
+    <li>vanillaracesexpanded.lycanthrope</li>
   </loadAfter>
 
   <description>
