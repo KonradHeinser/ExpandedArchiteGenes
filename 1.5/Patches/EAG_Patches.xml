@@ -100,15 +100,15 @@
                     <xpath>Defs/GeneDef[defName="EBSG_StrongArchiteMetabolism"]/displayCategory</xpath>
                     <value><displayCategory>AG_FoodConsumption</displayCategory></value>
                 </li>
-                <li Class="PatchOperationReplace">
+                <li Class="PatchOperationReplace" MayRequireAnyOf="EBSG.AiO,EBSG.Food">
                     <xpath>Defs/GeneDef[defName="EBSGA_MinorArchiteEatingSpeed"]/displayCategory</xpath>
                     <value><displayCategory>AG_FoodConsumption</displayCategory></value>
                 </li>
-                <li Class="PatchOperationReplace">
+                <li Class="PatchOperationReplace" MayRequireAnyOf="EBSG.AiO,EBSG.Food,EBSG.Lite">
                     <xpath>Defs/GeneDef[defName="EBSGA_ArchiteEatingSpeed"]/displayCategory</xpath>
                     <value><displayCategory>AG_FoodConsumption</displayCategory></value>
                 </li>
-                <li Class="PatchOperationReplace">
+                <li Class="PatchOperationReplace" MayRequireAnyOf="EBSG.AiO,EBSG.Food">
                     <xpath>Defs/GeneDef[defName="EBSGA_StrongArchiteEatingSpeed"]/displayCategory</xpath>
                     <value><displayCategory>AG_FoodConsumption</displayCategory></value>
                 </li>
