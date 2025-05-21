@@ -109,7 +109,7 @@
                     <value><displayCategory>AG_FoodConsumption</displayCategory></value>
                 </li>
                 <li Class="PatchOperationReplace" MayRequireAnyOf="EBSG.AiO,EBSG.Food">
-                    <xpath>Defs/GeneDef[defName="EBSGA_StrongArchiteEatingSpeed"]/displayCategory</xpath>
+                    <xpath>Defs/GeneDef[defName="EBSGA_MajorArchiteEatingSpeed"]/displayCategory</xpath>
                     <value><displayCategory>AG_FoodConsumption</displayCategory></value>
                 </li>
             </operations>
