@@ -1,0 +1,1064 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> <!--To account for multiple potential sources, the patch will check for the genes themselves instead of specific mods-->
+    <GeneDef ParentName="CellInstabilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,CellStabilityGenes.Mod">
+        <defName>EBSG_MinorArchiteCellStability</defName>
+        <label>minor archite cell stability</label>
+        <description>Carriers of this gene have a small number of archites in their bloodstream dedicated to increasing the stability of their cell-replication machinery.\n\nThese options are here to allow the creation of a long living pawn that isn't ageless.</description>
+        <iconPath>MBSG/MildCellStability</iconPath>
+        <displayOrderInCategory>126.4</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <LifespanFactor>1.4</LifespanFactor>
+            <CancerRate>0.2</CancerRate>
+            <ImmunityGainSpeed>1.08</ImmunityGainSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="CellInstabilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,CellStabilityGenes.Mod">
+        <defName>EBSG_ArchiteCellStability</defName>
+        <label>archite cell stability</label>
+        <description>Carriers of this gene have archites in their bloodstream dedicated to increasing the stability of their cell-replication machinery.\n\nThese options are here to allow the creation of a long living pawn that isn't ageless.</description>
+        <iconPath>MBSG/MajorCellStability</iconPath>
+        <displayOrderInCategory>126.3</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <LifespanFactor>1.8</LifespanFactor>
+            <CancerRate>0.02</CancerRate>
+            <ImmunityGainSpeed>1.16</ImmunityGainSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="CellInstabilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,CellStabilityGenes.Mod">
+        <defName>EBSG_MajorArchiteCellStability</defName>
+        <label>major archite cell stability</label>
+        <description>Carriers of this gene have a large number of archites in their bloodstream dedicated to increasing the stability of their cell-replication machinery.\n\nThese options are here to allow the creation of a long living pawn that isn't ageless.</description>
+        <iconPath>MBSG/ExtremeCellStability</iconPath>
+        <displayOrderInCategory>126.2</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <LifespanFactor>2.2</LifespanFactor>
+            <CancerRate>0.002</CancerRate>
+            <ImmunityGainSpeed>1.24</ImmunityGainSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMaxTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,ClimatePreferenceGenes.Mod">
+        <defName>EBSG_MinorArchiteHeatTolerance</defName>
+        <label>minor archite heat tolerance</label>
+        <labelShortAdj>hot</labelShortAdj>
+        <description>Carriers of this gene have a small number of archites throughout their body that help protect them from hot temperatures.\n\nThis will not protect against fire, just ambient heat.</description>
+        <iconPath>UI/Icons/Genes/Gene_MaxTemperatureSmallIncrease</iconPath>
+        <displayOrderInCategory>50.1</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statOffsets>
+            <ComfyTemperatureMax>40</ComfyTemperatureMax>
+        </statOffsets>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>hot</symbol></li>
+                <li><symbol>heat</symbol></li>
+                <li><symbol>sun</symbol></li>
+                <li><symbol>sweat</symbol></li>
+                <li><symbol>bake</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMaxTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,ClimatePreferenceGenes.Mod">
+        <defName>EBSG_ArchiteHeatTolerance</defName>
+        <label>archite heat tolerance</label>
+        <labelShortAdj>hot</labelShortAdj>
+        <description>Carriers of this gene have archites throughout their body that help protect them from hot temperatures.\n\nThis will not protect against fire, just ambient heat.</description>
+        <iconPath>UI/Icons/Genes/Gene_MaxTemperatureLargeIncrease</iconPath>
+        <displayOrderInCategory>50.2</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statOffsets>
+            <ComfyTemperatureMax>80</ComfyTemperatureMax>
+        </statOffsets>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>hot</symbol></li>
+                <li><symbol>heat</symbol></li>
+                <li><symbol>sun</symbol></li>
+                <li><symbol>sweat</symbol></li>
+                <li><symbol>bake</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMaxTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,ClimatePreferenceGenes.Mod">
+        <defName>EBSG_MajorArchiteHeatTolerance</defName>
+        <label>major archite heat tolerance</label>
+        <labelShortAdj>hot</labelShortAdj>
+        <description>Carriers of this gene have a large number of archites throughout their body that help protect them from hot temperatures.\n\nThis will not protect against fire, just ambient heat.</description>
+        <iconPath>UI/Icons/Genes/Gene_MaxTemperatureLargeIncrease</iconPath>
+        <displayOrderInCategory>50.3</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <statOffsets>
+            <ComfyTemperatureMax>120</ComfyTemperatureMax>
+        </statOffsets>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>hot</symbol></li>
+                <li><symbol>heat</symbol></li>
+                <li><symbol>sun</symbol></li>
+                <li><symbol>sweat</symbol></li>
+                <li><symbol>bake</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMinTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,ClimatePreferenceGenes.Mod">
+        <defName>EBSG_MinorArchiteColdTolerance</defName>
+        <label>minor archite cold tolerance</label>
+        <labelShortAdj>cold</labelShortAdj>
+        <description>Carriers of this gene have a small number of archites throughout their body that help insulate them from cold temperatures.\n\nThis will not protect against cold related damage, just low temperatures.</description>
+        <iconPath>UI/Icons/Genes/Gene_MinTemperatureSmallDecrease</iconPath>
+        <displayOrderInCategory>20.1</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statOffsets>
+            <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+        </statOffsets>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>ice</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMinTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,ClimatePreferenceGenes.Mod">
+        <defName>EBSG_ArchiteColdTolerance</defName>
+        <label>archite cold tolerance</label>
+        <labelShortAdj>cold</labelShortAdj>
+        <description>Carriers of this gene have  archites throughout their body that help insulate them from cold temperatures.\n\nThis will not protect against cold related damage, just low temperatures.</description>
+        <iconPath>UI/Icons/Genes/Gene_MinTemperatureSmallDecrease</iconPath>
+        <displayOrderInCategory>20.2</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statOffsets>
+            <ComfyTemperatureMin>-80</ComfyTemperatureMin>
+        </statOffsets>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>ice</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMinTempBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,ClimatePreferenceGenes.Mod">
+        <defName>EBSG_MajorArchiteColdTolerance</defName>
+        <label>major archite cold tolerance</label>
+        <labelShortAdj>cold</labelShortAdj>
+        <description>Carriers of this gene have a large number of archites throughout their body that help insulate them from cold temperatures.\n\nThis will not protect against cold related damage, just low temperatures.</description>
+        <iconPath>UI/Icons/Genes/Gene_MinTemperatureSmallDecrease</iconPath>
+        <displayOrderInCategory>20.3</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <statOffsets>
+            <ComfyTemperatureMin>-120</ComfyTemperatureMin>
+        </statOffsets>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>ice</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="FertilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,FertilityGenes.Mod">
+        <defName>EBSG_ArchiteFertility</defName>
+        <label>archite fertility</label>
+        <description>Carriers of this gene have archites in their cells that make it exceptionally easy for them to become pregnant or impregnate others. Their reproductive system is so hyperactive that just being in the same room is cause for concern.</description>
+        <iconPath>MBSG/Gene_HyperFertile</iconPath>
+        <displayOrderInCategory>140.1</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <Fertility>10</Fertility>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Beauty">
+        <defName>EBSG_MinorArchiteBeauty</defName>
+        <label>minor archite beauty</label>
+        <description>Carriers of this gene have some archites in their skin dedicated to making their features distinctive and strong without being exaggerated, and their skin is nearly perfect. They are almost always seen as beautiful.</description>
+        <iconPath>UI/Icons/Genes/Gene_Pretty</iconPath>
+        <displayOrderInCategory>30.4</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <biostatCpx>3</biostatCpx>
+        <biostatArc>1</biostatArc>
+        <statOffsets>
+            <PawnBeauty>5</PawnBeauty>
+        </statOffsets>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>charm</symbol></li>
+                <li><symbol>ele</symbol></li>
+                <li><symbol>grace</symbol></li>
+                <li><symbol>neat</symbol></li>
+                <li><symbol>cute</symbol></li>
+                <li><symbol>beauti</symbol></li>
+                <li><symbol>smooth</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <displayCategory>Beauty</displayCategory>
+        <exclusionTags>
+            <li>Repulsive</li>
+            <li>Beauty</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Beauty">
+        <defName>EBSG_ArchiteBeauty</defName>
+        <label>archite beauty</label>
+        <description>Carriers of this gene have archites in their skin dedicated to making their features distinctive and strong without being exaggerated, and their skin is nearly perfect. They are almost always seen as beautiful.</description>
+        <iconPath>UI/Icons/Genes/Gene_Beautiful</iconPath>
+        <displayOrderInCategory>30.5</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <biostatCpx>6</biostatCpx>
+        <biostatArc>2</biostatArc>
+        <statOffsets>
+            <PawnBeauty>10</PawnBeauty>
+        </statOffsets>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>charm</symbol></li>
+                <li><symbol>ele</symbol></li>
+                <li><symbol>grace</symbol></li>
+                <li><symbol>neat</symbol></li>
+                <li><symbol>cute</symbol></li>
+                <li><symbol>beauti</symbol></li>
+                <li><symbol>smooth</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <displayCategory>Beauty</displayCategory>
+        <exclusionTags>
+            <li>Repulsive</li>
+            <li>Beauty</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MBSG.Beauty">
+        <defName>EBSG_MajorArchiteBeauty</defName>
+        <label>major archite beauty</label>
+        <description>Carriers of this gene have a lot of archites in their skin dedicated to making their features distinctive and strong without being exaggerated, and their skin is nearly perfect. They are almost always seen as beautiful.</description>
+        <iconPath>MBSG/Gene_SuperBeautiful</iconPath>
+        <displayOrderInCategory>30.6</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <displayCategory>Beauty</displayCategory>
+        <biostatCpx>9</biostatCpx>
+        <biostatArc>3</biostatArc>
+        <statOffsets>
+            <PawnBeauty>15</PawnBeauty>
+        </statOffsets>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>charm</symbol></li>
+                <li><symbol>ele</symbol></li>
+                <li><symbol>grace</symbol></li>
+                <li><symbol>neat</symbol></li>
+                <li><symbol>cute</symbol></li>
+                <li><symbol>beauti</symbol></li>
+                <li><symbol>smooth</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>Beauty</li>
+            <li>Repulsive</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMoveSpeedBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Movement">
+        <defName>EBSG_MinorArchiteSpeed</defName>
+        <label>minor archite speed</label> 
+        <labelShortAdj>arch-fast</labelShortAdj>
+        <description>Carriers of this gene have a small number of archites in their muscles dedicated to making them move much more quickly than normal.</description>
+        <iconPath>UI/Icons/Genes/Gene_QuickMovespeed</iconPath>
+        <displayOrderInCategory>20.3</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statOffsets>
+            <MoveSpeed>0.4</MoveSpeed>
+        </statOffsets>
+        <biostatCpx>3</biostatCpx>
+        <biostatArc>1</biostatArc>
+        <symbolPack>
+        <wholeNameSymbols>
+            <li><symbol>speeder</symbol></li>
+        </wholeNameSymbols>
+        <prefixSymbols>
+            <li><symbol>speed</symbol></li>
+            <li><symbol>fast</symbol></li>
+            <li><symbol>quick</symbol></li>
+            <li><symbol>agi</symbol></li>
+            <li><symbol>nimb</symbol></li>
+            <li><symbol>swift</symbol></li>
+            <li><symbol>flash</symbol></li>
+        </prefixSymbols>
+        <suffixSymbols>
+            <li><symbol>flash</symbol></li>
+            <li><symbol>runner</symbol></li>
+            <li><symbol>sprinter</symbol></li>
+        </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMoveSpeedBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Movement">
+        <defName>EBSG_ArchiteSpeed</defName>
+        <label>archite speed</label> 
+        <labelShortAdj>arch-fast</labelShortAdj>
+        <description>Carriers of this gene have archites in their muscles dedicated to making them move much more quickly than normal.</description>
+        <iconPath>UI/Icons/Genes/Gene_VeryQuickMovespeed</iconPath>
+        <displayOrderInCategory>20.4</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statOffsets>
+            <MoveSpeed>0.8</MoveSpeed>
+        </statOffsets>
+        <biostatCpx>6</biostatCpx>
+        <biostatArc>2</biostatArc>
+        <symbolPack>
+        <wholeNameSymbols>
+            <li><symbol>speeder</symbol></li>
+        </wholeNameSymbols>
+        <prefixSymbols>
+            <li><symbol>speed</symbol></li>
+            <li><symbol>fast</symbol></li>
+            <li><symbol>quick</symbol></li>
+            <li><symbol>agi</symbol></li>
+            <li><symbol>nimb</symbol></li>
+            <li><symbol>swift</symbol></li>
+            <li><symbol>flash</symbol></li>
+        </prefixSymbols>
+        <suffixSymbols>
+            <li><symbol>flash</symbol></li>
+            <li><symbol>runner</symbol></li>
+            <li><symbol>sprinter</symbol></li>
+        </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMoveSpeedBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Movement">
+        <defName>EBSG_MajorArchiteSpeed</defName>
+        <label>major archite speed</label> 
+        <labelShortAdj>arch-fast</labelShortAdj>
+        <description>Carriers of this gene have a latge number of archites in their muscles dedicated to making them move much more quickly than normal.</description>
+        <iconPath>UI/Icons/Genes/Gene_VeryQuickMovespeed</iconPath>
+        <displayOrderInCategory>20.5</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <statOffsets>
+            <MoveSpeed>1.2</MoveSpeed>
+        </statOffsets>
+        <biostatCpx>9</biostatCpx>
+        <biostatArc>3</biostatArc>
+        <symbolPack>
+        <wholeNameSymbols>
+            <li><symbol>speeder</symbol></li>
+        </wholeNameSymbols>
+        <prefixSymbols>
+            <li><symbol>speed</symbol></li>
+            <li><symbol>fast</symbol></li>
+            <li><symbol>quick</symbol></li>
+            <li><symbol>agi</symbol></li>
+            <li><symbol>nimb</symbol></li>
+            <li><symbol>swift</symbol></li>
+            <li><symbol>flash</symbol></li>
+        </prefixSymbols>
+        <suffixSymbols>
+            <li><symbol>flash</symbol></li>
+            <li><symbol>runner</symbol></li>
+            <li><symbol>sprinter</symbol></li>
+        </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMeleeDamageBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Violence">
+        <defName>EBSG_MinorArchiteMeleeDamage</defName>
+        <label>minor archite melee damage</label>
+        <labelShortAdj>strong</labelShortAdj>
+        <description>Carriers of this gene have a small number of archites in their muscle fibers that make their strikes more accurate and powerful.</description>
+        <iconPath>UI/Icons/Genes/Gene_StrongMeleeDamage</iconPath>
+        <displayOrderInCategory>42.1</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statFactors>
+            <MeleeDamageFactor>2</MeleeDamageFactor>
+        </statFactors>
+        <biostatCpx>3</biostatCpx>
+        <biostatArc>1</biostatArc>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>basher</symbol></li>
+                <li><symbol>striker</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>bash</symbol></li>
+                <li><symbol>strong</symbol></li>
+                <li><symbol>strike</symbol></li>
+                <li><symbol>hercu</symbol></li>
+                <li><symbol>achillo</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMeleeDamageBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Violence">
+        <defName>EBSG_ArchiteMeleeDamage</defName>
+        <label>archite melee damage</label>
+        <labelShortAdj>strong</labelShortAdj>
+        <description>Carriers of this gene have archites in their muscle fibers that make their strikes more accurate and powerful.</description>
+        <iconPath>UI/Icons/Genes/Gene_StrongMeleeDamage</iconPath>
+        <displayOrderInCategory>42.2</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statFactors>
+            <MeleeDamageFactor>3</MeleeDamageFactor>
+        </statFactors>
+        <biostatCpx>6</biostatCpx>
+        <biostatArc>2</biostatArc>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>basher</symbol></li>
+                <li><symbol>striker</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>bash</symbol></li>
+                <li><symbol>strong</symbol></li>
+                <li><symbol>strike</symbol></li>
+                <li><symbol>hercu</symbol></li>
+                <li><symbol>achillo</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMeleeDamageBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Violence">
+        <defName>EBSG_MajorArchiteMeleeDamage</defName>
+        <label>major archite melee damage</label>
+        <labelShortAdj>strong</labelShortAdj>
+        <description>Carriers of this gene have a large number of archites in their muscle fibers that make their strikes more accurate and powerful.</description>
+        <iconPath>UI/Icons/Genes/Gene_StrongMeleeDamage</iconPath>
+        <displayOrderInCategory>42.3</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <statFactors>
+            <MeleeDamageFactor>4</MeleeDamageFactor>
+        </statFactors>
+        <biostatCpx>9</biostatCpx>
+        <biostatArc>3</biostatArc>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>basher</symbol></li>
+                <li><symbol>striker</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>bash</symbol></li>
+                <li><symbol>strong</symbol></li>
+                <li><symbol>strike</symbol></li>
+                <li><symbol>hercu</symbol></li>
+                <li><symbol>achillo</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMoodBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreHappinessGenes.Mod">
+        <defName>EBSG_MinorArchiteHappiness</defName>
+        <label>minor archite induced happiness</label>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to stopping negative thoughts.</description>
+        <iconPath>UI/Icons/Genes/Gene_Optimist</iconPath>
+        <displayOrderInCategory>32.1</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <biostatCpx>3</biostatCpx>
+        <biostatArc>1</biostatArc>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>bright</symbol></li>
+                <li><symbol>sun</symbol></li>
+                <li><symbol>light</symbol></li>
+                <li><symbol>cheer</symbol></li>
+                <li><symbol>glad</symbol></li>
+                <li><symbol>up</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>bright</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMoodBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreHappinessGenes.Mod">
+        <defName>EBSG_ArchiteHappiness</defName>
+        <label>archite induced happiness</label>
+        <description>Carriers of this gene have archites in their brain dedicated to stopping negative thoughts.</description>
+        <iconPath>UI/Icons/Genes/Gene_Sanguine</iconPath>
+        <displayOrderInCategory>32.2</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <biostatCpx>6</biostatCpx>
+        <biostatArc>2</biostatArc>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>bright</symbol></li>
+                <li><symbol>sun</symbol></li>
+                <li><symbol>light</symbol></li>
+                <li><symbol>cheer</symbol></li>
+                <li><symbol>glad</symbol></li>
+                <li><symbol>up</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>bright</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneMoodBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreHappinessGenes.Mod">
+        <defName>EBSG_MajorArchiteHappiness</defName>
+        <label>major archite induced happiness</label>
+        <description>Carriers of this gene have a large number of archites in their brain dedicated to stopping negative thoughts.</description>
+        <iconPath>UI/Icons/Genes/Gene_Sanguine</iconPath>
+        <displayOrderInCategory>32.3</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatCpx>9</biostatCpx>
+        <biostatArc>3</biostatArc>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>bright</symbol></li>
+                <li><symbol>sun</symbol></li>
+                <li><symbol>light</symbol></li>
+                <li><symbol>cheer</symbol></li>
+                <li><symbol>glad</symbol></li>
+                <li><symbol>up</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>bright</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreHappinessGenes.Mod">
+        <defName>EBSG_MinorArchiteHappiness</defName>
+        <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <requiredGenes>
+            <li>EBSG_MinorArchiteHappiness</li>
+        </requiredGenes>
+        <stages>
+            <li>
+                <label>genetic joy</label>
+                <description>Natural bonus from 'minor archite induced happiness' gene.</description>
+                <baseMoodEffect>20</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreHappinessGenes.Mod">
+        <defName>EBSG_ArchiteHappiness</defName>
+        <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <requiredGenes>
+            <li>EBSG_ArchiteHappiness</li>
+        </requiredGenes>
+        <stages>
+            <li>
+                <label>genetic joy</label>
+                <description>Natural bonus from 'archite induced happiness' gene.</description>
+                <baseMoodEffect>40</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreHappinessGenes.Mod">
+        <defName>EBSG_MajorArchiteHappiness</defName>
+        <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <requiredGenes>
+            <li>EBSG_MajorArchiteHappiness</li>
+        </requiredGenes>
+        <stages>
+            <li>
+                <label>genetic joy</label>
+                <description>Natural bonus from 'major archite induced happiness' gene.</description>
+                <baseMoodEffect>60</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <GeneDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Hemogenic">
+        <defName>EBSG_MinorArchiteHemogenRecovery</defName>
+        <label>minor archite hemogen recovery</label>
+        <labelShortAdj>rejuvenating</labelShortAdj>
+        <description>Carriers have a small number of archites in their blood that generate 10 hemogen per day.\n\nUnlike normal hemogen recovery genes, you can only have one type of archite hemogen recovery at a time. These will work with the normal hemogen regen/drain genes.</description>
+        <resourceLabel>hemogen</resourceLabel>
+        <geneClass>Gene_HemogenDrain</geneClass>
+        <iconPath>MBSG/Gene_HemogenicRecovery</iconPath>
+        <prerequisite>Hemogenic</prerequisite>
+        <resourceLossPerDay>-0.1</resourceLossPerDay>
+        <displayCategory>Hemogen</displayCategory>
+        <displayOrderInCategory>-3.0</displayOrderInCategory>
+        <minAgeActive>3</minAgeActive>
+        <marketValueFactor>1.25</marketValueFactor>
+        <biostatCpx>3</biostatCpx>
+        <biostatArc>1</biostatArc>
+        <exclusionTags>
+            <li>EBSG_ArchiteHemogenRecovery</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Hemogenic">
+        <defName>EBSG_ArchiteHemogenRecovery</defName>
+        <label>archite hemogen recovery</label>
+        <labelShortAdj>rejuvenating</labelShortAdj>
+        <description>Carriers have archites in their blood that generate 20 hemogen per day.\n\nUnlike normal hemogen recovery genes, you can only have one type of archite hemogen recovery at a time. These will work with the normal hemogen regen/drain genes.</description>
+        <resourceLabel>hemogen</resourceLabel>
+        <geneClass>Gene_HemogenDrain</geneClass>
+        <iconPath>MBSG/Gene_HemogenicRejuvenation</iconPath>
+        <prerequisite>Hemogenic</prerequisite>
+        <resourceLossPerDay>-0.2</resourceLossPerDay>
+        <displayCategory>Hemogen</displayCategory>
+        <displayOrderInCategory>-3.1</displayOrderInCategory>
+        <minAgeActive>3</minAgeActive>
+        <marketValueFactor>1.25</marketValueFactor>
+        <biostatCpx>6</biostatCpx>
+        <biostatArc>2</biostatArc>
+        <exclusionTags>
+            <li>EBSG_ArchiteHemogenRecovery</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Hemogenic">
+        <defName>EBSG_MajorArchiteHemogenRecovery</defName>
+        <label>major archite hemogen recovery</label>
+        <labelShortAdj>rejuvenating</labelShortAdj>
+        <description>Carriers have a large number of archites in their blood that generate 30 hemogen per day.\n\nUnlike normal hemogen recovery genes, you can only have one type of archite hemogen recovery at a time. These will work with the normal hemogen regen/drain genes.</description>
+        <resourceLabel>hemogen</resourceLabel>
+        <geneClass>Gene_HemogenDrain</geneClass>
+        <iconPath>MBSG/Gene_HemogenicRejuvenation</iconPath>
+        <prerequisite>Hemogenic</prerequisite>
+        <resourceLossPerDay>-0.3</resourceLossPerDay>
+        <displayCategory>Hemogen</displayCategory>
+        <displayOrderInCategory>-3.2</displayOrderInCategory>
+        <minAgeActive>3</minAgeActive>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatCpx>9</biostatCpx>
+        <biostatArc>3</biostatArc>
+        <exclusionTags>
+            <li>EBSG_ArchiteHemogenRecovery</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="GenePainBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MorePainGenes.Mod">
+        <defName>EBSG_ArchiteRelentlessness</defName>
+        <label>archite relentlessness</label>
+        <description>Carriers of this gene have archites in their brain that stop them from feeling pain and stop them from being slowed down when being hit by damage.</description>
+        <iconPath>UI/Icons/Genes/Gene_Unstoppable</iconPath>
+        <displayOrderInCategory>32.1</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <painFactor>0</painFactor>
+        <biostatCpx>3</biostatCpx>
+        <biostatArc>1</biostatArc>
+        <statFactors>
+            <StaggerDurationFactor>0</StaggerDurationFactor>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>dull</symbol></li>
+                <li><symbol>daze</symbol></li>
+                <li><symbol>tough</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>Painful</li>
+            <li>Stoppable</li>
+            <li>EBSG_Wimp</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="GenePsychicAbilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MorePsychicSensitivityGenes.Mod">
+        <defName>EBSG_MinorArchitePsychicSensitivity</defName>
+        <label>minor archite psy-sensitivity</label> 
+        <labelShortAdj>psy-super-extreme</labelShortAdj>
+        <description>Carriers of this gene have a small clump of archites in their body that help them be more influenced by psychic effects.</description>
+        <iconPath>UI/Icons/Genes/Gene_EnhancedPsychicAbility</iconPath>
+        <displayOrderInCategory>31.1</displayOrderInCategory>
+        <statOffsets>
+            <PsychicSensitivity>0.4</PsychicSensitivity>
+            <MeditationFocusGain>0.2</MeditationFocusGain>
+            <PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
+        </statOffsets>
+        <biostatCpx>3</biostatCpx>
+        <biostatArc>1</biostatArc>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>psy</symbol>
+                    <weight>3</weight>
+                </li>
+                <li><symbol>senso</symbol></li>
+                <li><symbol>sensi</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GenePsychicAbilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MorePsychicSensitivityGenes.Mod">
+        <defName>EBSG_ArchitePsychicSensitivity</defName>
+        <label>archite psy-sensitivity</label> 
+        <labelShortAdj>psy-super-extreme</labelShortAdj>
+        <description>Carriers of this gene have a clump of archites in their body that help them be more influenced by psychic effects.</description>
+        <iconPath>UI/Icons/Genes/Gene_EnhancedPsychicAbility</iconPath>
+        <displayOrderInCategory>31.2</displayOrderInCategory>
+        <statOffsets>
+            <PsychicSensitivity>0.8</PsychicSensitivity>
+            <MeditationFocusGain>0.4</MeditationFocusGain>
+            <PsychicEntropyRecoveryRate>0.4</PsychicEntropyRecoveryRate>
+        </statOffsets>
+        <biostatCpx>6</biostatCpx>
+        <biostatArc>2</biostatArc>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>psy</symbol>
+                    <weight>3</weight>
+                </li>
+                <li><symbol>senso</symbol></li>
+                <li><symbol>sensi</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GenePsychicAbilityBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MorePsychicSensitivityGenes.Mod">
+        <defName>EBSG_MajorArchitePsychicSensitivity</defName>
+        <label>major archite psy-sensitivity</label> 
+        <labelShortAdj>psy-super-extreme</labelShortAdj>
+        <description>Carriers of this gene have a large clump of archites in their body that help them be more influenced by psychic effects.</description>
+        <iconPath>UI/Icons/Genes/Gene_EnhancedPsychicAbility</iconPath>
+        <displayOrderInCategory>31.3</displayOrderInCategory>
+        <statOffsets>
+            <PsychicSensitivity>1.2</PsychicSensitivity>
+            <MeditationFocusGain>0.6</MeditationFocusGain>
+            <PsychicEntropyRecoveryRate>0.6</PsychicEntropyRecoveryRate>
+        </statOffsets>
+        <biostatCpx>9</biostatCpx>
+        <biostatArc>3</biostatArc>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>psy</symbol>
+                    <weight>3</weight>
+                </li>
+                <li><symbol>senso</symbol></li>
+                <li><symbol>sensi</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSleepBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreSleepyGenes.Mod">
+        <defName>EBSG_ArchiteWakefulness</defName>
+        <label>archite wakefulness</label>
+        <description>Carriers of this gene have archites in their brain that ensure they get tired less quickly than others.</description>
+        <iconPath>UI/Icons/Genes/Gene_QuickSleeper</iconPath>
+        <displayOrderInCategory>30.1</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statFactors>
+            <RestFallRateFactor>0.40</RestFallRateFactor>
+        </statFactors>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>wake</symbol></li>
+                <li><symbol>night</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSleepBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreSleepyGenes.Mod">
+        <defName>EBSG_ArchiteNeverSleep</defName>
+        <label>archite circadian ryhthm</label>
+        <description>Carriers of this gene have archites in their brain which allows clusters of neurons to sleep while the rest of the brain stays awake. They never need to sleep.</description>
+        <iconPath>UI/Icons/Genes/Gene_Neversleep</iconPath>
+        <marketValueFactor>1.5</marketValueFactor>
+        <displayOrderInCategory>30.2</displayOrderInCategory>
+        <disablesNeeds>
+            <li>Rest</li>
+        </disablesNeeds>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>wake</symbol></li>
+                <li><symbol>night</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>Sleeping</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneToughnessBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreToughnessGenes.Mod">
+        <defName>EBSG_MinorArchiteRobustness</defName>
+        <label>minor archite robustness</label>
+        <description>Carriers of this gene have a small number of archites throughout their skin and bones dedicated to reducing the amount of damage they receive.</description>
+        <iconPath>UI/Icons/Genes/Gene_Tough</iconPath>
+        <displayOrderInCategory>12.1</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statFactors>
+            <IncomingDamageFactor>0.50</IncomingDamageFactor>
+        </statFactors>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>tough</symbol></li>
+                <li><symbol>stout</symbol></li>
+                <li><symbol>rough</symbol></li>
+                <li><symbol>lump</symbol></li>
+                <li><symbol>bruise</symbol></li>
+                <li><symbol>stiff</symbol></li>
+                <li><symbol>hard</symbol></li>
+                <li><symbol>vigo</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneToughnessBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreToughnessGenes.Mod">
+        <defName>EBSG_ArchiteRobustness</defName>
+        <label>archite robustness</label>
+        <description>Carriers of this gene have archites throughout their skin and bones dedicated to reducing the amount of damage they receive.</description>
+        <iconPath>UI/Icons/Genes/Gene_Tough</iconPath>
+        <displayOrderInCategory>12.2</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statFactors>
+            <IncomingDamageFactor>0.25</IncomingDamageFactor>
+        </statFactors>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>tough</symbol></li>
+                <li><symbol>stout</symbol></li>
+                <li><symbol>rough</symbol></li>
+                <li><symbol>lump</symbol></li>
+                <li><symbol>bruise</symbol></li>
+                <li><symbol>stiff</symbol></li>
+                <li><symbol>hard</symbol></li>
+                <li><symbol>vigo</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneToughnessBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreToughnessGenes.Mod">
+        <defName>EBSG_MajorArchiteRobustness</defName>
+        <label>major archite robustness</label>
+        <description>Carriers of this gene have a large number of archites throughout their skin and bones dedicated to reducing the amount of damage they receive.</description>
+        <iconPath>UI/Icons/Genes/Gene_Tough</iconPath>
+        <displayOrderInCategory>12.3</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <statFactors>
+            <IncomingDamageFactor>0.10</IncomingDamageFactor>
+        </statFactors>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>tough</symbol></li>
+                <li><symbol>stout</symbol></li>
+                <li><symbol>rough</symbol></li>
+                <li><symbol>lump</symbol></li>
+                <li><symbol>bruise</symbol></li>
+                <li><symbol>stiff</symbol></li>
+                <li><symbol>hard</symbol></li>
+                <li><symbol>vigo</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneLearningBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreStudyGenes.Mod">
+        <defName>EBSG_MinorArchiteLearning</defName>
+        <label>minor archite learning</label>
+        <description>Carriers of this gene have a small number of archites in their brain that their memories and ability to grasp new ideas quickly.</description>
+        <iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+        <displayOrderInCategory>37.1</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statFactors>
+            <GlobalLearningFactor>2.0</GlobalLearningFactor>
+            <LearningRateFactor MayRequire="ChildrenCanLearnFast.Mod">2.0</LearningRateFactor>
+        </statFactors>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>brain</symbol></li>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>smart</symbol></li>
+                <li><symbol>corti</symbol></li>
+                <li><symbol>neuro</symbol></li>
+                <li><symbol>mnemo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>brain</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneLearningBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreStudyGenes.Mod">
+        <defName>EBSG_ArchiteLearning</defName>
+        <label>archite learning</label>
+        <description>Carriers of this gene have archites in their brain that their memories and ability to grasp new ideas quickly.</description>
+        <iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+        <displayOrderInCategory>37.2</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statFactors>
+            <GlobalLearningFactor>3.0</GlobalLearningFactor>
+            <LearningRateFactor MayRequire="ChildrenCanLearnFast.Mod">3.0</LearningRateFactor>
+        </statFactors>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>brain</symbol></li>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>smart</symbol></li>
+                <li><symbol>corti</symbol></li>
+                <li><symbol>neuro</symbol></li>
+                <li><symbol>mnemo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>brain</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneLearningBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreStudyGenes.Mod">
+        <defName>EBSG_MajorArchiteLearning</defName>
+        <label>major archite learning</label>
+        <description>Carriers of this gene have a large number of archites in their brain that their memories and ability to grasp new ideas quickly.</description>
+        <iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+        <displayOrderInCategory>37.3</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <statFactors>
+            <GlobalLearningFactor>4.0</GlobalLearningFactor>
+            <LearningRateFactor MayRequire="ChildrenCanLearnFast.Mod">4.0</LearningRateFactor>
+        </statFactors>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>brain</symbol></li>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>smart</symbol></li>
+                <li><symbol>corti</symbol></li>
+                <li><symbol>neuro</symbol></li>
+                <li><symbol>mnemo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>nerd</symbol></li>
+                <li><symbol>brain</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneToxResistBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreAntitoxicGenes.Mod">
+        <defName>EBSG_ArchiteToxImmunity</defName>
+        <label>archite tox immunity</label>
+        <labelShortAdj>tox-immune</labelShortAdj>
+        <description>Carriers of this gene have archites in their blood that make them totally immune to toxic buildup from all sources including polluted terrain, toxic fallout, tox gas, and direct attacks with venom or injected poison. They are also not bothered by acidic smog.\n\nThe carrier's biochemical pathways are modified to route around interference from nearly all known toxins. Along with enhancements to the kidneys and liver, this keeps carriers comfortable in even the most toxic of environments.</description>
+        <iconPath>UI/Icons/Genes/Gene_TotalToxicityResistance</iconPath>
+        <displayOrderInCategory>10.1</displayOrderInCategory>
+        <immuneToToxGasExposure>true</immuneToToxGasExposure>
+        <marketValueFactor>1.25</marketValueFactor>
+        <customEffectDescriptions>
+            <li>Tox gas immunity</li>
+        </customEffectDescriptions>
+        <statOffsets>
+            <ToxicResistance>1</ToxicResistance>
+        </statOffsets>
+        <biostatCpx>3</biostatCpx>
+        <biostatArc>1</biostatArc>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>tox</symbol>
+                    <weight>3</weight>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>ToxicEnvironmentResistance</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneHealingRateBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreWoundHealingGenes.Mod">
+        <defName>EBSG_MinorArchiteWoundHealing</defName>
+        <label>minor archite wound healing</label>
+        <labelShortAdj>super-heal</labelShortAdj>
+        <description>Carriers of this gene have a small number of archites in their blood dedicated to healing their wounds faster than normal.</description>
+        <iconPath>UI/Icons/Genes/Gene_WoundHealingRateFast</iconPath>
+        <displayOrderInCategory>55.1</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <statFactors>
+            <InjuryHealingFactor>5</InjuryHealingFactor>
+        </statFactors>
+        <biostatCpx>3</biostatCpx>
+        <biostatArc>1</biostatArc>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>stout</symbol></li>
+                <li><symbol>hard</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneHealingRateBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreWoundHealingGenes.Mod">
+        <defName>EBSG_ArchiteWoundHealing</defName>
+        <label>archite wound healing</label>
+        <labelShortAdj>super-heal</labelShortAdj>
+        <description>Carriers of this gene have archites in their blood dedicated to healing their wounds faster than normal.</description>
+        <iconPath>UI/Icons/Genes/Gene_WoundHealingRateSuperfast</iconPath>
+        <displayOrderInCategory>55.2</displayOrderInCategory>
+        <marketValueFactor>1.50</marketValueFactor>
+        <statFactors>
+            <InjuryHealingFactor>10</InjuryHealingFactor>
+        </statFactors>
+        <biostatCpx>6</biostatCpx>
+        <biostatArc>2</biostatArc>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>stout</symbol></li>
+                <li><symbol>hard</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneHealingRateBase" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreWoundHealingGenes.Mod">
+        <defName>EBSG_MajorArchiteWoundHealing</defName>
+        <label>major archite wound healing</label>
+        <labelShortAdj>super-heal</labelShortAdj>
+        <description>Carriers of this gene have a large number of archites in their blood dedicated to healing their wounds faster than normal.</description>
+        <iconPath>MBSG/Gene_ExtremelyFastHealing</iconPath>
+        <displayOrderInCategory>55.3</displayOrderInCategory>
+        <marketValueFactor>2.00</marketValueFactor>
+        <statFactors>
+            <InjuryHealingFactor>15</InjuryHealingFactor>
+        </statFactors>
+        <biostatCpx>9</biostatCpx>
+        <biostatArc>3</biostatArc>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>stout</symbol></li>
+                <li><symbol>hard</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+</Defs>

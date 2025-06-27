@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Health">
+        <defName>EBSG_MinorArchiteEnhancedBiosculptingSpeed</defName>
+        <label>minor archite enhanced biosculpting speed</label>
+        <description>Carriers of this gene have a small number of archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
+        <iconPath>EBSG/Gene_BiosculptingSpeed</iconPath>
+        <displayOrderInCategory>200.9</displayOrderInCategory>
+        <marketValueFactor>1.25</marketValueFactor>
+        <displayCategory>Healing</displayCategory>
+        <exclusionTags>
+            <li>EBSG_BiosculptingSpeed</li>
+        </exclusionTags>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <BiosculpterOccupantSpeed>3.00</BiosculpterOccupantSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Health">
+        <defName>EBSG_ArchiteEnhancedBiosculptingSpeed</defName>
+        <label>archite enhanced biosculpting speed</label>
+        <description>Carriers of this gene have archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
+        <iconPath>EBSG/Gene_ExtremeBiosculptingSpeed</iconPath>
+        <displayOrderInCategory>201.0</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
+        <displayCategory>Healing</displayCategory>
+        <exclusionTags>
+            <li>EBSG_BiosculptingSpeed</li>
+        </exclusionTags>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <BiosculpterOccupantSpeed>5.00</BiosculpterOccupantSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Health">
+        <defName>EBSG_MajorArchiteEnhancedBiosculptingSpeed</defName>
+        <label>major archite enhanced biosculpting speed</label>
+        <description>Carriers of this gene have a large number of archites in their bodies dedicated to interfacing with biosculpter pods, reducing the amount of time the pawn needs to spend in one.</description>
+        <iconPath>EBSG/Gene_ExtremeBiosculptingSpeed</iconPath>
+        <displayOrderInCategory>201.1</displayOrderInCategory>
+        <marketValueFactor>2</marketValueFactor>
+        <displayCategory>Healing</displayCategory>
+        <exclusionTags>
+            <li>EBSG_BiosculptingSpeed</li>
+        </exclusionTags>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <BiosculpterOccupantSpeed>7.00</BiosculpterOccupantSpeed>
+        </statFactors>
+    </GeneDef>
+</Defs>

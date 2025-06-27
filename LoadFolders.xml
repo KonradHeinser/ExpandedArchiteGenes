@@ -10,4 +10,10 @@
 		<li IfModActive="EBSG.Framework">1.5/EBSGFull</li>
 		<li IfModActive="Ludeon.Rimworld.Ideology">1.5/Ideology</li>
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="EBSG.Framework">1.6/EBSGFull</li>
+		<li IfModActive="Ludeon.Rimworld.Ideology">1.6/Ideology</li>
+	</v1.6>
 </loadFolders>

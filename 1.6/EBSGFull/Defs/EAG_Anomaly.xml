@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef  MayRequire="Ludeon.Rimworld.Anomaly" MayRequireAnyOf="EBSG.AiO,EBSG.Slayer">
+        <defName>EBSG_MinorArchiteEnhancedEntitySlaying</defName>
+        <label>minor archite enhanced entity slaying</label>
+        <description>Carriers of this gene have a small number of archites in their body that enhance their attacks to help them kill entities.</description>
+        <iconPath>EBSG/Gene_GoodEntitySlayer</iconPath>
+        <displayOrderInCategory>590</displayOrderInCategory>
+        <displayCategory>EBSG_Slayer</displayCategory>
+        <exclusionTags>
+            <li>EBSG_EntitySlayer</li>
+        </exclusionTags>
+        <marketValueFactor>1.25</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Entity>1.60</EBSG_OutgoingDamageFactor_Entity>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef  MayRequire="Ludeon.Rimworld.Anomaly" MayRequireAnyOf="EBSG.AiO,EBSG.Slayer,EBSG.Lite">
+        <defName>EBSG_ArchiteEnhancedEntitySlaying</defName>
+        <label>archite enhanced entity slaying</label>
+        <description>Carriers of this gene have archites in their body that enhance their attacks to help them kill entities.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodEntitySlayer</iconPath>
+        <displayOrderInCategory>591</displayOrderInCategory>
+        <displayCategory>EBSG_Slayer</displayCategory>
+        <exclusionTags>
+            <li>EBSG_EntitySlayer</li>
+        </exclusionTags>
+        <marketValueFactor>1.5</marketValueFactor>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Entity>2.20</EBSG_OutgoingDamageFactor_Entity>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef  MayRequire="Ludeon.Rimworld.Anomaly" MayRequireAnyOf="EBSG.AiO,EBSG.Slayer">
+        <defName>EBSG_MajorArchiteEnhancedEntitySlaying</defName>
+        <label>major archite enhanced entity slaying</label>
+        <description>Carriers of this gene have a large number of archites in their body that enhance their attacks to help them kill entities.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodEntitySlayer</iconPath>
+        <displayOrderInCategory>592</displayOrderInCategory>
+        <displayCategory>EBSG_Slayer</displayCategory>
+        <exclusionTags>
+            <li>EBSG_EntitySlayer</li>
+        </exclusionTags>
+        <marketValueFactor>2</marketValueFactor>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Entity>2.80</EBSG_OutgoingDamageFactor_Entity>
+        </statFactors>
+    </GeneDef>
+</Defs>
