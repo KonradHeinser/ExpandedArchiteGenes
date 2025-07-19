@@ -559,6 +559,7 @@
         <biostatCpx>3</biostatCpx>
         <statFactors>
             <ResearchSpeed>2</ResearchSpeed>
+            <EntityStudyRate MayRequire="Ludeon.Rimworld.Anomaly">2</EntityStudyRate>
         </statFactors>
     </GeneDef>
 
@@ -576,6 +577,7 @@
         <biostatCpx>6</biostatCpx>
         <statFactors>
             <ResearchSpeed>3</ResearchSpeed>
+            <EntityStudyRate MayRequire="Ludeon.Rimworld.Anomaly">3</EntityStudyRate>
         </statFactors>
     </GeneDef>
 
@@ -593,6 +595,7 @@
         <biostatCpx>9</biostatCpx>
         <statFactors>
             <ResearchSpeed>4</ResearchSpeed>
+            <EntityStudyRate MayRequire="Ludeon.Rimworld.Anomaly">2</EntityStudyRate>
         </statFactors>
     </GeneDef>
 
@@ -746,6 +749,111 @@
         <biostatCpx>9</biostatCpx>
         <statFactors>
             <HuntingStealth>4</HuntingStealth>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity">
+        <defName>EBSG_MinorArchiteEnhancedHacking</defName>
+        <label>minor archite enhanced hacking</label>
+        <iconPath>EBSG/Gene_Hacking</iconPath>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to helping them hack into devices a lot faster than most.</description>
+        <displayOrderInCategory>77.1</displayOrderInCategory>
+        <displayCategory>EBSG_Productivity</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Hacking</li>
+        </exclusionTags>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <HackingSpeed>2</HackingSpeed>
+            <HackingStealth>1.5</HackingStealth>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity,EBSG.Lite">
+        <defName>EBSG_ArchiteEnhancedHacking</defName>
+        <label>archite enhanced hacking</label>
+        <iconPath>EBSG/Gene_HackingExtreme</iconPath>
+        <description>Carriers of this gene have archites in their brain dedicated to helping them hack into devices a lot faster than most.</description>
+        <displayOrderInCategory>77.2</displayOrderInCategory>
+        <displayCategory>EBSG_Productivity</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Hacking</li>
+        </exclusionTags>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <HackingSpeed>3</HackingSpeed>
+            <HackingStealth>2.0</HackingStealth>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity">
+        <defName>EBSG_MajorArchiteEnhancedHacking</defName>
+        <label>major archite enhanced hacking</label>
+        <iconPath>EBSG/Gene_HackingExtreme</iconPath>
+        <description>Carriers of this gene have a large number of archites in their brain dedicated to helping them hack into devices a lot faster than most.</description>
+        <displayOrderInCategory>77.3</displayOrderInCategory>
+        <displayCategory>EBSG_Productivity</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Hacking</li>
+        </exclusionTags>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <HackingSpeed>4</HackingSpeed>
+            <HackingStealth>2.5</HackingStealth>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity">
+        <defName>EBSG_MinorArchiteEnhancedPiloting</defName>
+        <label>minor archite enhanced piloting</label>
+        <iconPath>EBSG/Gene_Piloting</iconPath>
+        <description>Carriers of this gene have a small number of archites in their brain dedicated to helping them pilot ships easier than most.</description>
+        <displayOrderInCategory>107.1</displayOrderInCategory>
+        <displayCategory>EBSG_Productivity</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Piloting</li>
+        </exclusionTags>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <PilotingAbility>2</PilotingAbility>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity,EBSG.Lite">
+        <defName>EBSG_ArchiteEnhancedPiloting</defName>
+        <label>archite enhanced piloting</label>
+        <iconPath>EBSG/Gene_PilotingExtreme</iconPath>
+        <description>Carriers of this gene have archites in their brain dedicated to helping them pilot ships easier than most.</description>
+        <displayOrderInCategory>107.2</displayOrderInCategory>
+        <displayCategory>EBSG_Productivity</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Piloting</li>
+        </exclusionTags>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <PilotingAbility>3</PilotingAbility>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity">
+        <defName>EBSG_MajorArchiteEnhancedPiloting</defName>
+        <label>major archite enhanced piloting</label>
+        <iconPath>EBSG/Gene_PilotingExtreme</iconPath>
+        <description>Carriers of this gene have a large number of archites in their brain dedicated to helping them pilot ships easier than most.</description>
+        <displayOrderInCategory>107.3</displayOrderInCategory>
+        <displayCategory>EBSG_Productivity</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Piloting</li>
+        </exclusionTags>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <PilotingAbility>4</PilotingAbility>
         </statFactors>
     </GeneDef>
 
