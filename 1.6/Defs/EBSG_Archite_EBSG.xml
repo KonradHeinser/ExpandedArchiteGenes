@@ -806,7 +806,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity" MayRequire="Ludeon.Rimworld.Odyssey">
         <defName>EBSG_MinorArchiteEnhancedPiloting</defName>
         <label>minor archite enhanced piloting</label>
         <iconPath>EBSG/Gene_Piloting</iconPath>
@@ -823,7 +823,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity,EBSG.Lite">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity,EBSG.Lite" MayRequire="Ludeon.Rimworld.Odyssey">
         <defName>EBSG_ArchiteEnhancedPiloting</defName>
         <label>archite enhanced piloting</label>
         <iconPath>EBSG/Gene_PilotingExtreme</iconPath>
@@ -840,7 +840,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity">
+    <GeneDef MayRequireAnyOf="EBSG.AiO,EBSG.Productivity" MayRequire="Ludeon.Rimworld.Odyssey">
         <defName>EBSG_MajorArchiteEnhancedPiloting</defName>
         <label>major archite enhanced piloting</label>
         <iconPath>EBSG/Gene_PilotingExtreme</iconPath>
