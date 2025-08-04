@@ -3,7 +3,7 @@
     <GeneCategoryDef MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes">
         <defName>EBSGA_ArchiteAptitudes</defName>
         <label>archite aptitudes</label>
-        <displayPriorityInXenotype>201</displayPriorityInXenotype>
+        <displayPriorityInXenotype>201.789</displayPriorityInXenotype>
     </GeneCategoryDef>
 
     <GeneDef Name="MBSG_MinorArchite" MayRequireAnyOf="MoreBiotechStyleGenes.Mod,MoreBiotechStyleGenes.Aptitudes" Abstract="True">
