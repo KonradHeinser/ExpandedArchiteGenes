@@ -27,9 +27,12 @@
     <li>EBSG.Biomes</li>
     <li>vanillaracesexpanded.insector</li>
     <li>vanillaracesexpanded.lycanthrope</li>
+    <li>wvc.sergkart.races.biotech</li>
   </loadAfter>
 
   <description>
+Due to a vanilla bug, this should be loaded after any mods that add darvision genes. When in doubt, putting it close to the bottom of the list should generally be safe.
+
 Expanded Biotech Style Genes(EBSG) is the step beyond [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2985153870]More Biotech Style Genes[/url]. Where that series sought to expand ranges that already exist, this series seeks to add ranges that should exist. You get gene ranges that alter sleep fall rate, but why not a range for changing the rate it recovers? If you can have fire resistance genes, why not have genes to resist other types of damage like frostbite and acid?
 
 Expanded Archite Genes seeks to extend the purpose of archite genes beyond their normal "weird ability" state by adding 89 new genes to the normal ranges of genes. This mod goes through all of the ranges that [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2985153870]More Biotech Style Genes[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3020821838]Expanded Biotech Style Genes[/url] expand upon, and adds 3 new options in each range where I believed they fit. The genes are added based on the specific mods you have enabled, so if you only have specific individual mods, you will only see the archite genes related to those mods. 
