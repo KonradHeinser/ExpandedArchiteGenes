@@ -28,6 +28,7 @@
     <li>vanillaracesexpanded.insector</li>
     <li>vanillaracesexpanded.lycanthrope</li>
     <li>wvc.sergkart.races.biotech</li>
+    <li>EBSG.Framework</li>
   </loadAfter>
 
   <description>
